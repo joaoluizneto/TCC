@@ -1,0 +1,59 @@
+\BOOKMARK [0][-]{chapter*.2}{Resumo}{}% 1
+\BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 2
+\BOOKMARK [0][-]{chapter*.4}{Agradecimentos}{}% 3
+\BOOKMARK [0][-]{chapter*.5}{Lista de Figuras}{}% 4
+\BOOKMARK [0][-]{chapter*.6}{Lista de Tabelas}{}% 5
+\BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 6
+\BOOKMARK [1][-]{section.1.1}{Motiva\347\365es}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.2}{Objetivo}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.3}{Resultados esperados}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.4}{Trabalhos correlacionados}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.5}{Organiza\347\343o do documento}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{Introdu\347\343o te\363rica}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Defini\347\365es iniciais}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.1.1}{Defini\347\343o de VANT}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.2}{Tipos de VANTs}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.3}{Componentes dos VANTs de Asa Rotativa}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.4}{Controladora PixHawk}{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.5}{UART}{section.2.1}% 18
+\BOOKMARK [2][-]{subsection.2.1.6}{Telemetria}{section.2.1}% 19
+\BOOKMARK [2][-]{subsection.2.1.7}{Protocolo Mavlink}{section.2.1}% 20
+\BOOKMARK [2][-]{subsection.2.1.8}{Computadores de Bordo}{section.2.1}% 21
+\BOOKMARK [2][-]{subsection.2.1.9}{ROS - Robot Operative System}{section.2.1}% 22
+\BOOKMARK [2][-]{subsection.2.1.10}{Drones DJI}{section.2.1}% 23
+\BOOKMARK [1][-]{section.2.2}{Arquitetura do sistema proposto}{chapter.2}% 24
+\BOOKMARK [0][-]{chapter.3}{Metodologia}{}% 25
+\BOOKMARK [1][-]{section.3.1}{Pesquisa}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.2}{Objetivos do m\351todo aplicado}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.3}{Abordagem}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.4}{Descri\347\343o do problema}{chapter.3}% 29
+\BOOKMARK [0][-]{chapter.4}{Detalhamento da solu\347\343o}{}% 30
+\BOOKMARK [1][-]{section.4.1}{S\351rie de computadores Raspberry Pi}{chapter.4}% 31
+\BOOKMARK [0][-]{chapter.5}{Resultados}{}% 32
+\BOOKMARK [0][-]{chapter.6}{Conclus\343o}{}% 33
+\BOOKMARK [0][-]{chapter.7}{Sugest\365es para trabalhos futuros}{}% 34
+\BOOKMARK [0][-]{chapter*.11}{Refer\352ncias}{}% 35
+\BOOKMARK [0][-]{appendix.A}{Ap\352ndice 1}{}% 36
+\BOOKMARK [1][-]{section.A.1}{Intalando o ArduPilot e MavProxy}{appendix.A}% 37
+\BOOKMARK [2][-]{subsection.A.1.1}{Clonando o reposit\363rio git para sua m\341quina}{section.A.1}% 38
+\BOOKMARK [2][-]{subsection.A.1.2}{Instalando as depend\352ncias e recompilando o perfil}{section.A.1}% 39
+\BOOKMARK [2][-]{subsection.A.1.3}{Mudando para a branch do ArduCopter}{section.A.1}% 40
+\BOOKMARK [2][-]{subsection.A.1.4}{Rodando SITL \(Software In The Loop\)}{section.A.1}% 41
+\BOOKMARK [1][-]{section.A.2}{Instalando o Gazebo e o plugin do ArduPilot}{appendix.A}% 42
+\BOOKMARK [2][-]{subsection.A.2.1}{Atualizando a lista de fontes para download}{section.A.2}% 43
+\BOOKMARK [2][-]{subsection.A.2.2}{Instalando o plugin do Gazebo para comunica\347\343o com o ArduPilot}{section.A.2}% 44
+\BOOKMARK [2][-]{subsection.A.2.3}{Executando a simula\347\343o}{section.A.2}% 45
+\BOOKMARK [1][-]{section.A.3}{Instalando o ROS e o configurando o Catkin}{appendix.A}% 46
+\BOOKMARK [2][-]{subsection.A.3.1}{Atualizando a lista de fontes para download}{section.A.3}% 47
+\BOOKMARK [2][-]{subsection.A.3.2}{Instalando o ROS}{section.A.3}% 48
+\BOOKMARK [2][-]{subsection.A.3.3}{Configurando o ambiente}{section.A.3}% 49
+\BOOKMARK [2][-]{subsection.A.3.4}{Instalando as depend\352ncias para os pacotes dos ROS}{section.A.3}% 50
+\BOOKMARK [2][-]{subsection.A.3.5}{Configurando o Catkin}{section.A.3}% 51
+\BOOKMARK [2][-]{subsection.A.3.6}{Instalando as depend\352ncias para o Catkin}{section.A.3}% 52
+\BOOKMARK [2][-]{subsection.A.3.7}{Instalando as MAVROS e MAVLink}{section.A.3}% 53
+\BOOKMARK [2][-]{subsection.A.3.8}{Atualizando o arquivo .bachrc}{section.A.3}% 54
+\BOOKMARK [1][-]{section.A.4}{Instalando as depend\352ncias geogr\341ficas e clonando o reposit\363rio de simula\347\343o do Intelligent Quads}{appendix.A}% 55
+\BOOKMARK [2][-]{subsection.A.4.1}{Instalando as depend\352ncias geogr\341ficas}{section.A.4}% 56
+\BOOKMARK [2][-]{subsection.A.4.2}{Clonando pacote ROS de simula\347\343o do Intelligent Quads}{section.A.4}% 57
+\BOOKMARK [1][-]{section.A.5}{Instalando o QGround Control}{appendix.A}% 58
+\BOOKMARK [2][-]{subsection.A.5.1}{Alterando permiss\365es e instalando o QGround Control}{section.A.5}% 59

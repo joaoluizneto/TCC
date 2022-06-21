@@ -1,0 +1,174 @@
+%
+%
+%%%%%%%%%%%%%%%%%%%%
+%   Pacotes gerais %
+%%%%%%%%%%%%%%%%%%%%
+%
+%
+% Padrao brasileiro:
+%   a primeira frase eh indentada
+%   para todos os paragrafos.
+%
+\usepackage{indentfirst}
+%
+%
+% Pacotes para lingua portuguesa
+%
+%%%\usepackage{babel}
+%%%\usepackage[brazil]{babel}
+\usepackage[brazilian]{babel}
+%%%\usepackage[portuguese]{babel}
+%%%\babelprovide[import=pt-BR,main]{portuguese}
+%
+%
+%%%\usepackage{ae}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+%
+%
+% Padrao de codificacao 
+% dos caracteres no arquivo '.tex'
+%
+%%%\usepackage{inputenc}
+%\usepackage[ansinew]{inputenc}
+\usepackage[utf8]{inputenc}
+%
+%
+% Pacotes matematicos
+%
+% Package dependency hierarchy 
+% in terms of the AMS-LaTeX bundle:
+%
+% - amsmath (miscellaneous enhancements)
+%   - amstext (text embedded in mathematics)
+%     - amsgen (*)
+%
+% - amsbsy (bold symbols)
+%   - amsgen (*)
+%
+% - amsopn (operator name commands)
+%   - amsgen (*)
+%
+% - amssymb (extended symbol collection)
+%   - amsfonts (*)
+%
+% - amsthm (theorem-like environments)
+%
+% (*) This package has no dependencies.
+%
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+%
+%
+% Pacotes graficos
+%
+%\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{subfig}
+%\usepackage{subfigure}
+\usepackage{epsfig}
+%\usepackage{rotating}
+%
+%
+% Pacotes sobre tabelas
+%
+\usepackage{multirow}
+%
+%
+% Pacote para fazer 'Indice Remissivo'
+%
+%%%\usepackage{makeidx}
+\usepackage{imakeidx}
+\makeindex[intoc]
+%
+%
+% Pacotes uteis para revisao do texto
+%
+% Comentarios de varias linhas
+%
+\usepackage{comment}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%
+% Incluir Códigos   %
+%%%%%%%%%%%%%%%%%%%%%
+\usepackage{listings}
+%
+%% Configuracoes do pacote listings
+\lstdefinestyle{mystyle}{
+language=Python,
+basicstyle=\ttm,
+% Add keywords here
+morekeywords={self, if, True, False, for, except, raise, return, try},
+keywordstyle=\ttb\color{deepblue},
+% Custom highlighting
+emph={set_mode, set_servo_pulsewidth, sleep, OUTPUT, stop, exit},          
+% Custom highlighting style
+emphstyle=\ttb\color{deepred},    
+stringstyle=\color{deepgreen},
+% Any extra options here
+frame=single,                       
+showstringspaces=false,
+commentstyle=\color{green}
+}
+% 
+\lstset{
+style=mystyle,
+breaklines=true
+}
+%
+%
+% definicao de comando para Lista de Códigos
+%
+% Listing -> Código
+\renewcommand{\lstlistingname}{Código}
+% List of Listings -> Lista de Códigos
+\renewcommand{\lstlistlistingname}{Lista de \lstlistingname s}
+%
+%% PACOTES QUE SERÃO REMOVIDOS APÓS REVISÃO
+% Realce de texto
+\usepackage{soulutf8}
+\usepackage{soul}
+% Extensão de letras gregas (Vou tentar Excluir isso)
+\usepackage{upgreek}
+
+%%%%%%%%%%%%%%%%% FIM DESSES PACOTES %%%%%%%%%%%%%%
+
+% Marcacao de texto com cor
+%
+% Explicar...
+%
+%%%\usepackage{color}
+%\usepackage{xcolor}
+\usepackage[table,xcdraw]{xcolor}
+%
+\definecolor{red}  {rgb}{1,0,0}
+\definecolor{green}{rgb}{0,1,0}
+\definecolor{blue} {rgb}{0,0,1}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{green}{rgb}{0,0.8,0}
+%
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+%
+%
+% O pacote 'xurl' 
+% faz quebra automatica de linha 
+% para um URL muito grande...
+%
+%%%\usepackage{url}
+\usepackage{xurl}
+%
+\usepackage{hyperref}
+%
+%
+% Explicar e posicionar...
+%
+%%%\usepackage{memhfixc}
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

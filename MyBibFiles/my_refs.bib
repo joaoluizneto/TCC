@@ -1,0 +1,672 @@
+%
+%%%%%%%%%%%%%%%%%%%%%
+% Inicio do arquivo %
+%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Arquivo de base bibliográfica para      %
+% Projetos PET-Tele, LaDISan              %
+%                                         %
+% Inicio  : Janeiro/2019                  %
+% Autores :                              ¨%
+%   R. Miranda                            %
+%   J. Neto                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% --------------------------------------------------
+% 
+% Definicao de strings
+%
+@string{LastView = {Acesso em: 25/01/2021}}
+@string{DispHead = {Disponível em: }}
+%
+% --------------------------------------------------
+%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% **********************
+% *****   Livros   *****
+% **********************
+%
+% book: A book with an explicit publisher.
+%       Required fields: author or editor, title, publisher, year.
+%       Optional fields: volume, series, address, edition, month, note.
+%
+% EXEMPLO:
+% --------------------------------------------------
+%
+% book{book:nome_do_livro,
+%   author={},
+%   title={},
+%   publisher={},
+%   year={},
+% }
+%
+% --------------------------------------------------
+%
+%
+% **********************
+% *****   Livros   *****
+% **********************
+%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%
+@book{book:eng_controle_moderno,
+  author={Katsuhiko Ogata},
+  title={Engenharia de Controle Moderno},
+  publisher={LTC - Livros Técnicos e Científicos Editora S.A},
+  year={2000},
+}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+@book{book:servomecanismos,
+  author={Harold Locke Hazen},
+  title={Theory of servo-mechanisms},
+  publisher={-},
+  year={1934},
+}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% **********************************
+% *****  Documentação técnica  *****
+% **********************************
+%
+% Manual: Technical documentation.
+%         Required fields: title.
+%         Optional fields: author, organization, address, edition, month, year, note.
+%
+% EXEMPLO:
+% --------------------------------------------------
+%
+% manual{tut:nome_do_manual,
+%   title = {},
+%   author = {},
+%   edition	= {},
+%   year = {},
+% }
+%
+% --------------------------------------------------
+%
+@misc{url:cms,
+  title = {\textbf{URL do Manual do {\textit{software}} CMS}},
+  author = {Yoosee},
+  howpublished = DispHead # {``\url{http://support.hkvstar.com/file/Yoosee_Instruction_Manual.pdf}''},
+  year = {2017}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:datasheet_mg995,
+  title = {\textbf{URL do \textit{Datasheet} do MG995}},
+  author = {Tower-Pro},
+  howpublished = DispHead # {``\url{https://storage.googleapis.com/baudaeletronicadatasheet/MG995.pdf}''},
+  year = {2019}, 
+  note = LastView,
+}
+%
+% **********************************
+% *****  Documentação técnica  *****
+% **********************************
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% **********************
+% *****  Artigos   *****
+% **********************
+%
+% EXEMPLO:
+% --------------------------------------------------
+%
+% article{article:nome_do_artigo,
+%   author={},
+%   journal={},
+%   title={},
+%   year={},
+%   volumer={},
+%   number={},
+%   pages={},
+%   doi={},
+% }
+%
+% --------------------------------------------------
+%
+@article{article:pwm,
+  author={N. Pinckney},
+  journal={IEEE Potentials}, 
+  title={Pulse-width modulation for microcontroller servo control}, 
+  year={2006},
+  volume={25},
+  number={1},
+  pages={27-29},
+  doi={10.1109/MP.2006.1635026},
+}
+%
+% --------------------------------------------------
+%
+@article{article:chequer,
+  author = {Thiago Chequer Coelho and Lucas Pontes Siqueira and Franciele Batista de Oliveira and Alexandre Santos de la Vega},
+  title   = {\textbf{Implantação de um Sistema Automático para Medição de Fluxo em uma Planta Didática Usando um Kit Arduino e o Sensor Water Flow G1/2}},
+  journal = {COBENGE},
+  year    = 2017,
+  pages   = {8},
+  month   = {12},
+  note    = DispHead # {``\url{http://www.telecom.uff.br/pet/petws/downloads/artigos/cobenge_2017/COBENGE17_00017_00000123_Planta_LaDISan_2017_07_15.pdf}''},
+}
+%
+% --------------------------------------------------
+%
+@article{article:tcc_lorraine_maria,
+  author  = {Lorraine Miranda Magalhães Paiva and Maria Carolina Milhomem}, 
+  title   = {\textbf{Uso de sensores e acesso remoto para a realização de aula prática sobre reservatórios de detenção aplicados à drenagem urbana}},
+  journal = {UFF},
+  year    = 2018,
+  pages   = {70},
+  month   = {7},
+  note    = DispHead # {``\url{https://app.uff.br/riuff/handle/1/7080}''},
+}
+%
+% --------------------------------------------------
+%
+@article{article:lorraine_maria,
+  author  = {Lorraine Miranda Magalhães Paiva and Maria Carolina Milhomem and Alexandre Santos de la Vega}, 
+  title   = {\textbf{Realização de Aula Prática Remota a Partir de Laboratório Equipado com Modelo Físico sobre Detenção de Água de Chuva}},
+  journal = {COBENGE},
+  year    = 2018,
+  pages   = {10},
+  month   = 9,
+  note    = DispHead # {``\url{http://www.telecom.uff.br/pet/petws/downloads/artigos/cobenge_2018/COBENGE18_00063_00001258_Aula_Remota_LaDISan_2018_07_09.pdf}''},
+}
+%
+% --------------------------------------------------
+%
+@article{article:raphael_joaoluiz,
+  author = {João Luiz Amorim Pereira Neto and Raphael Miranda and Alexandre Santos de la Vega},
+  title = {\textbf{Evolução da Infraestrutura para Realização de Aula Prática Remota a Partir de Laboratório Equipado com Modelo Físico sobre Detenção de Água de Chuva}},
+  journal = {COBENGE},
+  year = 2020,
+  pages = {10},
+  month = 12, 
+  note = DispHead # {``\url{http://www.telecom.uff.br/pet/petws/downloads/artigos/cobenge_2020/COBENGE20_00164_00002906_LaDISan_Raphael_JoaoL_ASV_2020_10_02.pdf}''},
+}
+%
+% --------------------------------------------------
+%
+%
+% **********************
+% *****  Artigos   *****
+% **********************
+%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% **********************
+% ******   URLs   ******
+% **********************
+%
+% misc: Use this type when nothing else fits. 
+%       Required fields: none. 
+%       Optional fields: author, title, howpublished, month, year, note. 
+%
+% --------------------------------------------------
+%
+% EXEMPLO:
+%
+% --------------------------------------------------
+% 
+% Definicao de strings
+%
+% @string{LastView = {Acesso em: 25/01/2021}}
+% @string{DispHead = {Disponível em: }}
+%
+% misc{url:nome_da_url,
+%   title = {},
+%   author = {},
+%   howpublished = DispHead # {``\url{}''},
+%   note = LastView,
+% }
+%
+% --------------------------------------------------
+%
+@misc{url:lab2p,
+    title = {\textbf{URL do Laboratório de Produtos e Processos (TGP/UFF)}},
+    author = {LAB2P},
+    howpublished = DispHead # {``\url{Sem_URL_disponivel}''},
+    year = {2019},
+    note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:ladisan,
+  title = {\textbf{URL do Laboratório de Drenagem, Irrigação e Saneamento Ambiental (TER/UFF)}},
+  author = {LaDISan},
+  howpublished = DispHead #  {``\url{http://www.uff.br/?q=setor/laboratorio-de-drenagem-irrigacao-e-saneamento-ambiental-ladisan}''},
+  year = {2019},
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:arduino,
+    title = {\textbf{URL do Arduino}},
+    author = {Arduino},
+    howpublished = DispHead # {``\url{https://www.arduino.cc/}''},
+    year = {2020},
+    note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:cobenge_2017,
+    title = {\textbf{URL do COBENGE 2017}},
+    author = {COBENGE},
+    howpublished = DispHead # {``\url{http://www.abenge.org.br/cobenge.php}''},
+    year = {2017},
+    note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:cobenge,
+    title = {\textbf{URL do COBENGE}},
+    author = {ABENGE},
+    howpublished = DispHead # {``\url{http://www.abenge.org.br/cobenge.php}''},
+    year = {2020},
+    note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:raspberrypi,
+    title = {\textbf{URL da plataforma Raspberry Pi}},
+    author = {Raspberry Pi Foundation},
+    howpublished = DispHead # {``\url{https://www.raspberrypi.org/}''},
+    year = {2020},
+    note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:raspberry_wiki,
+  title = {\textbf{URL do termo Raspberry Pi}},
+  author = {Wikipedia Members},
+  howpublished = DispHead # {``\url{https://pt.wikipedia.org/wiki/Raspberry_Pi}''},
+  year = {2019}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:soc,
+  title = {\textbf{URL do termo \textit{System on a chip} (SoC)}},
+  author = {Wikipedia Members},
+  howpublished = DispHead # {``\url{https://pt.wikipedia.org/wiki/System-on-a-chip}''},
+  year = {2019}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:usb,
+  title = {\textbf{URL da tecnologia \textit{Universal Serial Bus} (USB)}},
+  author = {USB Implementers Forum, Inc},
+  hhowpublished = DispHead # {``\url{https://www.usb.org/}''},
+  year = {2020}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:tinkercad,
+  title = {\textbf{URL da plataforma TinkerCad AutoDesk}},
+  author = {{Autodesk, Inc.}},
+  howpublished = DispHead # {``\url{https://www.tinkercad.com/}''},
+  year = {2019}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:teachduino,
+  title = {\textbf{URL do projeto Teachduino (UFSC)}},
+  author = {Daniel Girardi},
+  howpublished = DispHead # {``\url{https://teachduino.ufsc.br/}''},
+  year = {2017}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:yoosee,
+  title = {\textbf{URL da fabricante Yoosee}},
+  author = {{Yoosee}},
+  howpublished = DispHead # {``\url{https://pt.yooseecamera.com/}''},
+  year = {2017}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:how_it_works_servo,
+  title = {\textbf{How do servo motors work?}},
+  author = {Jameco Electronics},
+  howpublished = DispHead # {``\url{https://www.jameco.com/jameco/workshop/howitworks/how-servo-motors-work.html}''},
+  year = {2019}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:python,
+  title = {\textbf{URL da linguagem de programação Python}},
+  author = {Python Software Foundation},
+  howpublished = DispHead # {``\url{http://www.python.org}''},
+  year = {2021}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:pigpio,
+  title = {\textbf{URL da biblioteca PIGPIO para Python}},
+  author = {joan2937},
+  howpublished = DispHead # {``\url{https://github.com/joan2937/pigpio}''},
+  year = {2019}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:rpi_gpio,
+  title = {\textbf{URL da biblioteca RPI.GPIO 0.7.0 para Python}},
+  author = {Ben Croston},
+  howpublished = DispHead # {``\url{https://pypi.org/project/RPi.GPIO/}''},
+  year = {2019}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:serialplot,
+  title = {\textbf{URL da plataforma SerialPlot - \textit{Realtime Plotting Software}}},
+  author = {Hasan Yavuz Özderya},
+  howpublished = DispHead # {``\url{https://hackaday.io/project/5334-serialplot-realtime-plotting-software}''},
+  year = {2017}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:ip,
+  title = {\textbf{URL do padrão do protocolo IP}},
+  author = {{RFC Editors}},
+  howpublished = DispHead # {``\url{https://www.rfc-editor.org/standards}''},
+  year = {2020}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:yf_s201b,
+  title = {\textbf{Sensor Water Flow YF-S201}},
+  author = {{YIFA}},
+  howpublished = DispHead # {``\url{http://www.hobbytronics.co.uk/datasheets/sensors/YF-S201.pdf}''},
+  year = {2020}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:ide,
+  title = {\textbf{Integrated Development Enviroment (IDE)}},
+  author = {{Codecademy, Inc.}},
+  howpublished = DispHead # {``\url{https://www.codecademy.com/articles/what-is-an-ide}''},
+  year = {2020}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:viewduino,
+  title = {\textbf{ViewDuino - Uma interface gráfica para dados do Arduino}},
+  author = {Daniel Girardi},
+  howpublished = DispHead # {``\url{https://teachduino.ufsc.br/2017/09/06/viewduino-uma-interface-grafica-para-dados-do-arduino-bluetooth/}''},
+  year = {2017}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:tunelamento,
+  title = {\textbf{Seção: Tutoriais Banda Larga}},
+  author = {Teleco},
+  howpublished = DispHead # {``\url{https://www.teleco.com.br/tutoriais/tutorialvpn/pagina_3.asp}''},
+  year = {-}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:tcp,
+  title = {\textbf{A Roadmap for Transmission Control Protocol (TCP) Specification Documents}},
+  author = {Martin Duke and Robert Braden and Wesley M. Eddy and Ethan Blanton and Alexander Zimmermann},
+  howpublished = DispHead # {``\url{https://tools.ietf.org/html/rfc7414}''},
+  year = {2015}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:sftp,
+  title = {\textbf{SSH File Transfer Protocol draft-ietf-secsh-filexfer-02}},
+  author = {Tatu Ylonen and Sami Lehtinen},
+  howpublished = DispHead # {``\url{https://tools.ietf.org/html/draft-ietf-secsh-filexfer-02}''},
+  year = {2001}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:scp,
+  title = {\textbf{SCP/SFTP/SSH URI Format draft-ietf-secsh-scp-sftp-ssh-uri-02}},
+  author = {Steve Suehring and Joseph Salowey},
+  howpublished = DispHead # {``\url{https://tools.ietf.org/html/draft-ietf-secsh-scp-sftp-ssh-uri-02#page-7}''},
+  year = {2005}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:eduroam,
+  title = {\textbf{EDUROAM - Rede Nacional de Ensino e Pesquisa (RNP)}},
+  author = {RNP},
+  howpublished = DispHead # {``\url{https://www.rnp.br/servicos/alunos-e-professores/colaboracao-a-distancia/eduroam}''},
+  year = {2021}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:ipc,
+  title = {\textbf{The Interprocess Communication (IPC) Overview}},
+  author = {IBM},
+  howpublished = DispHead # {``\url{https://www.ibm.com/support/pages/interprocess-communication-ipc-overview}''},
+  year = {2021}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:transdutor,
+  title = {\textbf{Transdutor}},
+  author = {{Wikipedia Members}},
+  howpublished = DispHead # {``\url{https://pt.wikipedia.org/wiki/Transdutor}''},
+  year = {2021}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:linux,
+  title = {\textbf{Linux}},
+  author = {{Wikipedia Members}},
+  howpublished = DispHead # {``\url{https://pt.wikipedia.org/wiki/Linux}''},
+  year = {2019}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:monolitica,
+  title = {\textbf{Aplicação Monolítica}},
+  author = {{Wikipedia Members}},
+  howpublished = DispHead # {``\url{https://pt.wikipedia.org/wiki/Aplicaçao_monolítica}''},
+  year = {2021}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:debian,
+  title = {\textbf{Debian OS}},
+  author = {{Software in the Public Interest, Inc}},
+  howpublished = DispHead # {``\url{https://www.debian.org/}''},
+  year = {2021}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:pinballsp,
+  title = {\textbf{Página Pinballsp}},
+  author = {Pinballsp},
+  howpublished = DispHead # {``\url{https://www.pinballsp.com/}''},
+  year = {2020}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:ssh,
+  title = {\textbf{Secure Shell Protocol}},
+  author = {{RaspberryPi Foundation}},
+  howpublished = DispHead # {``\url{https://www.raspberrypi.org/documentation/remote-access/ssh/}''},
+  year = {2020}, 
+  note = LastView,
+}
+% --------------------------------------------------
+%
+% URL's PET:
+%
+% --------------------------------------------------
+%
+@MISC{
+    url:petsesumec,
+    AUTHOR = {{Programa de Educação Tutorial - }PET},
+    TITLE = DispHead # {``\url{http://portal.mec.gov.br/index.php?option=com_conent&view=article&id=12223&ativo=481&Itemid=480}''},
+    NOTE = LastView,
+} 
+%
+% --------------------------------------------------
+%
+@MISC{
+    url:pettele,
+    AUTHOR = {{Grupo PET-Tele}},
+    TITLE = DispHead # {``\url{http://www.telecom.uff.br/pet}''},
+    YEAR = {2021},
+    NOTE = LastView,
+} 
+%
+% --------------------------------------------------
+%
+@MISC{
+    url:apostila_linux,
+    TITLE = {\textbf{URL da apostila de introdução ao Linux}},
+    AUTHOR = {{Grupo PET-Tele}},
+    HOWPUBLISHED = DispHead # {``\url{http://www.telecom.uff.br/pet/petws/downloads/apostilas/LINUX.pdf}''},
+    YEAR = {2004},
+    NOTE = LastView,
+}
+%
+% --------------------------------------------------
+%
+@MISC{
+    url:apostila_python,
+    TITLE = {\textbf{URL da apostila de introdução ao Python}},
+    AUTHOR = {{Grupo PET-Tele}},
+    HOWPUBLISHED = DispHead # {``\url{http://www.telecom.uff.br/pet/petws/downloads/apostilas/PYTHON.pdf}''},
+    YEAR = {2011},
+    NOTE = LastView,
+}
+%
+% --------------------------------------------------
+%
+@MISC{
+    url:projeto_ladisan,
+    TITLE = {\textbf{Novas implementações para automatização e acesso remoto no sistema de reservatórios de detenção aplicados à drenagem urbana do LaDISan/TCE/UFF utilizando a plataforma Raspberry Pi}},
+    AUTHOR = {João Luiz Amorim Pereira Neto and Raphael Miranda},
+    HOWPUBLISHED = DispHead # {``\url{http://www.telecom.uff.br/pet/petws/index.php?pagina=downloads/projetos}''},
+    YEAR = {2021},
+    NOTE = LastView,
+}
+%
+% --------------------------------------------------
+%
+@MISC{
+    url:tutorial_teamviewer,
+    TITLE = {\textbf{Tutorial sobre aplicativo computacional TeamViewer}},
+    AUTHOR = {Raphael Miranda and Alexandre Santos de la Vega},
+    HOWPUBLISHED = DispHead # {``\url{http://www.telecom.uff.br/pet/petws/downloads/tutoriais/TeamViewer/Tut_TeamViewer.pdf}''},
+    YEAR = {2018}, 
+    NOTE = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:equipeuffo,
+  title = {\textbf{Equipe UFFO}},
+  author = {{Equipe UFFO}},
+  howpublished = DispHead # {``\url{https://uffoequipe.github.io/website/uffo/}''},
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:ardupilot-companioncomputers,
+  title = {\textbf{Companion Computers}},
+  author = {{Companion Computers}},
+  howpublished = DispHead # {``\url{https://ardupilot.org/dev/docs/companion-computers.html}''},
+  year = {2021}, 
+  note = LastView,
+}
+%
+% --------------------------------------------------
+%
+@misc{url:ardupilotdoc,
+  title = {\textbf{Ardupilot Docs}},
+  author = {{Ardupilot Docs}},
+  howpublished = DispHead # {``\url{https://ardupilot.org/dev/#welcome-to-the-ardupilot-development-site}''},
+  year = {2021}, 
+  note = LastView,
+}
+%
+% **********************
+% ******   URLs   ******
+% **********************
+%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%%%
+% Fim do arquivo %
+%%%%%%%%%%%%%%%%%%
+%
