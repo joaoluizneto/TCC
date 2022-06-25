@@ -297,13 +297,23 @@ Niterói -- RJ
 %
 \thispagestyle{myheadings}
 %
-Este trabalho é o fruto de um trabalho conjunto entre vários discentes e docentes da UFF e iniciativa privada, todos com mútuo interesse por VANTs e suas aplicações. O projeto inicial era ideia da Equipe UFFO~\cite{url:equipeuffo} - construir um \textit{drone} para vigilância dos campi da UFF. O hardware a ser utilizado era um quadricóptero equipado com um sistema FPV de transmissão analógica. Posteriormente, houve-se o interesse de equipar um computador de bordo no \textit{drone} em questão, para fazer aplicações no campo da visão computacional com processamento em tempo de voo. Para isso foi utilizado como referência o material da comunidade~\cite{url:ardupilotdoc} sobre computadores de bordo~\cite{url:ardupilot-companioncomputers}.\\
+Este trabalho é o fruto de um esforço em conjunto entre vários discentes e docentes da UFF e iniciativa privada, todos com mútuo 
+interesse por VANTs e suas aplicações. O projeto inicial era ideia da Equipe UFFO~\cite{url:equipeuffo} - construir um \textit{drone} 
+para vigilância dos campi da UFF. O hardware a ser utilizado era um quadricóptero equipado com um sistema FPV de transmissão analógica. 
+Posteriormente, houve-se o interesse de equipar um computador de bordo no \textit{drone} em questão, para fazer aplicações no campo 
+da visão computacional com processamento em tempo de voo. Para isso foi utilizado como referência o material da comunidade~\cite{url:ardupilotdoc} 
+sobre computadores de bordo~\cite{url:ardupilot-companioncomputers}.\\
 %
-Para a escolha do computador de bordo foram levados mais em conta fatores de custo e popularidade, com isso a plataforma \textit{Raspberry Pi}~\cite{url:raspberrypi} foi a selecionada para esse fim.\\
+Para a escolha do computador de bordo foram levados mais em conta fatores de custo e popularidade, com isso a plataforma 
+\textit{Raspberry Pi}~\cite{url:raspberrypi} foi a selecionada para esse fim.\\
 %
-A partir da arquitetura proposta, várias aplicações além da visão computacional são possíveis. Como o computador de bordo em questão possui um sistema operacional com propósito geral baseado em \textit{debian}~\cite{url:debian}, além de outras capacidades de Hardware como portas \textit{GPIO} para acoplamento de sensores e atuadores e outros barramentos para conexão de periféricos, as possibilidades para esse hardware são muitas.\\
+A partir da arquitetura proposta, várias aplicações além da visão computacional são possíveis. Como o computador de bordo em questão 
+possui um sistema operacional com propósito geral baseado em \textit{debian}~\cite{url:debian}, além de outras capacidades de Hardware como portas 
+\textit{GPIO} para acoplamento de sensores e atuadores e outros barramentos para conexão de periféricos, as possibilidades para esse hardware são muitas.\\
 %
-Com isso, a aplicação proposta nesse trabalho será a conexão desse computador de bordo à uma rede IP. Várias capacidades da plataforma \textit{Raspberry Pi} serão exploradas nos experimentos que sucederão, além disso, serão escritos softwares para testar o conceito de \textit{Drones} em Redes de computadores.
+Com isso, a aplicação proposta nesse trabalho será a conexão desse computador de bordo à uma rede IP. Várias capacidades da plataforma 
+\textit{Raspberry Pi} serão exploradas nos experimentos que sucederão, além disso, serão desenvolvidas aplicações para testar o conceito de 
+\textit{Drones} em Redes de computadores.
 %
 
 \bigskip
@@ -380,34 +390,31 @@ Keywords: Monograph. LaTeX. Hints.
 \addcontentsline{toc}{chapter}{Agradecimentos}
 
 \thispagestyle{myheadings}
-
+%
 Espaço reservado para os agradecimentos.
-
-Agradecer ao Prof. Alexandre
-
-Agradecer ao Prof. Raul
-
-Agradecer ao Prof. Lauro Eduardo
-
-Agradecer ao Programa PET
-
-Agradecer ao Raphael Miranda e a Equipe UFFO
-
-Agradecer ao Fabio e a Empresa 6DDrones
-
-Agradecer a comunidade Arducopter pelo grande esforço colaborativo em desenvolver as ferramentas utilizadas nesse projeto.
-
-Agradecer a Larissa Lauffer, namorada de João, por todo apoio durante vários momentos difíceis.
-
-Agradecer a minha mãe, padastro e avó pela cobrança e incentivo nos estudos
-
-
-Os agradecimentos devem ser sucintos e específicos
-a cada tipo de ajuda, a cada ideia relevante, 
-a cada empréstimo significativo, pois um agradecimento
-é, de certa forma, um crédito dado a alguém.
-
-
+%
+Agradecemos ao Prof. Alexandre pla orientação durante a nossa estadia no grupo do PET-Tele. Através, 
+da nossa participação no grupo foi possível termos um primeiro contato com as plataformas de desenvolvimento 
+Arduino e \textit{Raspberry Pi}~\cite{url:raspberrypi}, além de outras atividades que contribuíram para nosso
+desenvolvimento profissional.
+%
+Agradecemos ao Prof. Raul pelo acolhimento na \textit{Equipe UFFO} e pelo incentivo ao estudo e desenvolvimento 
+de VANTs. 
+%
+Agradecemos ao Prof. Lauro Eduardo pelo direcionamento durante a elaboração desse projeto de TCC. 
+%
+Agradecemos à Equipe UFFO e especialmente ao Raphael Miranda, pelo apoio no desenvolvimento do drone quadcóptero 
+utilizado nos experimentos desse trabalho. 
+%
+Agradecemos à Empresa 6DDrones e especialmente ao Fabio, pelo apoio com infraestrutura e equipamentos para o desenvolvimento 
+desse projeto.
+%
+Agradecemos à comunidade Arducopter pelo grande esforço colaborativo em desenvolver varias das ferramentas utilizadas nesse projeto.
+%
+Agradeço à Larissa, minha namorada, por todo apoio, carinho e incentivo durante a minha graduação.
+%
+Agradecemos aos nossos familiares pela cobrança e incentivo nos estudos.
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -469,25 +476,29 @@ a cada empréstimo significativo, pois um agradecimento
 \thispagestyle{empty} 
 %
 %
-Atrelado à popularização da tecnologia, o barateamento dos \textit{drones} tornou-o capaz de ser usado para além do âmbito militar, ganhando espaço nas industrias cinematográficas, esportivas e do entretenimento, fora para o uso pessoal.\\
-
+Atrelado à popularização da tecnologia, o barateamento dos \textit{drones} tornou-o capaz de ser usado para além do âmbito militar, 
+ganhando espaço nas industrias cinematográficas, esportivas e do entretenimento, fora para o uso pessoal.\\
 Somado à isso, com o barateamento e miniaturização dos componentes eletrônicos nas últimas décadas, surgiram diversas plataformas de 
-
-A difusão de estudos sobre possíveis aplicações é, portanto, uma consequência inevitável. Dessa forma, abre-se um leque de possibilidades para explorar as atividades que um VANT (Veículo Aéreo Não Tripulado) pode executar.\\
+difusão de estudos sobre possíveis aplicações é, portanto, uma consequência inevitável. Dessa forma, abre-se um leque de possibilidades 
+para explorar as atividades que um VANT (Veículo Aéreo Não Tripulado) pode executar.\\
 
 
 
 \section{Motivações}
 
-O sentimento de interesse e empolgação pela tecnologia dos drones dos autores desse texto foram as forças primordiais para a concepção do trabalho que se segue. Tal interesse nasceu dentro da Universidade Federal Fluminense através da equipe UFFO~\cite{url:equipeuffo}, formada por discentes e docentes da universidade.\\
-
-Com a experiência adquirida na confecção de um drone quadcóptero simples, descobriu-se a possibilidade de acoplar a este um Raspberry Pi~\cite{url:raspberrypi} como computador de bordo da aeronave, expandindo suas capacidades.\\
-
-A partir desta ideia, foram realizados estudos para buscar os métodos e tecnologias mais recentes utilizados nessa configuração de drone. Felizmente, muitas dessas tecnologias utilizadas já estavam disponíveis na documentação Open Source do Ardupilot~\cite{url:ardupilotdoc} para o equipamento utilizado.
+O sentimento de interesse e empolgação pela tecnologia dos drones dos autores desse texto foram as forças primordiais para a concepção 
+do trabalho que se segue. Tal interesse nasceu dentro da Universidade Federal Fluminense através da equipe UFFO~\cite{url:equipeuffo}, 
+formada por discentes e docentes da universidade.\\
+Com a experiência adquirida na confecção de um drone quadcóptero simples, descobriu-se a possibilidade de acoplar a este um 
+Raspberry Pi~\cite{url:raspberrypi} como computador de bordo da aeronave, expandindo suas capacidades.\\
+A partir desta ideia, foram realizados estudos para buscar os métodos e tecnologias mais recentes utilizados nessa configuração de drone. 
+Felizmente, muitas dessas tecnologias utilizadas já estavam disponíveis na documentação Open Source do Ardupilot~\cite{url:ardupilotdoc} 
+para o equipamento utilizado.
 
 \section{Objetivo}
 
-Este trabalho objetiva o projeto e construção de um drone capaz de se comunicar numa rede IP, além de estudar algumas aplicações para esse tipo de equipamento.
+Este trabalho objetiva o projeto e construção de um drone capaz de se comunicar numa rede IP, além de estudar algumas aplicações para 
+esse tipo de equipamento.
 
 \section{Resultados esperados}
 
@@ -523,8 +534,12 @@ Resumir os seguintes pontos:
 
 \section{Definições iniciais}
 
-\subsection{Definição de VANT}
-VANT - Veículo Aéreo Não Tripulado é uma aeronave projetada para operar sem a presença de um piloto à bordo. 
+\subsection{Drones e VANTs}
+Drones são sistemas aéreos automatizados que incluem tanto os VANTs - Veículos Aéreos Não Tripulados, capazes de voar por milhares de 
+kilometros, quanto drones pequenos que voam em locais confinados. São veículos aéreos não tripulados, automatizados ou controlados 
+remotamente, podem carregar diversos tipos de carga e fazer vários tipos de missões.\\
+Devido a avanços nas tecnologias envolvidas na fabricação, nos sistemas de navegação, nos sensores e sistemas de armazenamento de 
+energia, uma grande variedade de tipos de drones surgiram nas últimas décadas. 
 
 \subsection{Tipos de VANTs}
 
