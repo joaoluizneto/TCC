@@ -3,10 +3,11 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: apalike.bst
 Database file #1: ./MyBibFiles/my_refs.bib
+Warning--I didn't find a database entry for "artigo_relacionado_1"
 Warning--empty year in url:equipeuffo
 You've used 12 entries,
             1935 wiz_defined-function locations,
-            530 strings with 6081 characters,
+            531 strings with 6101 characters,
 and the built_in function-call counts, 3391 in all, are:
 = -- 363
 > -- 107
@@ -45,4 +46,4 @@ warning$ -- 1
 while$ -- 26
 width$ -- 0
 write$ -- 171
-(There was 1 warning)
+(There were 2 warnings)
