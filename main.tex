@@ -297,7 +297,7 @@ Niterói -- RJ
 %
 \thispagestyle{myheadings}
 %
-Este trabalho é o fruto de um esforço em conjunto entre vários discentes e docentes da UFF e iniciativa privada, todos com mútuo 
+Este trabalho é o fruto de um esforço conjunto entre vários discentes e docentes da UFF e iniciativa privada, todos com mútuo 
 interesse por VANTs e suas aplicações. O projeto inicial era ideia da Equipe UFFO~\cite{url:equipeuffo} - construir um \textit{drone} 
 para vigilância dos campi da UFF. O hardware a ser utilizado era um quadricóptero equipado com um sistema FPV de transmissão analógica. 
 Posteriormente, houve-se o interesse de equipar um computador de bordo no \textit{drone} em questão, para fazer aplicações no campo 
@@ -393,7 +393,7 @@ Keywords: Monograph. LaTeX. Hints.
 %
 Espaço reservado para os agradecimentos.
 %
-Agradecemos ao Prof. Alexandre pla orientação durante a nossa estadia no grupo do PET-Tele. Através, 
+Agradecemos ao Prof. Alexandre pela orientação durante a nossa estadia no grupo do PET-Tele. Através, 
 da nossa participação no grupo foi possível termos um primeiro contato com as plataformas de desenvolvimento 
 Arduino e \textit{Raspberry Pi}~\cite{url:raspberrypi}, além de outras atividades que contribuíram para nosso
 desenvolvimento profissional.
@@ -476,7 +476,7 @@ Agradecemos aos nossos familiares pela cobrança e incentivo nos estudos.
 \thispagestyle{empty} 
 %
 %
-Atrelado à popularização da tecnologia, o barateamento dos \textit{drones} tornou-o capaz de ser usado para além do âmbito militar, 
+Atrelado à popularização da tecnologia, o barateamento dos \textit{drones} tornaram-nos capazes de serem usados para além do âmbito militar, 
 ganhando espaço nas industrias cinematográficas, esportivas e do entretenimento, fora para o uso pessoal.\\
 Somado à isso, com o barateamento e miniaturização dos componentes eletrônicos nas últimas décadas, surgiram diversas plataformas de 
 difusão de estudos sobre possíveis aplicações é, portanto, uma consequência inevitável. Dessa forma, abre-se um leque de possibilidades 
@@ -497,7 +497,7 @@ para o equipamento utilizado.
 
 \section{Objetivo}
 
-O primeiro objetivo deste trabalho é projetar, construir e testar uma conexão de  um drone a uma rede \textit{IP}, visando facilitar a coleta de dados e o controle do drone em si. Para isso, no ambiente simulado, utilizaremos uma rede \textit{wi-fi} para realizazr o envio de dados do drone a um servidor remoto, cujo intuito é armazenar, processar e exibir informações coletadas pelo drone. O segundo objetivo, agora fora do ambiente de simulação, gira em torno do estudo da viabilidade e benefícios 
+O primeiro objetivo deste trabalho é projetar, construir e testar uma conexão de  um drone a uma rede \textit{IP}, visando facilitar a coleta de dados e o controle do drone em si. Para isso, no ambiente simulado, utilizaremos uma rede \textit{wi-fi} para realizar o envio de dados do drone a um servidor remoto, cujo intuito é armazenar, processar e exibir informações coletadas pelo drone. O segundo objetivo, agora fora do ambiente de simulação, gira em torno do estudo da viabilidade e benefícios 
 de uma conexão utilizando a tecnologia LTE. ampliando o ambiente de funcionamento para muito além do alcance do \textit{wi-fi}.
 \textit{IP}.  
 
@@ -543,7 +543,20 @@ remotamente, podem carregar diversos tipos de carga e fazer vários tipos de mis
 Devido a avanços nas tecnologias envolvidas na fabricação, nos sistemas de navegação, nos sensores e sistemas de armazenamento de 
 energia, uma grande variedade de tipos de drones surgiram nas últimas décadas. 
 
-\subsection{Tipos de VANTs}
+\subsection{Classificação de VANTs}
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/introducao/drone_classification.png}
+  \caption{Classificação de VANTs por tipo de pouso, aerodinâmica e quantidade de rotores.}
+  \label{fig:drone_classification.png}
+\end{figure}
+
+Como mostrado no organograma da figura a cima~\ref{fig:drone_classification.png}, as categorizações mais comuns para os VANTs são obtidas pelos atributos "tipo de pouso", "aerodinâmica" e "quantidade de rotores".
+
+O tipo de aerodinâmica responsável pela sustentação das aeronaves no ar é bastante diversificado. Uma categoria bem comum de drones sa VANTs de asa fixa, que semelhantemente aos aviões, tiram proveito da geometria das asas e da velocidade gerada por um ou mais motores para obterem sustentação. 
+
+A classificaçao de aterrisagem, com a nomenclatura VTOL e HTOL diz respeito apenas aos VANTs de asa fixa visto que apenas esses tipos de VANTs tiram proveito tanto da aterrisagem vertical quanto da autonomia proveniente do vôo horizontal com asas fixas. 
 
 \subsection{Componentes dos VANTs de Asa Rotativa}
 

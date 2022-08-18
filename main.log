@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.6.20)  27 JUL 2022 11:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.8.16)  18 AUG 2022 02:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.tex
-(/home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.tex
+**/home/joaoneto/TCC/main.tex
+(/home/joaoneto/TCC/main.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
@@ -27,7 +27,7 @@ File: bk12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \@input{CfgFiles/my_inc_pkg.aux}
 \openout2 = `CfgFiles/my_inc_pkg.aux'.
 
-(/home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/CfgFiles/my_inc_pkg.tex (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+(/home/joaoneto/TCC/CfgFiles/my_inc_pkg.tex (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2020/02/14 3.40 The Babel package
@@ -44,7 +44,7 @@ File: babel.def 2020/02/14 3.40 Babel common definitions
 \bbl@dirlevel=\count177
 )
 Package babel Info: \l@brazilian = using hyphenrules for portuguese
-(babel)             (\language74) on input line 113.
+(babel)             (\language3) on input line 113.
 Package babel Info: Making " an active character on input line 145.
 )) (/usr/share/texmf/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
@@ -483,7 +483,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \@input{CfgFiles/inc_frm.aux}
 \openout2 = `CfgFiles/inc_frm.aux'.
 
-(/home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/CfgFiles/inc_frm.tex)
+(/home/joaoneto/TCC/CfgFiles/inc_frm.tex)
 \main@idxfile=\write5
 \openout5 = `main.idx'.
 
@@ -493,7 +493,7 @@ Writing index file main.idx
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count297
 \l__pdf_internal_box=\box97
-) (/home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.aux)
+) (/home/joaoneto/TCC/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
@@ -551,7 +551,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 69.
 LaTeX Info: Redefining \pageref on input line 69.
 LaTeX Info: Redefining \nameref on input line 69.
- (/home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.out) (/home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.out)
+ (/home/joaoneto/TCC/main.out) (/home/joaoneto/TCC/main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
@@ -604,19 +604,19 @@ l.135
 
 ] [6] [7
 
-] (/home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.lof)
+] (/home/joaoneto/TCC/main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
  [8
 
-] (/home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.lot)
+] (/home/joaoneto/TCC/main.lot)
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
  [9
 
-] (/home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.toc [10
+] (/home/joaoneto/TCC/main.toc [10
 
 ] [11])
 \tf@toc=\write9
@@ -640,41 +640,42 @@ l.503
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 507.
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-
-LaTeX Warning: Citation `artigo_relacionado_1' on page 2 undefined on input line 515.
-
-[2]
+) [2]
 Cap\'{\i }tulo 2.
+<Images/introducao/drone_classification.png, id=400, 869.49844pt x 309.40594pt>
+File: Images/introducao/drone_classification.png Graphic file (type png)
+<use Images/introducao/drone_classification.png>
+Package pdftex.def Info: Images/introducao/drone_classification.png  used on input line 550.
+(pdftex.def)             Requested size: 318.66946pt x 113.39726pt.
 [3
 
-] [4]
+ </home/joaoneto/TCC/Images/introducao/drone_classification.png>] [4]
 Cap\'{\i }tulo 3.
 [5
 
 ]
 Cap\'{\i }tulo 4.
 
-Overfull \hbox (30.8189pt too wide) in paragraph at lines 625--648
+Overfull \hbox (30.8189pt too wide) in paragraph at lines 638--661
  [][] 
  []
 
 [6
 
 ]
-<Images/introducao/rasp3b.jpg, id=424, 1248.665pt x 837.1275pt>
+<Images/introducao/rasp3b.jpg, id=433, 1248.665pt x 837.1275pt>
 File: Images/introducao/rasp3b.jpg Graphic file (type jpg)
 <use Images/introducao/rasp3b.jpg>
-Package pdftex.def Info: Images/introducao/rasp3b.jpg  used on input line 662.
+Package pdftex.def Info: Images/introducao/rasp3b.jpg  used on input line 675.
 (pdftex.def)             Requested size: 318.66946pt x 213.63713pt.
- [7 </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/introducao/rasp3b.jpg>]
+ [7 </home/joaoneto/TCC/Images/introducao/rasp3b.jpg>]
 Cap\'{\i }tulo 5.
 [8
 
 ]
 Cap\'{\i }tulo 6.
 
-Overfull \hbox (1.40903pt too wide) in paragraph at lines 742--752
+Overfull \hbox (1.40903pt too wide) in paragraph at lines 755--765
 \T1/lmr/bx/n/12 de Água de Chuva \T1/lmr/m/n/12 [[]], pu-bli-cado no CO-BENGE 2018 [[]],
  []
 
@@ -683,9 +684,9 @@ Overfull \hbox (1.40903pt too wide) in paragraph at lines 742--752
 ] [10]
 Cap\'{\i }tulo 7.
 
-LaTeX Warning: Reference `subsec:nova_interface' on page 11 undefined on input line 794.
+LaTeX Warning: Reference `subsec:nova_interface' on page 11 undefined on input line 807.
 
-(/home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.bbl [11
+(/home/joaoneto/TCC/main.bbl [11
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6.
@@ -702,37 +703,37 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 ) [14
 
 ] [15] [16] [17]
-Overfull \hbox (10.08936pt too wide) in paragraph at lines 961--961
+Overfull \hbox (10.08936pt too wide) in paragraph at lines 974--974
 []\T1/lmr/bx/n/17.28 Instalando as de-pen-dên-cias ge-o-grá-fi-cas e clo-nando
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 991.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1004.
 [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 991.
- (/home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 991.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 991.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1004.
+ (/home/joaoneto/TCC/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1004.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1004.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 780D8D4C52FE7C52F15EB1713F647692;4474.
+(rerunfilecheck)             Checksum: A40C046157A0510F12B62FDECFC49130;4488.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 991.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1004.
  ) 
 Here is how much of TeX's memory you used:
- 12380 strings out of 481239
- 181011 string characters out of 5920377
- 732461 words of memory out of 5000000
- 27135 multiletter control sequences out of 15000+600000
+ 12402 strings out of 483163
+ 180586 string characters out of 5965511
+ 727884 words of memory out of 5000000
+ 26908 multiletter control sequences out of 15000+600000
  602247 words of font info for 67 fonts, out of 8000000 for 9000
- 1144 hyphenation exceptions out of 8191
- 55i,10n,99p,589b,1902s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 19 hyphenation exceptions out of 8191
+ 55i,10n,99p,552b,1902s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on /home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.pdf (31 pages, 337362 bytes).
+Output written on /home/joaoneto/TCC/main.pdf (31 pages, 384199 bytes).
 PDF statistics:
- 708 PDF objects out of 1000 (max. 8388607)
- 657 compressed objects within 7 object streams
- 220 named destinations out of 1000 (max. 500000)
- 478 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 720 PDF objects out of 1000 (max. 8388607)
+ 667 compressed objects within 7 object streams
+ 222 named destinations out of 1000 (max. 500000)
+ 483 words of extra memory for PDF output out of 10000 (max. 10000000)
 
