@@ -554,13 +554,53 @@ energia, uma grande variedade de tipos de drones surgiram nas últimas décadas.
 
 Como mostrado no organograma da figura a cima~\ref{fig:drone_classification.png}, as categorizações mais comuns para os VANTs são obtidas pelos atributos "tipo de pouso", "aerodinâmica" e "quantidade de rotores".
 
-O tipo de aerodinâmica responsável pela sustentação das aeronaves no ar é bastante diversificado. Uma categoria bem comum de drones sa VANTs de asa fixa, que semelhantemente aos aviões, tiram proveito da geometria das asas e da velocidade gerada por um ou mais motores para obterem sustentação. 
+O tipo de aerodinâmica responsável pela sustentação das aeronaves no ar é bastante diversificado. Uma categoria bem comum de drones são os VANTs de asa fixa, que semelhantemente aos aviões, tiram proveito da geometria das asas e da velocidade gerada por um ou mais motores para obterem sustentação. 
 
 A classificaçao de aterrisagem, com a nomenclatura VTOL e HTOL diz respeito apenas aos VANTs de asa fixa visto que apenas esses tipos de VANTs tiram proveito tanto da aterrisagem vertical quanto da autonomia proveniente do vôo horizontal com asas fixas. 
 
 \subsection{Componentes dos VANTs de Asa Rotativa}
 
+Os componentes dos drones de asa rotativa variam conforme o tipo de missão. Alguns dos componentes proncipais podem ser listados abaixo:
+
+\begin{enumerate}
+  \item Frame
+  \item Motores e hélices
+  \item Escs
+  \item Controladora de voo
+  \item Bateria e Placa distribuidora de energia
+\end{enumerate}
+\subsubsection*{Frame}
+
+O Frame de um drone é a base estrutural na qual todos os outros componentes são fixados, ele geralmente é feito de um material leve e 
+resistente como fibra de carbono e outros polímeros plásticos. 
+
+\subsubsection*{Bateria e Placa distribuidora de energia}
+
+A bateria é a fonte de energia do drone, geralmente são utilizadas baterias Li-Po (Lítio-Polímero) pela sua boa relação massa/desempenho 
+enérgetico, essas baterias possuem uma nomenclatura específica com baase na quantidade de células <explicar melhor as baterias>.
+
+\subsubsection*{Motores e hélices}
+
+Os motores do drone são os responsávei por converter a energia elétrica proveniente das baterias em energia cinética. Geralmente os 
+motores utilizados são motores de corrente contínua não escovados (\textit{brushless DC}) <colocar as características físicas desse tipo de motor>.
+A partir da corrente elétrica fornecida ao motor ele movimenta a hélice, que devido à sua aerodinamica gera uma força resultante para cima no drone,
+a qual é denominada empuxo. 
+
+\subsubsection*{Escs}
+
+Os Escs, ou Eletronic Speed Controlers são os componentes eletrônicos responsáveis por controlar a velocidade dos motores.
+Eles são comandados pela controladora de voo, geralmente a partir de sinais PWM <Falar sobre PWM>. Assim como o PWM é utilizado para comandar 
+os ESCs, os ESCs utilizam essa modulação para chavear o circuito entre os motores e a bateria controlando assim a velocidade dos motores. 
+
+\subsubsection*{Controladora de Voo}
+
+A controladora de voo é um microcontrolador com software embarcado dedicado às funções básicas da aeronave. Ela possui sensores 
+inerciais embutidos para comandar a dinâmica de voo da aeronave, além de possuir interface eletrônica com outros componentes como módulos gps, módulos receptores de rádio, módulos de telemetria entre outros. Sem a controladora de voo, seria uma tarefa humanamente impossível controlar a dinâmica de voo da aeronave, visto que a mesma depende de um feedback contínuo e instantâneo dos parâmetros inerciais. 
+
+
 \subsection{Controladora PixHawk}
+
+
 
 \subsection{UART}
 
