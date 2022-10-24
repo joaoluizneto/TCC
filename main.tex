@@ -266,13 +266,13 @@ Universidade Federal Fluminense - UFF
 
 \hrulefill \\
 Prof. Alexandre S. de la Vega\\
-INSTITUIÇÃO
+Universidade Federal Fluminense - UFF
 
 \vfill
 
 \hrulefill \\
 Prof. Lauro Eduardo Kozovits\\
-INSTITUIÇÃO
+Universidade Federal Fluminense - UFF
 
 \vfill
 
@@ -307,9 +307,9 @@ sobre computadores de bordo~\cite{url:ardupilot-companioncomputers}.\\
 Para a escolha do computador de bordo foram levados mais em conta fatores de custo e popularidade, com isso a plataforma 
 \textit{Raspberry Pi}~\cite{url:raspberrypi} foi a selecionada para esse fim.\\
 %
-A partir da arquitetura proposta, várias aplicações além da visão computacional são possíveis. Como o computador de bordo em questão 
-possui um sistema operacional com propósito geral baseado em \textit{debian}~\cite{url:debian}, além de outras capacidades de Hardware como portas 
-\textit{GPIO} para acoplamento de sensores e atuadores e outros barramentos para conexão de periféricos, as possibilidades para esse hardware são muitas.\\
+A partir da arquitetura proposta, várias aplicações além da visão computacional são possíveis. O computador de bordo em questão 
+possui um sistema operacional baseado em \textit{debian}~\cite{url:debian}, além de outras capacidades de hardware como portas 
+\textit{GPIO} para acoplamento de sensores e atuadores e outros barramentos para conexão de periféricos. Logo, as possibilidades para complementos de funcionalidades são muitas.\\
 %
 Com isso, a aplicação proposta nesse trabalho será a conexão desse computador de bordo à uma rede IP. Várias capacidades da plataforma 
 \textit{Raspberry Pi} serão exploradas nos experimentos que sucederão, além disso, serão desenvolvidas aplicações para testar o conceito de 
@@ -334,28 +334,16 @@ Com isso, a aplicação proposta nesse trabalho será a conexão desse computado
 %
 \thispagestyle{myheadings}
 %
-This part is destinated to the abstract of your monograph. 
+This work is a result of a collective effort between some students and teachers from UFF and the private sector, all of them having the mutual interest in UAVs and  their aplications. The first idea of this project was made by UFFO Team~\cite{url:equipeuffo} - to build a drone for surveillance of all UFF campuses. The required hardware would have been a quadcopter equipped with an analog trasmission FPV system. Posteriorly, there was an interest to equip to the same drone an on-board computer, so it could provide some application in computer vision by doing real-time processing, The reference was made by studying the community files~\cite{url:ardupilotdoc} about on-board computers~\cite{url:ardupilot-companioncomputers}.\\
 %
-It must be written in the vernacular language and 
-in an idiom of great popularization 
-(English, French, Spanish, for example). 
+The on-board computer was chosen taking into account the cost and popularity, thus, the Raspberry Pi~\cite{url:raspberrypi} was selected for this purpose.\\
 %
-This part should be done at last, because just after finishing the work 
-it will be possible an overall understanding of it. 
+Based on the proposed architecture, countless features may be implemmented by using its hardware. The on-board computer has an operating system based on debian~\cite{url:debian}, moreover it has numerous GPIO ports that enables the communication to sensors or actuators and also other buses to connect peripherals devices. Hence, there are a plenty possibilities of addons and functionalities.\\ 
 %
-The abstract should not bring any further information, 
-it is just the summary of the relevants aspects of the monograph, 
-such as work gender, finality, methodology, results and conclusions. 
-%
-It must be written impersonally, 
-to possess an extension from 150 to 500 words 
-typed in simple space and in only one paragraph. 
-%
-It must be followed by the keywords of your monograph. 
-
+Therefore, the proposed application of this thesis will be the connection between the on-board computer to an IP network. Many possibilities of Raspberry Pi will be studied and explored in future experiments, besides that, there will be developed some applications to test the concept of drones on a computer network.
 \bigskip
 
-Keywords: Monograph. LaTeX. Hints. 
+\hl{ Keywords: Raspberry Pi. Drones. UAV. ROS. UFFO Team. Robotics. Ardupilot. Pixhawk}
 
 \newpage
 
@@ -393,10 +381,10 @@ Keywords: Monograph. LaTeX. Hints.
 %
 Espaço reservado para os agradecimentos.
 %
-Agradecemos ao Prof. Alexandre pla orientação durante a nossa estadia no grupo do PET-Tele. Através, 
+Agradecemos ao Prof. Alexandre pela orientação durante a nossa estadia no grupo do PET-Tele. Através, 
 da nossa participação no grupo foi possível termos um primeiro contato com as plataformas de desenvolvimento 
 Arduino e \textit{Raspberry Pi}~\cite{url:raspberrypi}, além de outras atividades que contribuíram para nosso
-desenvolvimento profissional.
+desenvolvimento acadêmico e profissional.
 %
 Agradecemos ao Prof. Raul pelo acolhimento na \textit{Equipe UFFO} e pelo incentivo ao estudo e desenvolvimento 
 de VANTs. 
@@ -411,7 +399,7 @@ desse projeto.
 %
 Agradecemos à comunidade Arducopter pelo grande esforço colaborativo em desenvolver varias das ferramentas utilizadas nesse projeto.
 %
-Agradeço à Larissa, minha namorada, por todo apoio, carinho e incentivo durante a minha graduação.
+Eu, João, agradeço à Larissa, minha namorada, por todo apoio, carinho e incentivo durante a graduação.
 %
 Agradecemos aos nossos familiares pela cobrança e incentivo nos estudos.
 %
@@ -469,6 +457,13 @@ Agradecemos aos nossos familiares pela cobrança e incentivo nos estudos.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                        Texto                         %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Siglas}
+ROS - \textit{Robot Operating System} \\
+VANT - Veículo aéreo não tripulado \\
+MAVLink - \textit{Micro Air Vehicle Communication Protocol} \\
+UART - \textit{Universal asynchronous receiver/transmitter} \\
+RXD - \textit{Receive Data}\\
+TXD - \textit{Transmit Data}\\
 
 \chapter{Introdução}
 %
@@ -517,7 +512,9 @@ de uma conexão utilizando a tecnologia LTE. ampliando o ambiente de funcionamen
 \section{Organização do documento}
 Resumir os seguintes pontos:
 \begin{enumerate}
-    \item Introducao teorica
+    \item Introdução teórica
+    O avanço da interconectividade de aparelhos através das redes vem sendo explorada e, em vista disso, tivemos a ideia de acoplar um computador de bordo com acesso à internet a um \textit{VANT}. Os drones, que compõem um tipo específico de \textit{VANT}, tem acoplados juntamente a eles uma controladora, que em nosso caso chama-se \textit{PixHawk}. Com o intuito de fazer a comunicação entre drone e usuário, além de utilizar o protocolo \textit{UART}, está sendo implementado em uma camada acima, o protocolo \textit{Mavlink}. Tratando-se de drones, essa troca de dados é traduzida em telemetria, que podem ser filtradas e processadas pelo usuário. 
+    
     \item Definições
     \item Arquitetura Proposta
     \item Metodologia
@@ -544,77 +541,34 @@ Devido a avanços nas tecnologias envolvidas na fabricação, nos sistemas de na
 energia, uma grande variedade de tipos de drones surgiram nas últimas décadas. 
 
 \subsection{Tipos de VANTs}
+Dentre os diversos tipos de VANTs, iremos focar na apresentação dos quatro principais tipos. O primeiro, os drones multirotor, são os mais baratos e, portanto, os mais comuns para uso geral, devido ao excelente custo benefício para realizar funções como foto aéreas e vigilância. O nome multirotor se dá, evidentemente, pela presença de mais de um motor, que em grande maioria são três, quatro, seis ou oito.
 
+O segundo tipo, drones de asa fixa, têm o formato de um avião e funcionam como um, elevando a altitude com movimentos retilíneos diagonais. A grande vantagem é a economia de energia, já que nesse tipo de drone a energia é gasta apenas para mover-se para frente, e não para cima, assim como nos aviões usuais.
+
+O terceiro tipo de drone, de rotor único, são construídos com o objetivo de serem mais resistentes e duradouros. Pode-se dizer que o formato assemelha-se a um helicóptero, já que possui uma hélice central e uma hélice menor na cauda, essa última para controlar a direção e estabilidade.
+
+Por último, o VTOL une os benefícios dos drones de asa fixa e rotores, já que conta com rotores acoplados em suas asas fixas, isso os torna muito promissores no futuro, apesar de serem um tipo novo. Um bom exemplo de VTOL são os drones de entrega utilizados pela \textit{Amazon}.
+
+\cite{vant_tipos}
 \subsection{Componentes dos VANTs de Asa Rotativa}
 
-\subsection{Controladora PixHawk}
+\subsection{Controladora \textit{PixHawk}}
+
 
 \subsection{UART}
+UART, que vem das palavras \textit{universal asynchronous receive/transmit}, realiza o papel principal na comunicação serial, já que converte os dados entre série e paralelo. Há então uma conversão de paralelo-serial para os dados transmitidos, e uma outra serial-paralelo para os dados recebidos. Existe ainda um \textit{buffer}, cujo objetivo é armazenar dados por tempo limitado em transmissões com alta taxa, sem que haja descarte de dados e consequente perda de informação. Para que não haja fluxo de transmissão caso ambas as partes estiverem prontas, em adição as características citadas, são incorporados circuitos reguladores de fluxo.
+
+A divisão do protocolo é feita em três sub-módulos, gerador de taxa de transmissão, módulo de transmissão e módulo de recepção. O primeiro, se responsabiliza por gerar um sinal de relógio localmente, o qual deve ser muito maior que a taxa de transmissão de dados entre transmissor-receptor. O módulo receptor, por sua vez, recebe os sinais RXD e os converte para dados paralelos. Por fim, o módulo transmissor converte os bytes em bits seriais, com base no padrão de quadro utilizado, e os envia através de sinais TXD. \cite{uart}
 
 \subsection{Telemetria}
 
-\subsection{Protocolo Mavlink}
+\subsection{Protocolo \textit{Mavlink}}
+MAVLink é um protocolo de comunicação com drones e entre os componentes acoplados ao drone. Essa transmissão consiste no envio de um fluxo de dados, os quais são chamados de tópicos, e escritos em arquivos XML. Dentre as principais vantagens de se utilizar o MAVLink estão a sua eficiência e versatilidade. Em números, a segunda versão do MAVLink tem apenas 14 \textit{bytes} de \textit{overhead} no pacote de comunicação. Além disso, provê métodos de detectar perda de pacotes e dados corrompidos, e garante a autenticação dos pacotes. Outro ponto positivo é o suporte a diversas linguagens, já que o protocolo tem suporte a diferentes tipos de sistemas operacionais e microcontroladores. Por fim, apesar de menos importante para o nosso projeto, vale citar que o protocolo suporta até 255 usuários simultâneos em um mesma rede.
+\cite{mavlink}
 
 \subsection{Computadores de Bordo}
 
-\subsection{ROS - Robot Operative System}
-
-\subsection{Drones DJI}
-
-\section{Arquitetura do sistema proposto}
-
-Explicação dos componentes da arquitetura do sistema proposto.
-%
-%\begin{figure}[ht]
-%    \centering
-%    \includegraphics{Images/introducao/planta_inicial.png}
-%    \caption{Diagrama em blocos da planta didática em configuração original.}
-%    \label{fig:planta_inicial}
-%\end{figure}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%% Metodologia %%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\chapter{Metodologia}
-\label{chapter:Metodologia}
-%
-% retira numeracao da pagina, conforme as normas de apresentacao.
-\thispagestyle{empty} 
-%
-\section{Pesquisa}
-
-
-%
-\section{Objetivos do método aplicado}
-A metodologia aplicada possui objetivo descritivo e exploratório. Com o sistema devidamente construído, faremos experimentos que comprovam algumas possibilidades de uso para o equipamento.
-
-\section{Abordagem}
-adotar-se-á uma análise qualitativa dos resultados obtidos a partir da implementação do novo sistema, em observância aos seguintes questionamentos:
-\begin{enumerate}
-    \item Com o sistema desenvolvido será possível ao professor, operador do sistema. controlar o experimento remotamente?
-    \item Com o sistema desenvolvido a turma da disciplina conseguirá acompanhar o experimento em um ambiente diferente do laboratório?
-    \item pergunta avaliativa 3
-    \item pergunta avaliativa 4
-\end{enumerate}
-%
-%%%%%%%%%%%%%%%%
-%
-
-\section{Descrição do problema}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-\chapter{Detalhamento da solução}
-%
-% retira numeracao da pagina, conforme as normas de apresentacao.
-\thispagestyle{empty} 
-%
-
-
-\section {Série de computadores Raspberry Pi}
+\subsection {Série de computadores Raspberry Pi}
 %
 O Raspberry Pi é uma série de computadores de placa única e tamanho reduzido, que recebem a denominação  SoC (\textit{System on Chip})~\cite{url:soc} à qual são conectados os seguintes dispositivos: monitor, teclado, e mouse. 
 
@@ -701,6 +655,123 @@ A Tabela~\ref{tab:Raspberry Pinout} reúne uma descrição de todos os pinos.
     \label{tab:Raspberry Pinout}
 \end{table}
 
+\subsection{ROS - \textit{Robot Operative System}}
+\textit{Robot Operative System} é um \textit{software open source} cujo objetivo se baseia em facilitar a integração entre diferentes módulos de um robô. Normalmente, assim como no nosso caso, pode-se dividir os módulos em atuadores, sensores e o sistema de controle, o ROS então, permite que interliguemos todos as partes de maneira simples e rápida através de suas ferramentas, as quais são mensagens e tópicos. As mensagens almejam facilitar a coleta e análise dos dados, podendo ser guardados em \textit{logs}, o que ajuda testes em geral e a detecção de problemas. Essas dados contidos nas mensagens, geradas automaticamente, podem ser integradas a outros \textit{softwares}, permitindo a visualização 3D em um ambiente de simulação, por exemplo \cite{ros}. Já os tópicos 
+
+\subsection{Django}
+Django é um \textit{web framework} cuja intenção é tornar o desenvolvimento \textit{web} mais veloz e fácil. Possui uma integração nativa entre banco de dados, \textit{front-end} e \textit{back-end}, apesar de que não seja necessária a utilização de um banco de dados. Primeiramente, podemos citar que todo o esquema do banco é feito através de códigos \textit{python}, pela técnica de mapeamento objeto-relacional, como podemos ver no exemplo a seguir\cite{django}.
+
+\begin{lstlisting}[language=Python]
+from django.db import models
+
+class Reporter(models.Model):
+    full_name = models.CharField(max_length=70)
+
+    def __str__(self):
+        return self.full_name
+
+class Article(models.Model):
+    pub_date = models.DateField()
+    headline = models.CharField(max_length=200)
+    content = models.TextField()
+    reporter = models.ForeignKey(Reporter, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.headline
+\end{lstlisting}
+
+No exemplo acima, são instanciadas duas tabelas, \textit{Reporter} e \textit{Article}, e suas respectivas colunas. A fim de criá-las no banco deve-se executar os comandos:
+
+\begin{lstlisting}[language=bash] 
+$ python manage.py makemigrations
+$ python manage.py migrate
+\end{lstlisting}
+
+A partir do momento que os modelos estão criados, podemos registrá-los no arquivo referente ao administrador, o que possibilita a criação, alteração e remoção dos objetos através da \textit{interface web} criada pelo próprio Django. Para habilitar as operações citadas sobre a classe \textit{Article}, por exemplo, basta configurar o arquivo \textit{admin.py} tal como:
+
+\begin{lstlisting}[language=Python]
+from django.contrib import admin
+
+from . import models
+
+admin.site.register(models.Article)
+\end{lstlisting}
+
+Outro ponto interessante é a possibilidade de configuração de \textit{URLs}. Para isso, devemos criar um código de mapeamento de \textit{URLs} dentro do arquivo \textit{urls.py}, como exemplificado a seguir:
+
+\begin{lstlisting}[language=Python]
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('articles/<int:year>/', views.year_archive),
+    path('articles/<int:year>/<int:month>/', views.month_archive),
+]
+\end{lstlisting}
+
+Nesse caso, 
+
+\subsection{Django REST Framework}
+
+\section{Arquitetura do sistema proposto}
+
+Explicação dos componentes da arquitetura do sistema proposto.
+%
+%\begin{figure}[ht]
+%    \centering
+%    \includegraphics{Images/introducao/planta_inicial.png}
+%    \caption{Diagrama em blocos da planta didática em configuração original.}
+%    \label{fig:planta_inicial}
+%\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% Metodologia %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Metodologia}
+\label{chapter:Metodologia}
+%
+% retira numeracao da pagina, conforme as normas de apresentacao.
+\thispagestyle{empty} 
+%
+\section{Pesquisa}
+
+https://florimondmanca.github.io/djangorestframework-api-key/guide/
+
+https://riptutorial.com/django-rest-framework/example/30993/api-key-base-request-authentication
+
+%
+\section{Objetivos do método aplicado}
+A metodologia aplicada possui objetivo descritivo e exploratório. Com o sistema devidamente construído, faremos experimentos que comprovam algumas possibilidades de uso para o equipamento.
+
+\section{Abordagem}
+adotar-se-á uma análise qualitativa dos resultados obtidos a partir da implementação do novo sistema, em observância aos seguintes questionamentos:
+\begin{enumerate}
+    \item Com o sistema desenvolvido será possível ao professor, operador do sistema. controlar o experimento remotamente?
+    \item Com o sistema desenvolvido a turma da disciplina conseguirá acompanhar o experimento em um ambiente diferente do laboratório?
+    \item pergunta avaliativa 3
+    \item pergunta avaliativa 4
+\end{enumerate}
+%
+%%%%%%%%%%%%%%%%
+%
+
+\section{Descrição do problema}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\chapter{Detalhamento da solução}
+%
+% retira numeracao da pagina, conforme as normas de apresentacao.
+\thispagestyle{empty} 
+%
+
+
+
+
 
 
 
@@ -769,29 +840,28 @@ As demandas podem ser implementadas pelos futuros bolsistas do grupo PET-Tele. C
 \thispagestyle{empty} 
 %
 %
-Em observância ao caráter amplo e diverso dos conceitos aqui utilizados, diversas vertentes de trabalhos futuros podem ser identificadas. Tais vertentes, assim como os trabalhos individuais em cada uma das vertentes, podem ser listados e resumidos.
+Tendo em mente as características do projeto apresentadas neste trabalho, podemos imaginar diversas aplicações para serem acrescentadas. Somos capazes, portanto, de listar algumas das possíveis aplicações e seus possíveis desdobramentos.
 %
 \begin{enumerate}
-    \item Vertente Técnica Funcional
+    \item Melhorias na interface de controle 
         \begin{enumerate}
-            \item Novas interfaces de usuário com mais opções
-            \item Desenvolvimento de novas curvas hidrográficas
+            \item Adição de novos funcionalidades
+            \item Coleta e apresentação de mais dados do drone  
         \end{enumerate}
-    \item Vertente Facilidade de Uso
+    \item Integração de um modem de internet móvel
         \begin{enumerate}
-            \item Encapsulamento de hardware em produto final
-            \item Simplificação do configuração e uso para usuário final.
+            \item Controle e coleta de dados a qualquer distância, desde que haja sinal de internet móvel.
         \end{enumerate}
-    \item Vertente casos de testes
+    \item Integração de uma câmera
         \begin{enumerate}
-            \item Coleta de indicadores para medir o grau de satisfação da turma com o sistema.
-            \item Aumentar o número de testes a fim de identificar falhas.
+            \item Visão em tempo real do ambiente o qual o drone sobrevoa
+            \item Adição de inteligência artificial capaz de tratar e processar imagens capturadas
         \end{enumerate}
 \end{enumerate}
 
-Vale ressaltar dentro dessas vertentes a necessidade de realização de mais testes com o sistema em operação como forma de garantir que as funcionalidades propostas estejam com o funcionamento correto.]
+Para cada uma dessas adições deve-se realizar testes de viabilidade, bem como estudos mais profundos do impacto que cada complemento teria no modelo final deste trabalho. 
 
-Para isso, é de fundamental importância a elaboração de novos casos de uso e simulações teste, bem como a implementação de atualizações otimizadas dos programas desenvolvidos. Uma pesquisa avaliando os parâmetros funcionais qualitativos da interface proposta na Seção~\ref{subsec:nova_interface} pode servir de suporte para as exigências aqui formuladas.
+Portanto, geradas essas necessidades, podemos utilizar o ambiente de simulação do gazebo, junto aos módulos ROS, para prever como se comportará o sistema. Comparações a respeito do desempenho geral podem e devem ser feitas a fim de comprovar bons resultados.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
