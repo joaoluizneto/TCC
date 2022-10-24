@@ -595,30 +595,78 @@ os ESCs, os ESCs utilizam essa modulação para chavear o circuito entre os moto
 \subsubsection*{Controladora de Voo}
 
 A controladora de voo é um microcontrolador com software embarcado dedicado às funções básicas da aeronave. Ela possui sensores 
-inerciais embutidos para comandar a dinâmica de voo da aeronave, além de possuir interface eletrônica com outros componentes como módulos gps, módulos receptores de rádio, módulos de telemetria entre outros. Sem a controladora de voo, seria uma tarefa humanamente impossível controlar a dinâmica de voo da aeronave, visto que a mesma depende de um feedback contínuo e instantâneo dos parâmetros inerciais. 
+inerciais embutidos para comandar a dinâmica de voo da aeronave, além de possuir interface eletrônica com outros componentes como módulos gps, módulos receptores de rádio, módulos de telemetria entre outros. Sem a controladora de voo, seria uma tarefa humanamente impossível controlar o voo da aeronave, visto que a mesma depende de um feedback contínuo e instantâneo dos parâmetros inerciais. 
 
+\subsection{Ardupilot}
 
-\subsection{Controladora PixHawk}
-
-
+blalbalalba
 
 \subsection{UART}
 
+O controlador UART (Universal Asynchronous Receiver/Transmitter) é um componente utilizado para fazer a comunicação serial entre dispositivos. Este componente geralmente apresentado como um circuito integrado, consegue transmitir bits de dados de forma síncrona e assíncrona entre dispositivos.
+
+<descrever funcionamento>
+
 \subsection{Telemetria}
+
+A telemetria é uma funcionalidade indispensável nos drones mais modernos, ela permite receber informações dos sensores do drone em tempo real como altitude, velocidade, gps, temperatura, informações da quantidade de carga na bateria dentre outras. Essa transmissãode dados geralmente é feita por um módulo dedicado a isso ou então em módulos receptores de rádio que já possuem essa funcionalidade integrada.
 
 \subsection{Protocolo Mavlink}
 
+O Mavlink é um protocolo leve para comunicação com drones e também entre os componentes embarcados dos mesmos. Ele segue uma implementação moderna da arquitetura publisher-subscriber e point to point
+
+MAVLink follows a modern hybrid publish-subscribe and point-to-point design pattern: Data streams are sent / published as topics while configuration sub-protocols such as the mission protocol or parameter protocol are point-to-point with retransmission.
+
+Messages are defined within XML files. Each XML file defines the message set supported by a particular MAVLink system, also referred to as a "dialect". The reference message set that is implemented by most ground control stations and autopilots is defined in common.xml (most dialects build on top of this definition).
+
+Code generators create software libraries for specific programming languages from these XML message definitions, which can then be used by drones, ground control stations, and other MAVLink systems to communicate. The generated libraries are typically MIT-licensed, and can therefore be used without limits in any closed-source application without publishing the source code of the closed-source application.
+
+Key Features
+Very efficient. MAVLink 1 has just 8 bytes overhead per packet, including start sign and packet drop detection. MAVLink 2 has just 14 bytes of overhead (but is a much more secure and extensible protocol). Because MAVLink doesn't require any additional framing it is very well suited for applications with very limited communication bandwidth.
+Very reliable. MAVLink has been used since 2009 to communicate between many different vehicles, ground stations (and other nodes) over varied and challenging communication channels (high latency/noise). It provides methods for detecting packet drops, corruption, and for packet authentication.
+Many different programming languages can be used, running on numerous microcontrollers/operating systems (including ARM7, ATMega, dsPic, STM32 and Windows, Linux, MacOS, Android and iOS).
+Allows up to 255 concurrent systems on the network (vehicles, ground stations, etc.)
+Enables both offboard and onboard communications (e.g. between a GCS and drone, and between drone autopilot and MAVLink enabled drone camera).
+
 \subsection{Computadores de Bordo}
+
+Companion Computers can be used to interface and communicate with ArduPilot on a flight controller using the MAVLink protocol. By doing this your companion computer gets all the MAVLink data produced by the autopilot (including GPS data) and can use it to make intelligent decisions during flight. For example, “take a photo when the vehicle is at these GPS co-ordinates”, gather and pre-process information from advanced sensors or actuate lights, auxiliary servos or any other interfaces.
+
+There are two major parts to Companion Computers - hardware and software.
+
+The Companion Computer hardware refers to the specific computer hardware being used. This is typically a small ARM-based Single Board Computer. Specific tutorials for popular Companion Computer hardware are listed below.
+
+Arduino family
+LYCHEE (Cube Carrier Board for Raspberry Pi Compute Module)
+NVidia TX1
+NVidia TX2
+ODroid
+Raspberry Pi
+The Companion Computer software refers to the programs and tools that run on the Companion Computer. They will take in MAVLink telemetry from the Flight Controller and can route and process the telemetry data. Specific tutorials for popular Companion Computer software tools/suites are listed below.
+
+APSync
+DroneKit
+FlytOS
+Maverick
+ROS
+Rpanion-server
 
 \subsection{ROS - Robot Operative System}
 
-\subsection{Drones DJI}
+Robot Operating System (ROS or ros) is an open-source robotics middleware suite. Although ROS is not an operating system (OS) but a set of software frameworks for robot software development, it provides services designed for a heterogeneous computer cluster such as hardware abstraction, low-level device control, implementation of commonly used functionality, message-passing between processes, and package management. Running sets of ROS-based processes are represented in a graph architecture where processing takes place in nodes that may receive, post, and multiplex sensor data, control, state, planning, actuator, and other messages. Despite the importance of reactivity and low latency in robot control, ROS is not a real-time operating system (RTOS). However, it is possible to integrate ROS with real-time code.[3] The lack of support for real-time systems has been addressed in the creation of ROS 2,[4][5][6] a major revision of the ROS API which will take advantage of modern libraries and technologies for core ROS functions and add support for real-time code and embedded system hardware.
+
+Software in the ROS Ecosystem[7] can be separated into three groups:
+
+language-and platform-independent tools used for building and distributing ROS-based software;
+ROS client library implementations such as roscpp,[8] rospy,[9] and roslisp;[10]
+packages containing application-related code which uses one or more ROS client libraries.[11]
+Both the language-independent tools and the main client libraries (C++, Python, and Lisp) are released under the terms of the BSD license, and as such are open-source software and free for both commercial and research use. The majority of other packages are licensed under a variety of open-source licenses. These other packages implement commonly used functionality and applications such as hardware drivers, robot models, datatypes, planning, perception, simultaneous localization and mapping, simulation tools, and other algorithms.
+
+The main ROS client libraries are geared toward a Unix-like system, primarily because of their dependence on large collections of open-source software dependencies. For these client libraries, Ubuntu Linux is listed as "Supported" while other variants such as Fedora Linux, macOS, and Microsoft Windows are designated "experimental" and are supported by the community.[12] The native Java ROS client library, rosjava,[13] however, does not share these limitations and has enabled ROS-based software to be written for the Android OS.[14] rosjava has also enabled ROS to be integrated into an officially supported MATLAB toolbox which can be used on Linux, macOS, and Microsoft Windows.[15] A JavaScript client library, roslibjs[16] has also been developed which enables integration of software into a ROS system via any standards-compliant web browser.
 
 \section{Arquitetura do sistema proposto}
 
-Explicação dos componentes da arquitetura do sistema proposto.
-%
-%\begin{figure}[ht]
+Com todas as tecnologias devidamente introduzidas, deseja-se criar um sistema composto pelas mesmas e explorar as suas capacidades. Para isso, utilizaremos um drone com controladora ardupilot e computador de bordo capaz de se conectar com uma rede de computadores. O software embarcado será desenvolvido utilizando ROS e um API será desenvolvida em django para centralizar se conectar ao drone via rede. 
 %    \centering
 %    \includegraphics{Images/introducao/planta_inicial.png}
 %    \caption{Diagrama em blocos da planta didática em configuração original.}
