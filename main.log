@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.6.20)  24 OCT 2022 09:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.6.20)  1 NOV 2022 21:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -600,9 +600,19 @@ l.135
 
 ] [4
 
-] [5
+]
+Overfull \hbox (150.57834pt too wide) in paragraph at lines 337--344
+\T1/lmr/m/n/12 hard-ware. The on-board com-pu-ter has an ope-ra-ting sys-tem ba-sed on de-bian [[]],
+ []
 
-] [6] [7
+[5
+
+] [6]
+Overfull \hbox (6.10162pt too wide) in paragraph at lines 383--406
+\T1/lmr/m/n/12 con-tato com as pla-ta-for-mas de de-sen-vol-vi-mento Ar-duino e \T1/lmr/m/it/12 Rasp-berry Pi \T1/lmr/m/n/12 [[]],
+ []
+
+[7
 
 ] (/home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.lof)
 \tf@lof=\write7
@@ -623,117 +633,152 @@ l.135
 \openout9 = `main.toc'.
 
  [12]
-Cap\'{\i }tulo 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 479--484
+Underfull \hbox (badness 10000) in paragraph at lines 460--466
 
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.503 
-       [1
-
+l.467 \chapter
+              {IntroduÃ§Ã£o} [1
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 507.
+Cap\'{\i }tulo 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
+
+ []
+
+[2
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 505.
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [2]
+) [3] [4]
 Cap\'{\i }tulo 2.
-<Images/introducao/drone_classification.png, id=395, 869.49844pt x 309.40594pt>
+<Images/introducao/drone_classification.png, id=447, 869.49844pt x 309.40594pt>
 File: Images/introducao/drone_classification.png Graphic file (type png)
 <use Images/introducao/drone_classification.png>
-Package pdftex.def Info: Images/introducao/drone_classification.png  used on input line 550.
+Package pdftex.def Info: Images/introducao/drone_classification.png  used on input line 548.
 (pdftex.def)             Requested size: 318.66946pt x 113.39726pt.
-[3
+[5
 
- </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/introducao/drone_classification.png>] [4] [5] [6] [7] [8]
-Cap\'{\i }tulo 3.
-[9
+ </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/introducao/drone_classification.png>] [6]
+<Images/introducao/ardupilot_vehicles.jpg, id=468, 702.625pt x 400.49625pt>
+File: Images/introducao/ardupilot_vehicles.jpg Graphic file (type jpg)
+<use Images/introducao/ardupilot_vehicles.jpg>
+Package pdftex.def Info: Images/introducao/ardupilot_vehicles.jpg  used on input line 605.
+(pdftex.def)             Requested size: 318.66946pt x 181.64552pt.
+ [7]
+Overfull \hbox (2.88925pt too wide) in paragraph at lines 643--644
+[]\T1/lmr/m/n/12 <LISTAR CON-TRO-LA-DO-RAS DE VOO COM-PA-TÍ-VEIS COM O FIRMWARE> 
+ []
 
-]
-Cap\'{\i }tulo 4.
+[8 </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/introducao/ardupilot_vehicles.jpg>]
 
-Overfull \hbox (30.8189pt too wide) in paragraph at lines 726--749
+LaTeX Warning: Citation `uart' on page 9 undefined on input line 650.
+
+
+LaTeX Warning: Citation `mavlink' on page 9 undefined on input line 659.
+
+[9]
+Overfull \hbox (30.8189pt too wide) in paragraph at lines 696--719
  [][] 
  []
 
-[10
-
-]
-<Images/introducao/rasp3b.jpg, id=455, 1248.665pt x 837.1275pt>
+[10] [11]
+<Images/introducao/rasp3b.jpg, id=500, 1248.665pt x 837.1275pt>
 File: Images/introducao/rasp3b.jpg Graphic file (type jpg)
 <use Images/introducao/rasp3b.jpg>
-Package pdftex.def Info: Images/introducao/rasp3b.jpg  used on input line 763.
+Package pdftex.def Info: Images/introducao/rasp3b.jpg  used on input line 733.
 (pdftex.def)             Requested size: 318.66946pt x 213.63713pt.
- [11 </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/introducao/rasp3b.jpg>]
+ [12 </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/introducao/rasp3b.jpg>] [13]
+
+LaTeX Warning: Citation `django' on page 14 undefined on input line 798.
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+) [14] [15]
+Cap\'{\i }tulo 3.
+[16
+
+] [17]
+Cap\'{\i }tulo 4.
+<Images/Diagramas/hardware_connections.png, id=570, 926.46124pt x 663.47874pt>
+File: Images/Diagramas/hardware_connections.png Graphic file (type png)
+<use Images/Diagramas/hardware_connections.png>
+Package pdftex.def Info: Images/Diagramas/hardware_connections.png  used on input line 909.
+(pdftex.def)             Requested size: 318.66946pt x 228.21199pt.
+[18
+
+ </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/Diagramas/hardware_connections.png>] [19]
 Cap\'{\i }tulo 5.
-[12
+[20
 
 ]
 Cap\'{\i }tulo 6.
 
-Overfull \hbox (1.40903pt too wide) in paragraph at lines 843--853
+Overfull \hbox (1.40903pt too wide) in paragraph at lines 973--983
 \T1/lmr/bx/n/12 de Água de Chuva \T1/lmr/m/n/12 [[]], pu-bli-cado no CO-BENGE 2018 [[]],
  []
 
-[13
+[21
 
-] [14]
+] [22]
 Cap\'{\i }tulo 7.
-
-LaTeX Warning: Reference `subsec:nova_interface' on page 15 undefined on input line 895.
-
-(/home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.bbl [15
+(/home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.bbl [23
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [16
+) [24
 
-]) [17]
+]) [25]
 Ap\^endice A.
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
-) [18
+[26
 
-] [19] [20] [21]
-Overfull \hbox (10.08936pt too wide) in paragraph at lines 1062--1062
+] [27] [28] [29]
+Overfull \hbox (10.08936pt too wide) in paragraph at lines 1191--1191
 []\T1/lmr/bx/n/17.28 Instalando as de-pen-dên-cias ge-o-grá-fi-cas e clo-nando
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1092.
-[22]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1092.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1221.
+[30]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1221.
  (/home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1092.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1092.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1221.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1221.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 05C57AFF7664CA13B1103EA4FCB4824D;4412.
+(rerunfilecheck)             Checksum: C994C7FBA4968EED36DBBA2FC5C1A239;4979.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1092.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1221.
  ) 
 Here is how much of TeX's memory you used:
- 12417 strings out of 481239
- 181652 string characters out of 5920377
- 732792 words of memory out of 5000000
- 27155 multiletter control sequences out of 15000+600000
+ 12678 strings out of 481239
+ 184996 string characters out of 5920377
+ 734241 words of memory out of 5000000
+ 27355 multiletter control sequences out of 15000+600000
  602247 words of font info for 67 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,10n,99p,1169b,1902s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on /home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.pdf (35 pages, 394639 bytes).
+Output written on /home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.pdf (43 pages, 814369 bytes).
 PDF statistics:
- 744 PDF objects out of 1000 (max. 8388607)
- 687 compressed objects within 7 object streams
- 235 named destinations out of 1000 (max. 500000)
- 475 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 881 PDF objects out of 1000 (max. 8388607)
+ 811 compressed objects within 9 object streams
+ 293 named destinations out of 1000 (max. 500000)
+ 541 words of extra memory for PDF output out of 10000 (max. 10000000)
 
