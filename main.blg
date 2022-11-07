@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: apalike.bst
+Database file #1: ./MyBibFiles/my_refs.bib
+Warning--empty year in url:equipeuffo
+Warning--empty year in django
+Warning--empty year in mavlink
+You've used 16 entries,
+            1935 wiz_defined-function locations,
+            549 strings with 7202 characters,
+and the built_in function-call counts, 4444 in all, are:
+= -- 479
+> -- 141
+< -- 17
++ -- 43
+- -- 42
+* -- 272
+:= -- 866
+add.period$ -- 64
+call.type$ -- 16
+change.case$ -- 101
+chr.to.int$ -- 15
+cite$ -- 19
+duplicate$ -- 178
+empty$ -- 261
+format.name$ -- 64
+if$ -- 840
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 2
+newline$ -- 99
+num.names$ -- 48
+pop$ -- 50
+preamble$ -- 1
+purify$ -- 101
+quote$ -- 0
+skip$ -- 151
+stack$ -- 0
+substring$ -- 200
+swap$ -- 12
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 96
+warning$ -- 3
+while$ -- 34
+width$ -- 0
+write$ -- 225
+(There were 3 warnings)

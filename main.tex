@@ -849,7 +849,7 @@ urlpatterns = [
 
 \section{Arquitetura do sistema proposto}
 
-Com todas as tecnologias devidamente estudadas, deseja-se criar um sistema composto pelas mesmas e explorar as capacidades de tal sistema. Para isso, utilizaremos um drone com controladora de firmware ArduPilot e um computador de bordo capaz de se conectar com uma rede de computadores. O software embarcado será desenvolvido utilizando ROS e uma API será desenvolvida em Django para se comunicar ao drone via rede. 
+Com todas as tecnologias devidamente estudadas, deseja-se criar um sistema composto pelas mesmas e explorar as capacidades de tal sistema. Para isso, utilizaremos um drone com controladora de firmware ArduPilot e um computador de bordo capaz de se conectar com uma rede de computadores. O software embarcado será desenvolvido utilizando ROS e uma API será desenvolvida em Django para se comunicar com o drone via rede. 
 %    \centering
 %    \includegraphics{Images/introducao/planta_inicial.png}
 %    \caption{Diagrama em blocos da planta didática em configuração original.}
@@ -888,7 +888,7 @@ Adotar-se-á uma análise qualitativa dos resultados obtidos a partir da impleme
 %
 
 \section{Descrição do problema}
-De forma resumida, deseja-se, a partir de um drone montado com todas os seus componentes essenciais, acoplar um Raspberry Pi à controladora do mesmo para conectar o conjunto à rede de computadores e com isso expandir suas capacidades. Algumas questões surgem quanto a esse projeto, como por exemplo: Qual arquitetura de software a ser utilizada, ou seja como o software a ser desenvolvido será organizado? Qual arquitetura de rede a ser utilizada, por exemplo, par-a-par ou cliente-servidor? No quesito de comunicação na internet, na qual muitas vezes não se tem o controle da rede, como seria feita essa comunicação?
+De forma resumida, deseja-se, a partir de um drone montado com todos os seus componentes essenciais, acoplar um Raspberry Pi à controladora do mesmo para conectar o conjunto à rede de computadores e com isso expandir suas capacidades. Algumas questões surgem quanto a esse projeto, como por exemplo: Qual arquitetura de software a ser utilizada, ou seja como o software a ser desenvolvido será organizado? Qual arquitetura de rede a ser utilizada, por exemplo, par-a-par ou cliente-servidor? No quesito de comunicação na internet, na qual muitas vezes não se tem o controle da rede, como seria feita essa comunicação?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -902,23 +902,81 @@ De forma resumida, deseja-se, a partir de um drone montado com todas os seus com
 
 De posse de um drone quadricóptero com a controladora de voo Omnibus f4 pro, foram estabelecidos os primeiros testes de conexão entre o Raspberry Pi e o firmware ArduPilot. O diagrama de montagem do equipamento foi o seguinte:
 
-\subsection{Diagrama de interconexão dos componentes de hardware}
+\subsection{Diagrama de conexão dos componentes de hardware}
 %
 \begin{figure}[!htbp]
   \centering
   \includegraphics[width=0.7\textwidth]{Images/Diagramas/hardware_connections.png}
-  \caption{Conexões de hardware para Omnibus F4 V3 Pro.}
+  \caption{Conexões de hardware para Omnibus F4 Pro V3.}
   \label{fig:hardware_connections.png.0}
 \end{figure}
 %
-<tirar foto do drone>
+A motivação para a escolha dessa controladora foi o preço da mesma no mercado em relação às outras, valor que na época era em torno de 260 reais, enquanto que a Pixhawk custava em torno de 1000 reais. O resto dos componentes também foi escolhido com o intuito de deixar o projeto em baixo custo. 
+%
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/omnibus_drone.jpeg}
+  \caption{Bancada de trabalho com o drone quadricóptero.}
+  \label{fig:omnibus_drone.jpeg.0}
+\end{figure}
+%
 
-Após a ligação dos componentes eletrôicos, o teste de conexão entre o Raspberry e a controladora foi realizado utilizando o software MavProxy no minicomputador e foi possível obter dados em tempo real da controladora através da conexão serial assim como também foi possível mandar comandos MAVLink para a controladora de voo através do terminal da aplicação.
+Após a ligação dos componentes eletrônicos, o teste de conexão entre o Raspberry e a controladora foi realizado utilizando o software MavProxy no minicomputador e foi possível obter dados em tempo real da controladora através da conexão serial assim como também foi possível mandar comandos MAVLink para a controladora de voo através do terminal da aplicação.
 
-Dessa forma, conseguiu-se comandar o drone a partir do computador de bordo e receber dados de telemetria do mesmo. Entretanto não foi possível acoplar o módulos de GPS na controladora já que o módulo em questão não se mostrou compatível com a mesma.
+Dessa forma, conseguiu-se comandar o drone a partir do computador de bordo e receber dados de telemetria do mesmo. Entretanto, não foi possível acoplar o módulo de GPS na controladora já que o módulo em questão não se mostrou compatível com a mesma.
 
-Com isso validou-sea a viabilidade de conexão entre o computador de bordo e a controladora de voo. Entretanto
+As pesquisas e soluções de problemas oriundos da execução dessa etapa foram cruciais para adiquirir maturidade na montagem, configuração e acoplamento dos componentes. Além disso, o conhecimento adiquirido das ferramentas utilizadas para conectar o computador de bordo ao drone também foram excenciais. Entretanto, escolhemos mudar o hardware utilizado para uma configuração de drone mais convencional na comunidade ArduPilot, com a controladora Pixhawk. 
 
+
+\section{Montagem do drone hexacóptero}
+
+Após os problemas obtidos no drone quadcóptero com a controladora Omnibus, trocamos o hardware utilizado para um drone hexacóptero com a controladora Pixhawk Cube. 
+%
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.4\textwidth]{Images/Desenvolvimento/pixhawk2_cube_hero.png}
+  \caption{Pixhawk 2 Cube Hero.}
+  \label{fig:pixhawk2_cube_hero.png.0}
+\end{figure}
+%
+
+Com isso, obtemos a seguinte conexão dos componentes:
+
+\subsection{Diagrama de conexão dos componentes de hardware}
+%
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Diagramas/cube_wiring_overview.jpg}
+  \caption{Conexões de hardware para a Pixhawk 2 Cube Hero.}
+  \label{fig:cube_wiring_overview.jpg.0}
+\end{figure}
+%
+<motivação da escolha desse hardware>
+<características desse hardware>
+<capacidades desse drone>
+%
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/omnibus_drone.jpeg}
+  \caption{Bancada de trabalho com o drone quadricóptero.}
+  \label{fig:omnibus_drone.jpeg.0}
+\end{figure}
+%
+<conseguir mais fotos do drone>
+<mostrar ligação dos componentes e tudo funcionando perfeitamente>
+<motivação da escolha desse hardware>
+<características desse hardware>
+<capacidades desse drone>
+
+\section{Ambiente de simulação}
+%
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Diagramas/sitl.jpeg}
+  \caption{Software In The Loop.}
+  \label{fig:sitl.jpeg.0}
+\end{figure}
+%
 
 \section{Arquitetura do software desenvolvido}
 
@@ -932,7 +990,7 @@ Com isso validou-sea a viabilidade de conexão entre o computador de bordo e a c
   \item Drone\_CCS\_API (Cloud Control Station)
 \end{enumerate}
 
-\section{Arquitetura de rede}
+\section{Arquitetura da aplicação de rede}
 
 Modelo cliente servidor, no qual o raspberry e o servidor da API estão numa mesma VPN. 
 
