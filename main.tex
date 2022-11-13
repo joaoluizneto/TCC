@@ -297,7 +297,7 @@ Niterói -- RJ
 %
 \thispagestyle{myheadings}
 %
-Este trabalho é o fruto de um esforço em conjunto entre vários discentes e docentes da UFF e iniciativa privada, todos com mútuo 
+Este trabalho é o fruto de um esforço conjunto entre vários discentes e docentes da UFF e iniciativa privada, todos com mútuo 
 interesse por VANTs e suas aplicações. O projeto inicial era ideia da Equipe UFFO~\cite{url:equipeuffo} - construir um \textit{drone} 
 para vigilância dos campi da UFF. O hardware a ser utilizado era um quadricóptero equipado com um sistema FPV de transmissão analógica. 
 Posteriormente, houve-se o interesse de equipar um computador de bordo no \textit{drone} em questão, para fazer aplicações no campo 
@@ -341,6 +341,7 @@ The on-board computer was chosen taking into account the cost and popularity, th
 Based on the proposed architecture, countless features may be implemmented by using its hardware. The on-board computer has an operating system based on debian~\cite{url:debian}, moreover it has numerous GPIO ports that enables the communication to sensors or actuators and also other buses to connect peripherals devices. Hence, there are a plenty possibilities of addons and functionalities.\\ 
 %
 Therefore, the proposed application of this thesis will be the connection between the on-board computer to an IP network. Many possibilities of Raspberry Pi will be studied and explored in future experiments, besides that, there will be developed some applications to test the concept of drones on a computer network.
+
 \bigskip
 
 \hl{ Keywords: Raspberry Pi. Drones. UAV. ROS. UFFO Team. Robotics. Ardupilot. Pixhawk}
@@ -378,8 +379,6 @@ Therefore, the proposed application of this thesis will be the connection betwee
 \addcontentsline{toc}{chapter}{Agradecimentos}
 
 \thispagestyle{myheadings}
-%
-Espaço reservado para os agradecimentos.
 %
 Agradecemos ao Prof. Alexandre pela orientação durante a nossa estadia no grupo do PET-Tele. Através, 
 da nossa participação no grupo foi possível termos um primeiro contato com as plataformas de desenvolvimento 
@@ -471,13 +470,15 @@ TXD - \textit{Transmit Data}\\
 \thispagestyle{empty} 
 %
 %
-Atrelado à popularização da tecnologia, o barateamento dos \textit{drones} tornou-o capaz de ser usado para além do âmbito militar, 
-ganhando espaço nas industrias cinematográficas, esportivas e do entretenimento, fora para o uso pessoal.\\
-Somado à isso, com o barateamento e miniaturização dos componentes eletrônicos nas últimas décadas, surgiram diversas plataformas de 
-difusão de estudos sobre possíveis aplicações é, portanto, uma consequência inevitável. Dessa forma, abre-se um leque de possibilidades 
-para explorar as atividades que um VANT (Veículo Aéreo Não Tripulado) pode executar.\\
+Atrelado à popularização da tecnologia, o barateamento dos \textit{drones} tornaram-los capazes de serem usados para além do âmbito militar, ganhando espaço nas industrias cinematográficas, esportivas e do entretenimento, fora para o uso pessoal.\\
 
+Somado à isso, com o barateamento e miniaturização dos componentes eletrônicos nas últimas décadas, surgiram diversas plataformas eletrônicas de prototipagem, como o Arduíno e também mini computadores como o Raspberry Pi, o que popularizou o estudo das mesmas no âmbito dos drones. 
 
+O uso de mini computadores como o Raspberry Pi já é difundido em aplicações de IOT e robótica e recentemente a comunidade do Ardupilot também explorou e documentou a utilização da plataforma como um computador de bordo, abrindo um leque de possibilidades para as atividades que um VANT (Veículo Aéreo Não Tripulado) pode executar. 
+
+Um computador de bordo permite a utilização de um sistema operacinal completo, e por consequência oferece vários benefícios, como por exemplo capacidades de conexão à rede e a utilização de diversas tecnologias que facilitam o desenvolvimento de drones inteligentes.\\
+
+Dessa forma, partindo da tecnologia para a utilização de computadores de bordo em drones é possível explorar as capacidades desse sistema conectado à rede. Além disso, é inevitavel a criação de sistemas capazes de realizar o gerenciamento e controle dessas aeronaves através da própria internet, o que será abordado nesse documento.
 
 \section{Motivações}
 
@@ -492,9 +493,11 @@ para o equipamento utilizado.
 
 \section{Objetivo}
 
-O primeiro objetivo deste trabalho é projetar, construir e testar uma conexão de  um drone a uma rede \textit{IP}, visando facilitar a coleta de dados e o controle do drone em si. Para isso, no ambiente simulado, utilizaremos uma rede \textit{wi-fi} para realizazr o envio de dados do drone a um servidor remoto, cujo intuito é armazenar, processar e exibir informações coletadas pelo drone. O segundo objetivo, agora fora do ambiente de simulação, gira em torno do estudo da viabilidade e benefícios 
-de uma conexão utilizando a tecnologia LTE. ampliando o ambiente de funcionamento para muito além do alcance do \textit{wi-fi}.
-\textit{IP}.  
+O primeiro objetivo deste trabalho será o estudo e planejamento da arquitetura do sistema proposto, desde o hardware a ser utilizado, as ferramentas de software e a arquitetura da aplicação que será desenvolvida.
+
+O segundo obejtivo é o desenvolvimento de uma aplicação utilizando as ferramentas e a arquitetura proposta no objetivo anterior. Além disso, o funcionamento do sistema será parcialmente validado através de um ambiente de simulação.
+
+Por último, visa-se a construção e configuração de um drone com o sistema embarcado proposto e serão analisados os resultado obtidos.  
 
 \section{Resultados esperados}
 
@@ -540,35 +543,151 @@ remotamente, podem carregar diversos tipos de carga e fazer vários tipos de mis
 Devido a avanços nas tecnologias envolvidas na fabricação, nos sistemas de navegação, nos sensores e sistemas de armazenamento de 
 energia, uma grande variedade de tipos de drones surgiram nas últimas décadas. 
 
-\subsection{Tipos de VANTs}
-Dentre os diversos tipos de VANTs, iremos focar na apresentação dos quatro principais tipos. O primeiro, os drones multirotor, são os mais baratos e, portanto, os mais comuns para uso geral, devido ao excelente custo benefício para realizar funções como foto aéreas e vigilância. O nome multirotor se dá, evidentemente, pela presença de mais de um motor, que em grande maioria são três, quatro, seis ou oito.
+\subsection{Classificação de VANTs}
 
-O segundo tipo, drones de asa fixa, têm o formato de um avião e funcionam como um, elevando a altitude com movimentos retilíneos diagonais. A grande vantagem é a economia de energia, já que nesse tipo de drone a energia é gasta apenas para mover-se para frente, e não para cima, assim como nos aviões usuais.
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/introducao/drone_classification.png}
+  \caption{Classificação de VANTs por tipo de pouso, aerodinâmica e quantidade de rotores.}
+  \label{fig:drone_classification.png}
+\end{figure}
 
-O terceiro tipo de drone, de rotor único, são construídos com o objetivo de serem mais resistentes e duradouros. Pode-se dizer que o formato assemelha-se a um helicóptero, já que possui uma hélice central e uma hélice menor na cauda, essa última para controlar a direção e estabilidade.
+Como mostrado no organograma da figura a cima~\ref{fig:drone_classification.png}, as categorizações mais comuns para os VANTs são obtidas pelos atributos "tipo de pouso", "aerodinâmica" e "quantidade de rotores".
 
-Por último, o VTOL une os benefícios dos drones de asa fixa e rotores, já que conta com rotores acoplados em suas asas fixas, isso os torna muito promissores no futuro, apesar de serem um tipo novo. Um bom exemplo de VTOL são os drones de entrega utilizados pela \textit{Amazon}.
+O tipo de aerodinâmica responsável pela sustentação das aeronaves no ar é bastante diversificado. Uma categoria bem comum de drones são os VANTs de asa fixa, que semelhantemente aos aviões, tiram proveito da geometria das asas e da velocidade gerada por um ou mais motores para obterem sustentação. 
 
-\cite{vant_tipos}
+A classificaçao de aterrisagem, com a nomenclatura VTOL e HTOL diz respeito apenas aos VANTs de asa fixa visto que apenas esses tipos de VANTs tiram proveito tanto da aterrisagem vertical quanto da autonomia proveniente do vôo horizontal com asas fixas. 
+
+No presente documento focaremos mais acetuadamente nos drones de asa rotativa, visto que esse tipo de drone será utilizado nos experimentos que sucederão.
+
 \subsection{Componentes dos VANTs de Asa Rotativa}
 
-\subsection{Controladora \textit{PixHawk}}
+Os componentes dos drones de asa rotativa variam conforme o tipo de missão. Alguns dos componentes proncipais podem ser listados abaixo:
+
+\begin{enumerate}
+  \item Frame
+  \item Motores e hélices
+  \item Escs
+  \item Controladora de voo
+  \item Bateria e Placa distribuidora de energia
+\end{enumerate}
+\subsubsection*{Frame}
+
+O Frame de um drone é a base estrutural na qual todos os outros componentes são fixados, ele geralmente é feito de um material leve e 
+resistente como fibra de carbono e outros polímeros plásticos. 
+
+\subsubsection*{Bateria e Placa distribuidora de energia}
+
+A bateria é a fonte de energia do drone, geralmente são utilizadas baterias Li-Po (Lítio-Polímero) pela sua boa relação massa/desempenho 
+enérgetico, essas baterias possuem uma nomenclatura específica com baase na quantidade de células <explicar melhor as baterias>.
+
+\subsubsection*{Motores e hélices}
+
+Os motores do drone são os responsávei por converter a energia elétrica proveniente das baterias em energia cinética. Geralmente os 
+motores utilizados são motores de corrente contínua não escovados (\textit{brushless DC}) <colocar as características físicas desse tipo de motor>.
+A partir da corrente elétrica fornecida ao motor ele movimenta a hélice, que devido à sua aerodinamica gera uma força resultante para cima no drone,
+a qual é denominada empuxo. 
+
+\subsubsection*{Escs}
+
+Os Escs, ou Eletronic Speed Controlers são os componentes eletrônicos responsáveis por controlar a velocidade dos motores.
+Eles são comandados pela controladora de voo, geralmente a partir de sinais PWM <Falar sobre PWM>. Assim como o PWM é utilizado para comandar 
+os ESCs, os ESCs utilizam essa modulação para chavear o circuito entre os motores e a bateria controlando assim a velocidade dos motores. 
+
+\subsubsection*{Controladora de Voo}
+
+A controladora de voo é um microcontrolador com software embarcado dedicado às funções básicas da aeronave. Ela possui sensores 
+inerciais embutidos para comandar a dinâmica de voo da aeronave, além de possuir interface eletrônica com outros componentes como módulos gps, módulos receptores de rádio, módulos de telemetria entre outros. Sem a controladora de voo, seria uma tarefa humanamente impossível controlar o voo da aeronave, visto que a mesma depende de um feedback contínuo e instantâneo dos parâmetros inerciais. 
+
+\subsection{ArduPilot}
+
+%
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/introducao/ardupilot_vehicles.jpg}
+  \caption{Veículos suportados pelo ArduPilot.}
+  \label{fig:ardupilot_vehicles.jpg.0}
+\end{figure}
+%
+
+O ArduPilot é um projeto de código aberto que possui um conjunto de software destinado ao piloto automático de veículos não tripulados, os quais incluem:
+\begin{itemize}
+  \item Plane - piloto automático para drones de asa fixa.
+  \item Copter - piloto automático para drones de asa rotativa.
+  \item Rover - piloto automático para veículos terrestres e barcos.
+  \item Sub - piloto automático para veículos submarinos.
+\end{itemize}
+
+Além de suportar o firmware para todos esses tipos de veículos, a comunidade ArduPilot também se preocupa em desenvolver outras plataformas que auxiliam o desenvolvimento e a utilização do próprio firmware, como por exemplo:
+
+\begin{itemize}
+  \item Antenna Tracker - firmware para mirar uma antena automaticamente para o veículo.
+
+  \item Mission Planner - interface de estação de controle em solo escrita em C\# para Windows.
+  
+  \item APM Planner 2.0 - interface de estação de controle específica para APM escrita em C++ usando os módulos Qt, pode ser executada em Linux, Windows e Mac.
+  
+  \item MAVProxy - interface de estação de controle em linha de comando ou via script.
+  
+  \item DroneKit - APM SDK para aplicações executadas de forma embarcada, em mobile, e/ou na nuvem.
+  
+  \item MinimOSD - visualização de informações de voo em tempo real no visor da interface de FPV.
+  \item Tower - interface de estação de controle para celular.  
+  \item QGroundControl é uma interface de estação de controle alternativa escrita em C++ usando os modulos Qt.
+  \item PX4 - firmware pixhawk para a controladora pixhawk.
+  
+  \item MAVLink - o protocolo para comunicação entre estação de controle, controladora de voo e alguns componentes incluindo OSD.
+  
+  \item UAVCAN - protocolo leve e confiável para aplicações de comunicação aeroespacial e robótica, via CAN bus. 
+  
+\end{itemize}
+
+<LISTAR CONTROLADORAS DE VOO COMPATÍVEIS COM O FIRMWARE>
 
 
 \subsection{UART}
+
 UART, que vem das palavras \textit{universal asynchronous receive/transmit}, realiza o papel principal na comunicação serial, já que converte os dados entre série e paralelo. Há então uma conversão de paralelo-serial para os dados transmitidos, e uma outra serial-paralelo para os dados recebidos. Existe ainda um \textit{buffer}, cujo objetivo é armazenar dados por tempo limitado em transmissões com alta taxa, sem que haja descarte de dados e consequente perda de informação. Para que não haja fluxo de transmissão caso ambas as partes estiverem prontas, em adição as características citadas, são incorporados circuitos reguladores de fluxo.
 
 A divisão do protocolo é feita em três sub-módulos, gerador de taxa de transmissão, módulo de transmissão e módulo de recepção. O primeiro, se responsabiliza por gerar um sinal de relógio localmente, o qual deve ser muito maior que a taxa de transmissão de dados entre transmissor-receptor. O módulo receptor, por sua vez, recebe os sinais RXD e os converte para dados paralelos. Por fim, o módulo transmissor converte os bytes em bits seriais, com base no padrão de quadro utilizado, e os envia através de sinais TXD. \cite{uart}
 
 \subsection{Telemetria}
 
-\subsection{Protocolo \textit{Mavlink}}
+A telemetria é uma funcionalidade indispensável nos drones mais modernos, ela permite receber informações dos sensores do drone em tempo real como altitude, velocidade, gps, temperatura, informações da quantidade de carga na bateria dentre outras. Essa transmissão de dados geralmente é feita por um módulo dedicado a isso ou então em módulos receptores de rádio que já possuem essa funcionalidade integrada.
+
+\subsection{Protocolo Mavlink}
+
 MAVLink é um protocolo de comunicação com drones e entre os componentes acoplados ao drone. Essa transmissão consiste no envio de um fluxo de dados, os quais são chamados de tópicos, e escritos em arquivos XML. Dentre as principais vantagens de se utilizar o MAVLink estão a sua eficiência e versatilidade. Em números, a segunda versão do MAVLink tem apenas 14 \textit{bytes} de \textit{overhead} no pacote de comunicação. Além disso, provê métodos de detectar perda de pacotes e dados corrompidos, e garante a autenticação dos pacotes. Outro ponto positivo é o suporte a diversas linguagens, já que o protocolo tem suporte a diferentes tipos de sistemas operacionais e microcontroladores. Por fim, apesar de menos importante para o nosso projeto, vale citar que o protocolo suporta até 255 usuários simultâneos em um mesma rede.
 \cite{mavlink}
 
 \subsection{Computadores de Bordo}
 
-\subsection {Série de computadores Raspberry Pi}
+Computadores de bordo (ou \textit{Companion Computers}, como são chamados na documentação do ArduPilot) podem ser utilizados para interfacear com o firmware ArduPilot numa controladora de voo através do protocolo MAVLink. Dessa forma, o computador de bordo consegue computar todos os dados MAVLink produzidos pela controladora e com estes pode fazer decisões inteligentes durante o voo. 
+
+Geralmente, no quesito de hardware para esses computadores são escolhidos mini computadores de arquitetura baseada em ARM. Os mini computadores suportados pela comunidade ArduPilot são listados abaixo:
+
+\begin{itemize}
+  \item Arduino family
+  \item LYCHEE (Cube Carrier Board for Raspberry Pi Compute Module)
+  \item NVidia TX1
+  \item NVidia TX2
+  \item ODroid
+  \item Raspberry Pi
+\end{itemize}
+
+Já no quesito de software, existem ferramentas, programas e sistemas operacionais específicos para computadores de bordo, tais programas conseguem computar os dados MAVLink vindos da controladora. Alguns dos softwares suportados pela comunidade ArduPilot são listados abaixo:
+
+\begin{itemize}
+  \item APSync
+  \item DroneKit
+  \item FlytOS
+  \item Maverick
+  \item ROS
+  \item Rpanion-server
+\end{itemize}
+
+
+\section {Série de computadores Raspberry Pi}
 %
 O Raspberry Pi é uma série de computadores de placa única e tamanho reduzido, que recebem a denominação  SoC (\textit{System on Chip})~\cite{url:soc} à qual são conectados os seguintes dispositivos: monitor, teclado, e mouse. 
 
@@ -655,10 +774,29 @@ A Tabela~\ref{tab:Raspberry Pinout} reúne uma descrição de todos os pinos.
     \label{tab:Raspberry Pinout}
 \end{table}
 
-\subsection{ROS - \textit{Robot Operative System}}
-\textit{Robot Operative System} é um \textit{software open source} cujo objetivo se baseia em facilitar a integração entre diferentes módulos de um robô. Normalmente, assim como no nosso caso, pode-se dividir os módulos em atuadores, sensores e o sistema de controle, o ROS então, permite que interliguemos todos as partes de maneira simples e rápida através de suas ferramentas, as quais são mensagens e tópicos. As mensagens almejam facilitar a coleta e análise dos dados, podendo ser guardados em \textit{logs}, o que ajuda testes em geral e a detecção de problemas. Essas dados contidos nas mensagens, geradas automaticamente, podem ser integradas a outros \textit{softwares}, permitindo a visualização 3D em um ambiente de simulação, por exemplo \cite{ros}. Já os tópicos 
+\subsection{ROS - Robot Operative System}
+
+
+
+Robot Operating System (ROS or ros) is an open-source robotics middleware suite. Although ROS is not an operating system (OS) but a set of software frameworks for robot software development, it provides services designed for a heterogeneous computer cluster such as hardware abstraction, low-level device control, implementation of commonly used functionality, message-passing between processes, and package management. Running sets of ROS-based processes are represented in a graph architecture where processing takes place in nodes that may receive, post, and multiplex sensor data, control, state, planning, actuator, and other messages. Despite the importance of reactivity and low latency in robot control, ROS is not a real-time operating system (RTOS). However, it is possible to integrate ROS with real-time code.[3] The lack of support for real-time systems has been addressed in the creation of ROS 2,[4][5][6] a major revision of the ROS API which will take advantage of modern libraries and technologies for core ROS functions and add support for real-time code and embedded system hardware.
+
+Software in the ROS Ecosystem[7] can be separated into three groups:
+
+language-and platform-independent tools used for building and distributing ROS-based software;
+ROS client library implementations such as roscpp,[8] rospy,[9] and roslisp;[10]
+packages containing application-related code which uses one or more ROS client libraries.[11]
+Both the language-independent tools and the main client libraries (C++, Python, and Lisp) are released under the terms of the BSD license, and as such are open-source software and free for both commercial and research use. The majority of other packages are licensed under a variety of open-source licenses. These other packages implement commonly used functionality and applications such as hardware drivers, robot models, datatypes, planning, perception, simultaneous localization and mapping, simulation tools, and other algorithms.
+
+The main ROS client libraries are geared toward a Unix-like system, primarily because of their dependence on large collections of open-source software dependencies. For these client libraries, Ubuntu Linux is listed as "Supported" while other variants such as Fedora Linux, macOS, and Microsoft Windows are designated "experimental" and are supported by the community.[12] The native Java ROS client library, rosjava,[13] however, does not share these limitations and has enabled ROS-based software to be written for the Android OS.[14] rosjava has also enabled ROS to be integrated into an officially supported MATLAB toolbox which can be used on Linux, macOS, and Microsoft Windows.[15] A JavaScript client library, roslibjs[16] has also been developed which enables integration of software into a ROS system via any standards-compliant web browser.
+
+\subsubsection{Mavros}
+
+This package provides communication driver for various autopilots with MAVLink communication protocol. Additional it provides UDP MAVLink bridge for ground control stations (e.g. QGroundControl).
+
+<listar os tópicos>
 
 \subsection{Django}
+
 Django é um \textit{web framework} cuja intenção é tornar o desenvolvimento \textit{web} mais veloz e fácil. Possui uma integração nativa entre banco de dados, \textit{front-end} e \textit{back-end}, apesar de que não seja necessária a utilização de um banco de dados. Primeiramente, podemos citar que todo o esquema do banco é feito através de códigos \textit{python}, pela técnica de mapeamento objeto-relacional, como podemos ver no exemplo a seguir\cite{django}.
 
 \begin{lstlisting}[language=Python]
@@ -710,15 +848,10 @@ urlpatterns = [
 ]
 \end{lstlisting}
 
-Nesse caso, 
-
-\subsection{Django REST Framework}
 
 \section{Arquitetura do sistema proposto}
 
-Explicação dos componentes da arquitetura do sistema proposto.
-%
-%\begin{figure}[ht]
+Com todas as tecnologias devidamente estudadas, deseja-se criar um sistema composto pelas mesmas e explorar as capacidades de tal sistema. Para isso, utilizaremos um drone com controladora de firmware ArduPilot e um computador de bordo capaz de se conectar com uma rede de computadores. O software embarcado será desenvolvido utilizando ROS e uma API será desenvolvida em Django para se comunicar com o drone via rede. 
 %    \centering
 %    \includegraphics{Images/introducao/planta_inicial.png}
 %    \caption{Diagrama em blocos da planta didática em configuração original.}
@@ -737,20 +870,18 @@ Explicação dos componentes da arquitetura do sistema proposto.
 \thispagestyle{empty} 
 %
 \section{Pesquisa}
-
-https://florimondmanca.github.io/djangorestframework-api-key/guide/
-
-https://riptutorial.com/django-rest-framework/example/30993/api-key-base-request-authentication
-
+%
+A 
 %
 \section{Objetivos do método aplicado}
-A metodologia aplicada possui objetivo descritivo e exploratório. Com o sistema devidamente construído, faremos experimentos que comprovam algumas possibilidades de uso para o equipamento.
+A metodologia aplicada possui objetivo descritivo e exploratório. Após a realização de cada etapa do projeto serão feitos experimentos para comprovar o devido funcionamento do sistema e para este serão comentadas as possibilidades de aplicações.
 
 \section{Abordagem}
-adotar-se-á uma análise qualitativa dos resultados obtidos a partir da implementação do novo sistema, em observância aos seguintes questionamentos:
+Adotar-se-á uma análise qualitativa dos resultados obtidos a partir da implementação do novo sistema, em observância aos seguintes questionamentos:
 \begin{enumerate}
-    \item Com o sistema desenvolvido será possível ao professor, operador do sistema. controlar o experimento remotamente?
-    \item Com o sistema desenvolvido a turma da disciplina conseguirá acompanhar o experimento em um ambiente diferente do laboratório?
+    \item Com o sistema desenvolvido será possível receber dados de telemetria via rede?
+    \item Com o sistema desenvolvido será possível ao operador do sistema, controlar o drone remotamente?
+    \item O quão seguro é o sistema desenvolvido? Quais riscos de segurança estão submetidos a tal sistema?
     \item pergunta avaliativa 3
     \item pergunta avaliativa 4
 \end{enumerate}
@@ -759,7 +890,7 @@ adotar-se-á uma análise qualitativa dos resultados obtidos a partir da impleme
 %
 
 \section{Descrição do problema}
-
+De forma resumida, deseja-se, a partir de um drone montado com todos os seus componentes essenciais, acoplar um Raspberry Pi à controladora do mesmo para conectar o conjunto à rede de computadores e com isso expandir suas capacidades. Algumas questões surgem quanto a esse projeto, como por exemplo: Qual arquitetura de software a ser utilizada, ou seja como o software a ser desenvolvido será organizado? Qual arquitetura de rede a ser utilizada, por exemplo, par-a-par ou cliente-servidor? No quesito de comunicação na internet, na qual muitas vezes não se tem o controle da rede, como seria feita essa comunicação?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -769,11 +900,219 @@ adotar-se-á uma análise qualitativa dos resultados obtidos a partir da impleme
 \thispagestyle{empty} 
 %
 
+\section{Primeiros testes com o drone quadricóptero}
+
+De posse de um drone quadricóptero com a controladora de voo Omnibus f4 pro, foram estabelecidos os primeiros testes de conexão entre o Raspberry Pi e o firmware ArduPilot. O diagrama de montagem do equipamento foi o seguinte:
+
+\subsection{Diagrama de conexão dos componentes de hardware}
+%
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Diagramas/hardware_connections.png}
+  \caption{Conexões de hardware para Omnibus F4 Pro V3.}
+  \label{fig:hardware_connections.png.0}
+\end{figure}
+%
+A motivação para a escolha dessa controladora foi o preço da mesma no mercado em relação às outras, valor que na época era em torno de 260 reais, enquanto que a Pixhawk custava em torno de 1000 reais. O resto dos componentes também foi escolhido com o intuito de deixar o projeto em baixo custo. 
+%
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/omnibus_drone.jpeg}
+  \caption{Bancada de trabalho com o drone quadricóptero.}
+  \label{fig:omnibus_drone.jpeg.0}
+\end{figure}
+%
+
+Após a ligação dos componentes eletrônicos, o teste de conexão entre o Raspberry e a controladora foi realizado utilizando o software MavProxy no minicomputador e foi possível obter dados em tempo real da controladora através da conexão serial assim como também foi possível mandar comandos MAVLink para a controladora de voo através do terminal da aplicação.
+
+Dessa forma, conseguiu-se comandar o drone a partir do computador de bordo e receber dados de telemetria do mesmo. Entretanto, não foi possível acoplar o módulo de GPS na controladora já que o módulo em questão não se mostrou compatível com a mesma.
+
+As pesquisas e soluções de problemas oriundos da execução dessa etapa foram cruciais para adiquirir maturidade na montagem, configuração e acoplamento dos componentes. Além disso, o conhecimento adiquirido das ferramentas utilizadas para conectar o computador de bordo ao drone também foram excenciais. Entretanto, escolhemos mudar o hardware utilizado para uma configuração de drone mais convencional na comunidade ArduPilot, com a controladora Pixhawk Cube. 
+
+
+\section{Montagem do drone hexacóptero}
+
+Após os problemas obtidos no drone quadcóptero com a controladora Omnibus, trocamos o hardware utilizado para um drone hexacóptero com a controladora Pixhawk Cube. Tal aeronave já estava operacional antes de acoplarmos o Raspberrypi, isto é, era possível realizar todas as funções básicas que a controladora por si só é capaz de fazer.
+%
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.4\textwidth]{Images/Desenvolvimento/pixhawk2_cube_hero.png}
+  \caption{Pixhawk 2 Cube Hero.}
+  \label{fig:pixhawk2_cube_hero.png.0}
+\end{figure}
+%
+
+Com isso, obtemos a seguinte conexão dos componentes:
+
+\subsection{Diagrama de conexão dos componentes de hardware}
+%
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Diagramas/cube_wiring_overview.jpg}
+  \caption{Conexões de hardware para a Pixhawk 2 Cube Hero.}
+  \label{fig:cube_wiring_overview.jpg.0}
+\end{figure}
+%
+<motivação da escolha desse hardware>
+<características desse hardware>
+<capacidades desse drone>
+%
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/omnibus_drone.jpeg}
+  \caption{Bancada de trabalho com o drone quadricóptero.}
+  \label{fig:omnibus_drone.jpeg.0}
+\end{figure}
+%
+<conseguir mais fotos do drone>
+<mostrar ligação dos componentes e tudo funcionando perfeitamente>
+<motivação da escolha desse hardware>
+<características desse hardware>
+<capacidades desse drone>
+
+\newpage
+
+\section{Ambiente de simulação}
+%
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/sitl_demo.jpg}
+  \caption{Demonstração do Software In The Loop.}
+  \label{fig:sitl_demo.jpg.0}
+\end{figure}
+%
+
+O projeto ArduPilot possui um rico conjunto de ferramentas que auxiliam no desenvolvimento de aplicações para drones. O próprio código fonte do firmware ArduPilot pode ser compilado e carregado em um ambiente de simulação. O executável responsável por isso é chamado SITL (Software In The Loop), cujo digrama é apresentado na figura \ref{fig:sitl_arq.jpg.0}, esse programa consegue integrar-se com outros formando um ambiente de simulação completo. O MavProxy é utilizado para fazer a interface de comunicação entre o operador e a controladora em ambiente simulado. Além disso, é possível integrar com um simulador de física e dessa forma simular a dinâmica de voo da aeronave. A simulação da dinâmica de voo da aeronave geralmente vem acompanhada com a integração de algum software de visualização como no caso do Flight Gear e do Gazebo, o qual estaremos utilizando. A integração de todos esses componentes no ambiente de simulação forma um loop, e com isso temos o nome Software In The Loop. Essa aplicação é essencial para o desenvolvimento pois permite a execução do ArduPilot sem a utilizaçao de nenhum hardware.
+
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Diagramas/sitl_arq.jpg}
+  \caption{Arquitetura do Software In The Loop}
+  \label{fig:sitl_arq.jpg.0}
+\end{figure}
+%
 
 
 
+A inicialização do SITL é feita utilizando o script python demonstrado na figura \ref{fig:sim_vehicle.png.0}, que é disponibilizado junto ao código fonte do ArduPilot no seu repositorio do github.
 
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/sim_vehicle.png}
+  \caption{sim\_vehicle.py}
+  \label{fig:sim_vehicle.png.0}
+\end{figure}
+%
 
+Como demonstrado na figura \ref{fig:sim_vehicle.png.0} criamos um script bash para executar o ambiente de simulação, nos parametros especificamos que queremos simular o firmware ArduCopter, utilizando as interfaces de mapa e console. Além disso, inserimos como parametro a localização em coordenadas do campo de futebol da UFF no Campus de Gragoatá. O resultado da execução desse script pode ser visualisado na figura \ref{fig:startsitl_nogazebo.png.0}.
+
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Images/Desenvolvimento/startsitl_nogazebo.png}
+  \caption{startsitl\_nogazebo.sh}
+  \label{fig:startsitl_nogazebo.png.0}
+\end{figure}
+%
+
+Fizemos também um segundo script bash com os parametros necessários para a conexão com o Gazebo, que é o software que simula um mundo em 3D para o drone. Separamos nesses dois scripts, pois na maioria das vezes a simulação em 3D nao é necessária e consome muito dos recursos da máquina que a executa.
+
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Images/Desenvolvimento/startsitl.sh.png}
+  \caption{startsitl.sh com Gazebo}
+  \label{fig:startsitl_nogazebo.png.0}
+\end{figure}
+%
+
+O modelo de mundo 3D utilizado no Gazebo para a integração com o SITL foi obtido a partir do repositorio de un canal do \textit{Youtube} chamado \cite{url:iq}. 
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/sitl_gazebo.png}
+  \caption{Software In The Loop com Gazebo}
+  \label{fig:sitl_gazebo.png.0}
+\end{figure}
+%
+Essa instancia do Gazebo é iniciada a partir de um nó do ROS, que é executado com o comando da figura \ref{fig:ros_gazebo.png.0}.
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/ros_gazebo.png}
+  \caption{Nó do Gazebo - ROS}
+  \label{fig:ros_gazebo.png.0}
+\end{figure}
+%
+
+Com isso, obtemos um ambiente de teste de desenvolvimento para as aplicações que sucederão. Os benefícios de se utilizar um ambiente de simulaçao como este é que não colocamos em risco o equipamento de hardware, nem as pessoas que seriam envolvidas em testes de campo. Além disso, o teste no ambiente computacional se torna mais prático, descartando toda a logística necessária para se deslocar com todo o equipamento para um campo aberto e com baixa densidade populacional.
+
+O processo de instalação do ambiente de desenvolvimento do ArduPilot está bem documentado nos appendices deste documento, nesse processo também está incluído a instalação de dependencias para executar o ambiente de simulação. 
+
+\section{Ambiente de Simulação com o Mavros}
+
+O Mavros como dito na parte introdutória, é um nó de ROS que publica e subscreve dados da controladora de voo, essas mensagens são trocadas utilizando o protocolo MAVLink. O Mavros é geralmente configurado para realizar a comunicação através de um dispositivo serial, que no linux é identificado por um arquivo no diretório /dev. Entretanto, para fazer o Mavros se comunicar com o SITL, deve-se fazer uma modificação no arquivo de inicialização, arquivo com extensão \textit{.launch} no diretório launch do pacote.
+
+No diretório launch do pacote são observados vários arquivos \textit{.launch} utilizados para iniciar o nó do Mavros com diferentes parâmetros. O apm.launch foi modificado como indicado na figura \ref{fig:mavros_launch.png.0}, para utilizar a porta de rede específica do MavProxy no SITL e não o dispositivo serial, comentado na linha superior.
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/mavros_launch.png}
+  \caption{apm.launch do Pacote Mavros}
+  \label{fig:mavros_launch.png.0}
+\end{figure}
+%
+Com essa modificação, o nó do Mavros pode ser iniciado normalmente em conjunto com o SITL e é possível subscrever e publicar mensagens MAVLink nos tópicos para a controladora de voo no ambiente simulado. 
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/mavros_execution.png}
+  \caption{Execução do Mavros}
+  \label{fig:mavros_execution.png.0}
+\end{figure}
+%
+Alguns dos tópicos providos pelo Mavros são listados pelo comando rostopic list na figura \ref{fig:mavros_rostopic_list.png.0}. 
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/mavros_rostopic_list.png}
+  \caption{Tópicos do Mavros}
+  \label{fig:mavros_rostopic_list.png.0}
+\end{figure}
+%
+Por exemplo, o tópico correspondente a localização GPS da controladora de voo é o global\_position. É possível subscrever e acompanhar as mensagens que chegam da controladora nesse tópico pelo comando da figura \ref{fig:mavros_rostopic_echo.png.0}.
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/mavros_rostopic_echo.png}
+  \caption{Tópicos do Mavros}
+  \label{fig:mavros_rostopic_echo.png.0}
+\end{figure}
+%
+
+Os tópicos do ROS são fácilmente acessados através de linguagens de programação como C++ e Python. Em particular esta última, possui um módulo chamado rospy que permite a criação de aplicações do ROS, com este módulo é possível desenvolver nós inteiramente usando Python. Agora que temos o Mavros agindo como interface da aeronave, é possível desenvolver o software embarcado que também será um nó, ele irá se comunicar com o Mavros e com a aplicação em Django que será desenvolvida.
+
+\section{Arquitetura da aplicação}
+
+<mostrar diagrama estrutural>
+
+\begin{enumerate}
+  \item mavros 
+  \item iq\_gnc
+  \item drone\_telemetry\_over\_network
+  \item drone\_control\_over\_network
+  \item Drone\_CCS\_API (Cloud Control Station)
+\end{enumerate}
+
+\section{Arquitetura da aplicação de rede}
+
+Modelo cliente servidor, no qual o raspberry e o servidor da API estão numa mesma VPN. 
+
+\section{Outras arquiteturas possíveis para o sistema proposto}
+
+LTE e 5G.
 
 
 \chapter{Resultados}
