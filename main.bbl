@@ -1,11 +1,5 @@
 \begin{thebibliography}{}
 
-\bibitem[ABENGE, 2020]{url:cobenge}
-ABENGE (2020).
-\newblock \textbf{URL do COBENGE}.
-\newblock Disponível em: ``\url{http://www.abenge.org.br/cobenge.php}''.
-\newblock Acesso em: 25/01/2021.
-
 \bibitem[{Ardupilot Docs}, 2021]{url:ardupilotdoc}
 {Ardupilot Docs} (2021).
 \newblock \textbf{Ardupilot Docs}.
@@ -26,18 +20,37 @@ ABENGE (2020).
 \newblock Disponível em: ``\url{https://uffoequipe.github.io/website/uffo/}''.
 \newblock Acesso em: 25/01/2021.
 
+\bibitem[Foundation, ]{django}
+Foundation, D.~S.
+\newblock \textbf{Django at a glance}.
+\newblock \url{https://docs.djangoproject.com/en/4.1/intro/overview/}.
+\newblock Accessed: 2022-9-25.
+
 \bibitem[Foundation, 2020]{url:raspberrypi}
 Foundation, R.~P. (2020).
 \newblock \textbf{URL da plataforma Raspberry Pi}.
 \newblock Disponível em: ``\url{https://www.raspberrypi.org/}''.
 \newblock Acesso em: 25/01/2021.
 
-\bibitem[LaDISan, 2019]{url:ladisan}
-LaDISan (2019).
-\newblock \textbf{URL do Laboratório de Drenagem, Irrigação e Saneamento
-  Ambiental (TER/UFF)}.
+\bibitem[Laddha and Thakare, 2013]{uart}
+Laddha, N.~R. and Thakare, A.~P. (2013).
+\newblock \textbf{\textit{a review on serial communication by uart }}.
 \newblock Disponível em:
-  ``\url{http://www.uff.br/?q=setor/laboratorio-de-drenagem-irrigacao-e-saneamento-ambiental-ladisan}''.
+  ``\url{https://d1wqtxts1xzle7.cloudfront.net/35186800/V3I1-0220-with-cover-page-v2.pdf?Expires=1660489200&Signature=LlWOjoCWNEXiG0JGR8xEk8ERpygEDR08dkWQxiz0iYxoG~45wkWuOrH69arl4G0X0lYputTpTYBYY8ELUEDnj7x88wnXtNB8xu05kZo6BtKcN8OpkWIA99tLMgZcYHfoIHvzsU143iLiAa~5VLWo-EHHlHCtXdcJ2lazswkgqT3CG-D0wpTfjfLaGsqRzV4aKoBju3DufAqSBefW8T8dHMkUEd3hX0x2Jmi2HJcfuMCTHtFRQX4dnlCkeyjABUWElMMXc2adpzIzhNGcU4yk3cVFV22IVutoZi2G-xfRwxRooF1AR81fIBJA3pkf0Fx8KLokzQEyPmC4S8lD1NSh7A__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA}''.
+\newblock Acesso em: 25/01/2021.
+
+\bibitem[{Lassi Sundqvist}, 2015]{artigo_relacionado_1}
+{Lassi Sundqvist} (2015).
+\newblock \textbf{\textit{cellular controlled drone experiment: evaluation of
+  network requirements}}.
+\newblock Disponível em:
+  ``\url{https://aaltodoc.aalto.fi/bitstream/handle/123456789/19152/master_Sundqvist_Lassi_2015.pdf?sequence=1&isAllowed=y}''.
+\newblock Acesso em: 25/01/2021.
+
+\bibitem[MAVLink, ]{mavlink}
+MAVLink.
+\newblock \textbf{\textit{mavlink developer guide}}.
+\newblock Disponível em: ``\url{https://mavlink.io/en/}''.
 \newblock Acesso em: 25/01/2021.
 
 \bibitem[Members, 2019a]{url:raspberry_wiki}
@@ -53,29 +66,13 @@ Members, W. (2019b).
   ``\url{https://pt.wikipedia.org/wiki/System-on-a-chip}''.
 \newblock Acesso em: 25/01/2021.
 
-\bibitem[Neto and Miranda, 2021]{url:projeto_ladisan}
-Neto, J. L. A.~P. and Miranda, R. (2021).
-\newblock \textbf{Novas implementações para automatização e acesso remoto
-  no sistema de reservatórios de detenção aplicados à drenagem urbana do
-  LaDISan/TCE/UFF utilizando a plataforma Raspberry Pi}.
+\bibitem[Quads, 2022]{url:iq}
+Quads, I. (2022).
+\newblock \textbf{URL Tutoriais do Canal de {\textit{Youtube Intelligent
+  Quads}} }.
 \newblock Disponível em:
-  ``\url{http://www.telecom.uff.br/pet/petws/index.php?pagina=downloads/projetos}''.
+  ``\url{https://github.com/Intelligent-Quads/iq_tutorials}''.
 \newblock Acesso em: 25/01/2021.
-
-\bibitem[Paiva and Milhomem, 2018]{article:tcc_lorraine_maria}
-Paiva, L. M.~M. and Milhomem, M.~C. (2018).
-\newblock \textbf{Uso de sensores e acesso remoto para a realização de aula
-  prática sobre reservatórios de detenção aplicados à drenagem urbana}.
-\newblock {\em UFF}, page~70.
-\newblock Disponível em: ``\url{https://app.uff.br/riuff/handle/1/7080}''.
-
-\bibitem[Paiva et~al., 2018]{article:lorraine_maria}
-Paiva, L. M.~M., Milhomem, M.~C., and de~la Vega, A.~S. (2018).
-\newblock \textbf{Realização de Aula Prática Remota a Partir de Laboratório
-  Equipado com Modelo Físico sobre Detenção de Água de Chuva}.
-\newblock {\em COBENGE}, page~10.
-\newblock Disponível em:
-  ``\url{http://www.telecom.uff.br/pet/petws/downloads/artigos/cobenge_2018/COBENGE18_00063_00001258_Aula_Remota_LaDISan_2018_07_09.pdf}''.
 
 \bibitem[{Software in the Public Interest, Inc}, 2021]{url:debian}
 {Software in the Public Interest, Inc} (2021).
