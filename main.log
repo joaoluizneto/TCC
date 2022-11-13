@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.6.20)  12 NOV 2022 22:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.6.20)  13 NOV 2022 12:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -681,7 +681,7 @@ Cap\'{\i }tulo 2.
 <Images/introducao/drone_classification.png, id=498, 869.49844pt x 309.40594pt>
 File: Images/introducao/drone_classification.png Graphic file (type png)
 <use Images/introducao/drone_classification.png>
-Package pdftex.def Info: Images/introducao/drone_classification.png  used on input line 548.
+Package pdftex.def Info: Images/introducao/drone_classification.png  used on input line 550.
 (pdftex.def)             Requested size: 318.66946pt x 113.39726pt.
 [5
 
@@ -689,15 +689,15 @@ Package pdftex.def Info: Images/introducao/drone_classification.png  used on inp
 <Images/introducao/ardupilot_vehicles.jpg, id=518, 702.625pt x 400.49625pt>
 File: Images/introducao/ardupilot_vehicles.jpg Graphic file (type jpg)
 <use Images/introducao/ardupilot_vehicles.jpg>
-Package pdftex.def Info: Images/introducao/ardupilot_vehicles.jpg  used on input line 605.
+Package pdftex.def Info: Images/introducao/ardupilot_vehicles.jpg  used on input line 607.
 (pdftex.def)             Requested size: 318.66946pt x 181.64552pt.
  [7]
-Overfull \hbox (2.88925pt too wide) in paragraph at lines 643--644
+Overfull \hbox (2.88925pt too wide) in paragraph at lines 645--646
 []\T1/lmr/m/n/12 <LISTAR CON-TRO-LA-DO-RAS DE VOO COM-PA-TÍ-VEIS COM O FIRMWARE> 
  []
 
 [8 </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/introducao/ardupilot_vehicles.jpg>] [9]
-Overfull \hbox (30.8189pt too wide) in paragraph at lines 696--719
+Overfull \hbox (30.8189pt too wide) in paragraph at lines 698--721
  [][] 
  []
 
@@ -705,7 +705,7 @@ Overfull \hbox (30.8189pt too wide) in paragraph at lines 696--719
 <Images/introducao/rasp3b.jpg, id=554, 1248.665pt x 837.1275pt>
 File: Images/introducao/rasp3b.jpg Graphic file (type jpg)
 <use Images/introducao/rasp3b.jpg>
-Package pdftex.def Info: Images/introducao/rasp3b.jpg  used on input line 733.
+Package pdftex.def Info: Images/introducao/rasp3b.jpg  used on input line 735.
 (pdftex.def)             Requested size: 318.66946pt x 213.63713pt.
  [12 </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/introducao/rasp3b.jpg>] [13] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
@@ -720,12 +720,12 @@ Cap\'{\i }tulo 4.
 <Images/Diagramas/hardware_connections.png, id=626, 926.46124pt x 663.47874pt>
 File: Images/Diagramas/hardware_connections.png Graphic file (type png)
 <use Images/Diagramas/hardware_connections.png>
-Package pdftex.def Info: Images/Diagramas/hardware_connections.png  used on input line 909.
+Package pdftex.def Info: Images/Diagramas/hardware_connections.png  used on input line 911.
 (pdftex.def)             Requested size: 318.66946pt x 228.21199pt.
 <Images/Desenvolvimento/omnibus_drone.jpeg, id=627, 642.4pt x 642.4pt>
 File: Images/Desenvolvimento/omnibus_drone.jpeg Graphic file (type jpg)
 <use Images/Desenvolvimento/omnibus_drone.jpeg>
-Package pdftex.def Info: Images/Desenvolvimento/omnibus_drone.jpeg  used on input line 918.
+Package pdftex.def Info: Images/Desenvolvimento/omnibus_drone.jpeg  used on input line 920.
 (pdftex.def)             Requested size: 318.66946pt x 318.68004pt.
 [18
 
@@ -733,77 +733,77 @@ Package pdftex.def Info: Images/Desenvolvimento/omnibus_drone.jpeg  used on inpu
 <Images/Desenvolvimento/pixhawk2_cube_hero.png, id=634, 930.47626pt x 688.07062pt>
 File: Images/Desenvolvimento/pixhawk2_cube_hero.png Graphic file (type png)
 <use Images/Desenvolvimento/pixhawk2_cube_hero.png>
-Package pdftex.def Info: Images/Desenvolvimento/pixhawk2_cube_hero.png  used on input line 937.
+Package pdftex.def Info: Images/Desenvolvimento/pixhawk2_cube_hero.png  used on input line 939.
 (pdftex.def)             Requested size: 182.09485pt x 134.65094pt.
  [19 </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/Desenvolvimento/omnibus_drone.jpeg>]
 <Images/Diagramas/cube_wiring_overview.jpg, id=639, 705.837pt x 573.94424pt>
 File: Images/Diagramas/cube_wiring_overview.jpg Graphic file (type jpg)
 <use Images/Diagramas/cube_wiring_overview.jpg>
-Package pdftex.def Info: Images/Diagramas/cube_wiring_overview.jpg  used on input line 949.
+Package pdftex.def Info: Images/Diagramas/cube_wiring_overview.jpg  used on input line 951.
 (pdftex.def)             Requested size: 318.66946pt x 259.13077pt.
 File: Images/Desenvolvimento/omnibus_drone.jpeg Graphic file (type jpg)
 <use Images/Desenvolvimento/omnibus_drone.jpeg>
-Package pdftex.def Info: Images/Desenvolvimento/omnibus_drone.jpeg  used on input line 960.
+Package pdftex.def Info: Images/Desenvolvimento/omnibus_drone.jpeg  used on input line 962.
 (pdftex.def)             Requested size: 318.66946pt x 318.68004pt.
  [20 </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/Desenvolvimento/pixhawk2_cube_hero.png> </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/Diagramas/cube_wiring_overview.jpg>] [21]
 <Images/Desenvolvimento/sitl_demo.jpg, id=648, 451.6875pt x 338.76563pt>
 File: Images/Desenvolvimento/sitl_demo.jpg Graphic file (type jpg)
 <use Images/Desenvolvimento/sitl_demo.jpg>
-Package pdftex.def Info: Images/Desenvolvimento/sitl_demo.jpg  used on input line 977.
+Package pdftex.def Info: Images/Desenvolvimento/sitl_demo.jpg  used on input line 979.
 (pdftex.def)             Requested size: 318.66946pt x 239.01587pt.
 <Images/Diagramas/sitl_arq.jpg, id=650, 916.92563pt x 525.46312pt>
 File: Images/Diagramas/sitl_arq.jpg Graphic file (type jpg)
 <use Images/Diagramas/sitl_arq.jpg>
-Package pdftex.def Info: Images/Diagramas/sitl_arq.jpg  used on input line 988.
+Package pdftex.def Info: Images/Diagramas/sitl_arq.jpg  used on input line 990.
 (pdftex.def)             Requested size: 318.66946pt x 182.61594pt.
  [22 </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/Desenvolvimento/sitl_demo.jpg>]
 <Images/Desenvolvimento/sim_vehicle.png, id=656, 827.09pt x 128.48pt>
 File: Images/Desenvolvimento/sim_vehicle.png Graphic file (type png)
 <use Images/Desenvolvimento/sim_vehicle.png>
-Package pdftex.def Info: Images/Desenvolvimento/sim_vehicle.png  used on input line 1001.
+Package pdftex.def Info: Images/Desenvolvimento/sim_vehicle.png  used on input line 1003.
 (pdftex.def)             Requested size: 318.66946pt x 49.50317pt.
 <Images/Desenvolvimento/startsitl_nogazebo.png, id=659, 1849.91125pt x 1032.85875pt>
 File: Images/Desenvolvimento/startsitl_nogazebo.png Graphic file (type png)
 <use Images/Desenvolvimento/startsitl_nogazebo.png>
-Package pdftex.def Info: Images/Desenvolvimento/startsitl_nogazebo.png  used on input line 1012.
+Package pdftex.def Info: Images/Desenvolvimento/startsitl_nogazebo.png  used on input line 1014.
 (pdftex.def)             Requested size: 364.19664pt x 203.33727pt.
  [23 </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/Diagramas/sitl_arq.jpg> </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/Desenvolvimento/sim_vehicle.png> </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/Desenvolvimento/startsitl_nogazebo.png>]
 <Images/Desenvolvimento/startsitl.sh.png, id=666, 793.96625pt x 109.40875pt>
 File: Images/Desenvolvimento/startsitl.sh.png Graphic file (type png)
 <use Images/Desenvolvimento/startsitl.sh.png>
-Package pdftex.def Info: Images/Desenvolvimento/startsitl.sh.png  used on input line 1023.
+Package pdftex.def Info: Images/Desenvolvimento/startsitl.sh.png  used on input line 1025.
 (pdftex.def)             Requested size: 364.19664pt x 50.18672pt.
 <Images/Desenvolvimento/sitl_gazebo.png, id=668, 1925.1925pt x 1051.93pt>
 File: Images/Desenvolvimento/sitl_gazebo.png Graphic file (type png)
 <use Images/Desenvolvimento/sitl_gazebo.png>
-Package pdftex.def Info: Images/Desenvolvimento/sitl_gazebo.png  used on input line 1033.
+Package pdftex.def Info: Images/Desenvolvimento/sitl_gazebo.png  used on input line 1035.
 (pdftex.def)             Requested size: 318.66946pt x 174.10669pt.
 <Images/Desenvolvimento/ros_gazebo.png, id=670, 1044.90375pt x 399.4925pt>
 File: Images/Desenvolvimento/ros_gazebo.png Graphic file (type png)
 <use Images/Desenvolvimento/ros_gazebo.png>
-Package pdftex.def Info: Images/Desenvolvimento/ros_gazebo.png  used on input line 1042.
+Package pdftex.def Info: Images/Desenvolvimento/ros_gazebo.png  used on input line 1044.
 (pdftex.def)             Requested size: 318.66946pt x 121.83588pt.
  [24 </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/Desenvolvimento/startsitl.sh.png> </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/Desenvolvimento/sitl_gazebo.png> </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/Desenvolvimento/ros_gazebo.png>]
 <Images/Desenvolvimento/mavros_launch.png, id=681, 1112.155pt x 509.905pt>
 File: Images/Desenvolvimento/mavros_launch.png Graphic file (type png)
 <use Images/Desenvolvimento/mavros_launch.png>
-Package pdftex.def Info: Images/Desenvolvimento/mavros_launch.png  used on input line 1060.
+Package pdftex.def Info: Images/Desenvolvimento/mavros_launch.png  used on input line 1062.
 (pdftex.def)             Requested size: 318.66946pt x 146.10248pt.
 <Images/Desenvolvimento/mavros_execution.png, id=682, 1080.035pt x 509.905pt>
 File: Images/Desenvolvimento/mavros_execution.png Graphic file (type png)
 <use Images/Desenvolvimento/mavros_execution.png>
-Package pdftex.def Info: Images/Desenvolvimento/mavros_execution.png  used on input line 1069.
+Package pdftex.def Info: Images/Desenvolvimento/mavros_execution.png  used on input line 1071.
 (pdftex.def)             Requested size: 318.66946pt x 150.444pt.
  [25 </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/Desenvolvimento/mavros_launch.png>]
 <Images/Desenvolvimento/mavros_rostopic_list.png, id=689, 799.98875pt x 605.26125pt>
 File: Images/Desenvolvimento/mavros_rostopic_list.png Graphic file (type png)
 <use Images/Desenvolvimento/mavros_rostopic_list.png>
-Package pdftex.def Info: Images/Desenvolvimento/mavros_rostopic_list.png  used on input line 1078.
+Package pdftex.def Info: Images/Desenvolvimento/mavros_rostopic_list.png  used on input line 1080.
 (pdftex.def)             Requested size: 318.66946pt x 241.10277pt.
 <Images/Desenvolvimento/mavros_rostopic_echo.png, id=691, 1126.2075pt x 566.115pt>
 File: Images/Desenvolvimento/mavros_rostopic_echo.png Graphic file (type png)
 <use Images/Desenvolvimento/mavros_rostopic_echo.png>
-Package pdftex.def Info: Images/Desenvolvimento/mavros_rostopic_echo.png  used on input line 1087.
+Package pdftex.def Info: Images/Desenvolvimento/mavros_rostopic_echo.png  used on input line 1089.
 (pdftex.def)             Requested size: 318.66946pt x 160.18692pt.
  [26 </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/Desenvolvimento/mavros_execution.png> </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/Desenvolvimento/mavros_rostopic_list.png>] [27 </home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/Images/Desenvolvimento/mavros_rostopic_echo.png>] [28]
 Cap\'{\i }tulo 5.
@@ -812,7 +812,7 @@ Cap\'{\i }tulo 5.
 ]
 Cap\'{\i }tulo 6.
 
-Overfull \hbox (1.40903pt too wide) in paragraph at lines 1150--1160
+Overfull \hbox (1.40903pt too wide) in paragraph at lines 1152--1162
 \T1/lmr/bx/n/12 de Água de Chuva \T1/lmr/m/n/12 [[]], pu-bli-cado no CO-BENGE 2018 [[]],
  []
 
@@ -833,23 +833,23 @@ Ap\^endice A.
 [35
 
 ] [36] [37] [38]
-Overfull \hbox (10.08936pt too wide) in paragraph at lines 1368--1368
+Overfull \hbox (10.08936pt too wide) in paragraph at lines 1370--1370
 []\T1/lmr/bx/n/17.28 Instalando as de-pen-dên-cias ge-o-grá-fi-cas e clo-nando
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1398.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1400.
 [39]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1398.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1400.
  (/home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1398.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1398.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1400.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1400.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 8BD77201F919748E305573320930D403;5331.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1398.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1400.
  ) 
 Here is how much of TeX's memory you used:
  12865 strings out of 481239
@@ -860,7 +860,7 @@ Here is how much of TeX's memory you used:
  1144 hyphenation exceptions out of 8191
  55i,10n,99p,1242b,1902s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on /home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.pdf (52 pages, 4330501 bytes).
+Output written on /home/joaoneto/Documents/TCC/TCC_App_de_Drones_em_Rede/main.pdf (52 pages, 4331500 bytes).
 PDF statistics:
  1030 PDF objects out of 1200 (max. 8388607)
  927 compressed objects within 10 object streams
