@@ -266,13 +266,13 @@ Universidade Federal Fluminense - UFF
 
 \hrulefill \\
 Prof. Alexandre S. de la Vega\\
-INSTITUIÇÃO
+Universidade Federal Fluminense - UFF
 
 \vfill
 
 \hrulefill \\
 Prof. Lauro Eduardo Kozovits\\
-INSTITUIÇÃO
+Universidade Federal Fluminense - UFF
 
 \vfill
 
@@ -307,9 +307,9 @@ sobre computadores de bordo~\cite{url:ardupilot-companioncomputers}.\\
 Para a escolha do computador de bordo foram levados mais em conta fatores de custo e popularidade, com isso a plataforma 
 \textit{Raspberry Pi}~\cite{url:raspberrypi} foi a selecionada para esse fim.\\
 %
-A partir da arquitetura proposta, várias aplicações além da visão computacional são possíveis. Como o computador de bordo em questão 
-possui um sistema operacional com propósito geral baseado em \textit{debian}~\cite{url:debian}, além de outras capacidades de Hardware como portas 
-\textit{GPIO} para acoplamento de sensores e atuadores e outros barramentos para conexão de periféricos, as possibilidades para esse hardware são muitas.\\
+A partir da arquitetura proposta, várias aplicações além da visão computacional são possíveis. O computador de bordo em questão 
+possui um sistema operacional baseado em \textit{debian}~\cite{url:debian}, além de outras capacidades de hardware como portas 
+\textit{GPIO} para acoplamento de sensores e atuadores e outros barramentos para conexão de periféricos. Logo, as possibilidades para complementos de funcionalidades são muitas.\\
 %
 Com isso, a aplicação proposta nesse trabalho será a conexão desse computador de bordo à uma rede IP. Várias capacidades da plataforma 
 \textit{Raspberry Pi} serão exploradas nos experimentos que sucederão, além disso, serão desenvolvidas aplicações para testar o conceito de 
@@ -398,7 +398,7 @@ desse projeto.
 %
 Agradecemos à comunidade Arducopter pelo grande esforço colaborativo em desenvolver varias das ferramentas utilizadas nesse projeto.
 %
-Agradeço à Larissa, minha namorada, por todo apoio, carinho e incentivo durante a minha graduação.
+Eu, João, agradeço à Larissa, minha namorada, por todo apoio, carinho e incentivo durante a graduação.
 %
 Agradecemos aos nossos familiares pela cobrança e incentivo nos estudos.
 %
@@ -515,7 +515,9 @@ Por último, visa-se a construção e configuração de um drone com o sistema e
 \section{Organização do documento}
 Resumir os seguintes pontos:
 \begin{enumerate}
-    \item Introducao teorica
+    \item Introdução teórica
+    O avanço da interconectividade de aparelhos através das redes vem sendo explorada e, em vista disso, tivemos a ideia de acoplar um computador de bordo com acesso à internet a um \textit{VANT}. Os drones, que compõem um tipo específico de \textit{VANT}, tem acoplados juntamente a eles uma controladora, que em nosso caso chama-se \textit{PixHawk}. Com o intuito de fazer a comunicação entre drone e usuário, além de utilizar o protocolo \textit{UART}, está sendo implementado em uma camada acima, o protocolo \textit{Mavlink}. Tratando-se de drones, essa troca de dados é traduzida em telemetria, que podem ser filtradas e processadas pelo usuário. 
+    
     \item Definições
     \item Arquitetura Proposta
     \item Metodologia
