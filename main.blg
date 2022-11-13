@@ -6,45 +6,45 @@ Database file #1: ./MyBibFiles/my_refs.bib
 Warning--empty year in url:equipeuffo
 Warning--empty year in django
 Warning--empty year in mavlink
-You've used 17 entries,
+You've used 12 entries,
             1935 wiz_defined-function locations,
-            554 strings with 7376 characters,
-and the built_in function-call counts, 4698 in all, are:
-= -- 507
-> -- 148
-< -- 18
-+ -- 45
-- -- 44
-* -- 287
-:= -- 917
-add.period$ -- 68
-call.type$ -- 17
-change.case$ -- 107
-chr.to.int$ -- 16
-cite$ -- 20
-duplicate$ -- 188
-empty$ -- 276
-format.name$ -- 67
-if$ -- 887
+            529 strings with 5981 characters,
+and the built_in function-call counts, 3100 in all, are:
+= -- 340
+> -- 90
+< -- 12
++ -- 27
+- -- 26
+* -- 180
+:= -- 622
+add.period$ -- 48
+call.type$ -- 12
+change.case$ -- 73
+chr.to.int$ -- 11
+cite$ -- 15
+duplicate$ -- 120
+empty$ -- 181
+format.name$ -- 40
+if$ -- 573
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 2
-newline$ -- 105
-num.names$ -- 51
-pop$ -- 52
+missing$ -- 0
+newline$ -- 75
+num.names$ -- 36
+pop$ -- 31
 preamble$ -- 1
-purify$ -- 107
+purify$ -- 73
 quote$ -- 0
-skip$ -- 160
+skip$ -- 102
 stack$ -- 0
-substring$ -- 212
-swap$ -- 12
-text.length$ -- 2
+substring$ -- 144
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 102
+type$ -- 72
 warning$ -- 3
-while$ -- 36
+while$ -- 24
 width$ -- 0
-write$ -- 239
+write$ -- 167
 (There were 3 warnings)

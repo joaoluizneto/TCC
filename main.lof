@@ -1,27 +1,27 @@
 \babel@toc {brazilian}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Classificação de VANTs por tipo de pouso, aerodinâmica e quantidade de rotores.\relax }}{5}{figure.caption.8}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Veículos suportados pelo ArduPilot.\relax }}{8}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Raspberry Pi Revision 2.0.\relax }}{12}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Classificação de VANTs por tipo de pouso, aerodinâmica e quantidade de rotores.\relax }}{6}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Veículos suportados pelo ArduPilot.\relax }}{9}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Raspberry Pi Revision 2.0.\relax }}{14}{figure.caption.17}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Conexões de hardware para Omnibus F4 Pro V3.\relax }}{18}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Bancada de trabalho com o drone quadricóptero.\relax }}{19}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Pixhawk 2 Cube Hero.\relax }}{20}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Conexões de hardware para a Pixhawk 2 Cube Hero.\relax }}{20}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Bancada de trabalho com o drone quadricóptero.\relax }}{21}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Demonstração do Software In The Loop.\relax }}{22}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Arquitetura do Software In The Loop\relax }}{23}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces sim\_vehicle.py\relax }}{23}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces startsitl\_nogazebo.sh\relax }}{23}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces startsitl.sh com Gazebo\relax }}{24}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Software In The Loop com Gazebo\relax }}{24}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Nó do Gazebo - ROS\relax }}{24}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces apm.launch do Pacote Mavros\relax }}{25}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Execução do Mavros\relax }}{26}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Tópicos do Mavros\relax }}{26}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Tópicos do Mavros\relax }}{27}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Conexões de hardware para Omnibus F4 Pro V3.\relax }}{20}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Bancada de trabalho com o drone quadricóptero.\relax }}{21}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Pixhawk 2 Cube Hero.\relax }}{22}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Conexões de hardware para a Pixhawk 2 Cube Hero.\relax }}{22}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Bancada de trabalho com o drone quadricóptero.\relax }}{23}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Demonstração do Software In The Loop.\relax }}{24}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Arquitetura do Software In The Loop\relax }}{25}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces sim\_vehicle.py\relax }}{25}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces startsitl\_nogazebo.sh\relax }}{25}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces startsitl.sh com Gazebo\relax }}{26}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Software In The Loop com Gazebo\relax }}{26}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Nó do Gazebo - ROS\relax }}{26}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces apm.launch do Pacote Mavros\relax }}{27}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Execução do Mavros\relax }}{28}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Tópicos do Mavros\relax }}{28}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Tópicos do Mavros\relax }}{29}{figure.caption.35}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
