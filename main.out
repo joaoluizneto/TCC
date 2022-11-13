@@ -35,34 +35,35 @@
 \BOOKMARK [1][-]{section.4.2}{Montagem do drone hexac\363ptero}{chapter.4}% 35
 \BOOKMARK [2][-]{subsection.4.2.1}{Diagrama de conex\343o dos componentes de hardware}{section.4.2}% 36
 \BOOKMARK [1][-]{section.4.3}{Ambiente de simula\347\343o}{chapter.4}% 37
-\BOOKMARK [1][-]{section.4.4}{Arquitetura do software desenvolvido}{chapter.4}% 38
-\BOOKMARK [1][-]{section.4.5}{Arquitetura da aplica\347\343o de rede}{chapter.4}% 39
-\BOOKMARK [1][-]{section.4.6}{Outras arquiteturas poss\355veis para o sistema proposto}{chapter.4}% 40
-\BOOKMARK [0][-]{chapter.5}{Resultados}{}% 41
-\BOOKMARK [0][-]{chapter.6}{Conclus\343o}{}% 42
-\BOOKMARK [0][-]{chapter.7}{Sugest\365es para trabalhos futuros}{}% 43
-\BOOKMARK [0][-]{chapter*.25}{Refer\352ncias}{}% 44
-\BOOKMARK [0][-]{appendix.A}{Ap\352ndice 1}{}% 45
-\BOOKMARK [1][-]{section.A.1}{Intalando o ArduPilot e MavProxy}{appendix.A}% 46
-\BOOKMARK [2][-]{subsection.A.1.1}{Clonando o reposit\363rio git para sua m\341quina}{section.A.1}% 47
-\BOOKMARK [2][-]{subsection.A.1.2}{Instalando as depend\352ncias e recompilando o perfil}{section.A.1}% 48
-\BOOKMARK [2][-]{subsection.A.1.3}{Mudando para a branch do ArduCopter}{section.A.1}% 49
-\BOOKMARK [2][-]{subsection.A.1.4}{Rodando SITL \(Software In The Loop\)}{section.A.1}% 50
-\BOOKMARK [1][-]{section.A.2}{Instalando o Gazebo e o plugin do ArduPilot}{appendix.A}% 51
-\BOOKMARK [2][-]{subsection.A.2.1}{Atualizando a lista de fontes para download}{section.A.2}% 52
-\BOOKMARK [2][-]{subsection.A.2.2}{Instalando o plugin do Gazebo para comunica\347\343o com o ArduPilot}{section.A.2}% 53
-\BOOKMARK [2][-]{subsection.A.2.3}{Executando a simula\347\343o}{section.A.2}% 54
-\BOOKMARK [1][-]{section.A.3}{Instalando o ROS e o configurando o Catkin}{appendix.A}% 55
-\BOOKMARK [2][-]{subsection.A.3.1}{Atualizando a lista de fontes para download}{section.A.3}% 56
-\BOOKMARK [2][-]{subsection.A.3.2}{Instalando o ROS}{section.A.3}% 57
-\BOOKMARK [2][-]{subsection.A.3.3}{Configurando o ambiente}{section.A.3}% 58
-\BOOKMARK [2][-]{subsection.A.3.4}{Instalando as depend\352ncias para os pacotes dos ROS}{section.A.3}% 59
-\BOOKMARK [2][-]{subsection.A.3.5}{Configurando o Catkin}{section.A.3}% 60
-\BOOKMARK [2][-]{subsection.A.3.6}{Instalando as depend\352ncias para o Catkin}{section.A.3}% 61
-\BOOKMARK [2][-]{subsection.A.3.7}{Instalando as MAVROS e MAVLink}{section.A.3}% 62
-\BOOKMARK [2][-]{subsection.A.3.8}{Atualizando o arquivo .bachrc}{section.A.3}% 63
-\BOOKMARK [1][-]{section.A.4}{Instalando as depend\352ncias geogr\341ficas e clonando o reposit\363rio de simula\347\343o do Intelligent Quads}{appendix.A}% 64
-\BOOKMARK [2][-]{subsection.A.4.1}{Instalando as depend\352ncias geogr\341ficas}{section.A.4}% 65
-\BOOKMARK [2][-]{subsection.A.4.2}{Clonando pacote ROS de simula\347\343o do Intelligent Quads}{section.A.4}% 66
-\BOOKMARK [1][-]{section.A.5}{Instalando o QGround Control}{appendix.A}% 67
-\BOOKMARK [2][-]{subsection.A.5.1}{Alterando permiss\365es e instalando o QGround Control}{section.A.5}% 68
+\BOOKMARK [1][-]{section.4.4}{Ambiente de Simula\347\343o com o Mavros}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.5}{Arquitetura da aplica\347\343o}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.6}{Arquitetura da aplica\347\343o de rede}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.7}{Outras arquiteturas poss\355veis para o sistema proposto}{chapter.4}% 41
+\BOOKMARK [0][-]{chapter.5}{Resultados}{}% 42
+\BOOKMARK [0][-]{chapter.6}{Conclus\343o}{}% 43
+\BOOKMARK [0][-]{chapter.7}{Sugest\365es para trabalhos futuros}{}% 44
+\BOOKMARK [0][-]{chapter*.35}{Refer\352ncias}{}% 45
+\BOOKMARK [0][-]{appendix.A}{Ap\352ndice 1}{}% 46
+\BOOKMARK [1][-]{section.A.1}{Intalando o ArduPilot e MavProxy}{appendix.A}% 47
+\BOOKMARK [2][-]{subsection.A.1.1}{Clonando o reposit\363rio git para sua m\341quina}{section.A.1}% 48
+\BOOKMARK [2][-]{subsection.A.1.2}{Instalando as depend\352ncias e recompilando o perfil}{section.A.1}% 49
+\BOOKMARK [2][-]{subsection.A.1.3}{Mudando para a branch do ArduCopter}{section.A.1}% 50
+\BOOKMARK [2][-]{subsection.A.1.4}{Rodando SITL \(Software In The Loop\)}{section.A.1}% 51
+\BOOKMARK [1][-]{section.A.2}{Instalando o Gazebo e o plugin do ArduPilot}{appendix.A}% 52
+\BOOKMARK [2][-]{subsection.A.2.1}{Atualizando a lista de fontes para download}{section.A.2}% 53
+\BOOKMARK [2][-]{subsection.A.2.2}{Instalando o plugin do Gazebo para comunica\347\343o com o ArduPilot}{section.A.2}% 54
+\BOOKMARK [2][-]{subsection.A.2.3}{Executando a simula\347\343o}{section.A.2}% 55
+\BOOKMARK [1][-]{section.A.3}{Instalando o ROS e o configurando o Catkin}{appendix.A}% 56
+\BOOKMARK [2][-]{subsection.A.3.1}{Atualizando a lista de fontes para download}{section.A.3}% 57
+\BOOKMARK [2][-]{subsection.A.3.2}{Instalando o ROS}{section.A.3}% 58
+\BOOKMARK [2][-]{subsection.A.3.3}{Configurando o ambiente}{section.A.3}% 59
+\BOOKMARK [2][-]{subsection.A.3.4}{Instalando as depend\352ncias para os pacotes dos ROS}{section.A.3}% 60
+\BOOKMARK [2][-]{subsection.A.3.5}{Configurando o Catkin}{section.A.3}% 61
+\BOOKMARK [2][-]{subsection.A.3.6}{Instalando as depend\352ncias para o Catkin}{section.A.3}% 62
+\BOOKMARK [2][-]{subsection.A.3.7}{Instalando as MAVROS e MAVLink}{section.A.3}% 63
+\BOOKMARK [2][-]{subsection.A.3.8}{Atualizando o arquivo .bachrc}{section.A.3}% 64
+\BOOKMARK [1][-]{section.A.4}{Instalando as depend\352ncias geogr\341ficas e clonando o reposit\363rio de simula\347\343o do Intelligent Quads}{appendix.A}% 65
+\BOOKMARK [2][-]{subsection.A.4.1}{Instalando as depend\352ncias geogr\341ficas}{section.A.4}% 66
+\BOOKMARK [2][-]{subsection.A.4.2}{Clonando pacote ROS de simula\347\343o do Intelligent Quads}{section.A.4}% 67
+\BOOKMARK [1][-]{section.A.5}{Instalando o QGround Control}{appendix.A}% 68
+\BOOKMARK [2][-]{subsection.A.5.1}{Alterando permiss\365es e instalando o QGround Control}{section.A.5}% 69

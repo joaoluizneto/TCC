@@ -925,12 +925,12 @@ Após a ligação dos componentes eletrônicos, o teste de conexão entre o Rasp
 
 Dessa forma, conseguiu-se comandar o drone a partir do computador de bordo e receber dados de telemetria do mesmo. Entretanto, não foi possível acoplar o módulo de GPS na controladora já que o módulo em questão não se mostrou compatível com a mesma.
 
-As pesquisas e soluções de problemas oriundos da execução dessa etapa foram cruciais para adiquirir maturidade na montagem, configuração e acoplamento dos componentes. Além disso, o conhecimento adiquirido das ferramentas utilizadas para conectar o computador de bordo ao drone também foram excenciais. Entretanto, escolhemos mudar o hardware utilizado para uma configuração de drone mais convencional na comunidade ArduPilot, com a controladora Pixhawk. 
+As pesquisas e soluções de problemas oriundos da execução dessa etapa foram cruciais para adiquirir maturidade na montagem, configuração e acoplamento dos componentes. Além disso, o conhecimento adiquirido das ferramentas utilizadas para conectar o computador de bordo ao drone também foram excenciais. Entretanto, escolhemos mudar o hardware utilizado para uma configuração de drone mais convencional na comunidade ArduPilot, com a controladora Pixhawk Cube. 
 
 
 \section{Montagem do drone hexacóptero}
 
-Após os problemas obtidos no drone quadcóptero com a controladora Omnibus, trocamos o hardware utilizado para um drone hexacóptero com a controladora Pixhawk Cube. 
+Após os problemas obtidos no drone quadcóptero com a controladora Omnibus, trocamos o hardware utilizado para um drone hexacóptero com a controladora Pixhawk Cube. Tal aeronave já estava operacional antes de acoplarmos o Raspberrypi, isto é, era possível realizar todas as funções básicas que a controladora por si só é capaz de fazer.
 %
 \begin{figure}[!htbp]
   \centering
@@ -968,17 +968,131 @@ Com isso, obtemos a seguinte conexão dos componentes:
 <características desse hardware>
 <capacidades desse drone>
 
+\newpage
+
 \section{Ambiente de simulação}
 %
 \begin{figure}[!htbp]
   \centering
-  \includegraphics[width=0.7\textwidth]{Images/Diagramas/sitl.jpeg}
-  \caption{Software In The Loop.}
-  \label{fig:sitl.jpeg.0}
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/sitl_demo.jpg}
+  \caption{Demonstração do Software In The Loop.}
+  \label{fig:sitl_demo.jpg.0}
 \end{figure}
 %
 
-\section{Arquitetura do software desenvolvido}
+O projeto ArduPilot possui um rico conjunto de ferramentas que auxiliam no desenvolvimento de aplicações para drones. O próprio código fonte do firmware ArduPilot pode ser compilado e carregado em um ambiente de simulação. O executável responsável por isso é chamado SITL (Software In The Loop), cujo digrama é apresentado na figura \ref{fig:sitl_arq.jpg.0}, esse programa consegue integrar-se com outros formando um ambiente de simulação completo. O MavProxy é utilizado para fazer a interface de comunicação entre o operador e a controladora em ambiente simulado. Além disso, é possível integrar com um simulador de física e dessa forma simular a dinâmica de voo da aeronave. A simulação da dinâmica de voo da aeronave geralmente vem acompanhada com a integração de algum software de visualização como no caso do Flight Gear e do Gazebo, o qual estaremos utilizando. A integração de todos esses componentes no ambiente de simulação forma um loop, e com isso temos o nome Software In The Loop. Essa aplicação é essencial para o desenvolvimento pois permite a execução do ArduPilot sem a utilizaçao de nenhum hardware.
+
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Diagramas/sitl_arq.jpg}
+  \caption{Arquitetura do Software In The Loop}
+  \label{fig:sitl_arq.jpg.0}
+\end{figure}
+%
+
+
+
+A inicialização do SITL é feita utilizando o script python demonstrado na figura \ref{fig:sim_vehicle.png.0}, que é disponibilizado junto ao código fonte do ArduPilot no seu repositorio do github.
+
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/sim_vehicle.png}
+  \caption{sim\_vehicle.py}
+  \label{fig:sim_vehicle.png.0}
+\end{figure}
+%
+
+Como demonstrado na figura \ref{fig:sim_vehicle.png.0} criamos um script bash para executar o ambiente de simulação, nos parametros especificamos que queremos simular o firmware ArduCopter, utilizando as interfaces de mapa e console. Além disso, inserimos como parametro a localização em coordenadas do campo de futebol da UFF no Campus de Gragoatá. O resultado da execução desse script pode ser visualisado na figura \ref{fig:startsitl_nogazebo.png.0}.
+
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Images/Desenvolvimento/startsitl_nogazebo.png}
+  \caption{startsitl\_nogazebo.sh}
+  \label{fig:startsitl_nogazebo.png.0}
+\end{figure}
+%
+
+Fizemos também um segundo script bash com os parametros necessários para a conexão com o Gazebo, que é o software que simula um mundo em 3D para o drone. Separamos nesses dois scripts, pois na maioria das vezes a simulação em 3D nao é necessária e consome muito dos recursos da máquina que a executa.
+
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Images/Desenvolvimento/startsitl.sh.png}
+  \caption{startsitl.sh com Gazebo}
+  \label{fig:startsitl_nogazebo.png.0}
+\end{figure}
+%
+
+O modelo de mundo 3D utilizado no Gazebo para a integração com o SITL foi obtido a partir do repositorio de un canal do \textit{Youtube} chamado \cite{url:iq}. 
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/sitl_gazebo.png}
+  \caption{Software In The Loop com Gazebo}
+  \label{fig:sitl_gazebo.png.0}
+\end{figure}
+%
+Essa instancia do Gazebo é iniciada a partir de um nó do ROS, que é executado com o comando da figura \ref{fig:ros_gazebo.png.0}.
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/ros_gazebo.png}
+  \caption{Nó do Gazebo - ROS}
+  \label{fig:ros_gazebo.png.0}
+\end{figure}
+%
+
+Com isso, obtemos um ambiente de teste de desenvolvimento para as aplicações que sucederão. Os benefícios de se utilizar um ambiente de simulaçao como este é que não colocamos em risco o equipamento de hardware, nem as pessoas que seriam envolvidas em testes de campo. Além disso, o teste no ambiente computacional se torna mais prático, descartando toda a logística necessária para se deslocar com todo o equipamento para um campo aberto e com baixa densidade populacional.
+
+O processo de instalação do ambiente de desenvolvimento do ArduPilot está bem documentado nos appendices deste documento, nesse processo também está incluído a instalação de dependencias para executar o ambiente de simulação. 
+
+\section{Ambiente de Simulação com o Mavros}
+
+O Mavros como dito na parte introdutória, é um nó de ROS que publica e subscreve dados da controladora de voo, essas mensagens são trocadas utilizando o protocolo MAVLink. O Mavros é geralmente configurado para realizar a comunicação através de um dispositivo serial, que no linux é identificado por um arquivo no diretório /dev. Entretanto, para fazer o Mavros se comunicar com o SITL, deve-se fazer uma modificação no arquivo de inicialização, arquivo com extensão \textit{.launch} no diretório launch do pacote.
+
+No diretório launch do pacote são observados vários arquivos \textit{.launch} utilizados para iniciar o nó do Mavros com diferentes parâmetros. O apm.launch foi modificado como indicado na figura \ref{fig:mavros_launch.png.0}, para utilizar a porta de rede específica do MavProxy no SITL e não o dispositivo serial, comentado na linha superior.
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/mavros_launch.png}
+  \caption{apm.launch do Pacote Mavros}
+  \label{fig:mavros_launch.png.0}
+\end{figure}
+%
+Com essa modificação, o nó do Mavros pode ser iniciado normalmente em conjunto com o SITL e é possível subscrever e publicar mensagens MAVLink nos tópicos para a controladora de voo no ambiente simulado. 
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/mavros_execution.png}
+  \caption{Execução do Mavros}
+  \label{fig:mavros_execution.png.0}
+\end{figure}
+%
+Alguns dos tópicos providos pelo Mavros são listados pelo comando rostopic list na figura \ref{fig:mavros_rostopic_list.png.0}. 
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/mavros_rostopic_list.png}
+  \caption{Tópicos do Mavros}
+  \label{fig:mavros_rostopic_list.png.0}
+\end{figure}
+%
+Por exemplo, o tópico correspondente a localização GPS da controladora de voo é o global\_position. É possível subscrever e acompanhar as mensagens que chegam da controladora nesse tópico pelo comando da figura \ref{fig:mavros_rostopic_echo.png.0}.
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/mavros_rostopic_echo.png}
+  \caption{Tópicos do Mavros}
+  \label{fig:mavros_rostopic_echo.png.0}
+\end{figure}
+%
+
+Os tópicos do ROS são fácilmente acessados através de linguagens de programação como C++ e Python. Em particular esta última, possui um módulo chamado rospy que permite a criação de aplicações do ROS, com este módulo é possível desenvolver nós inteiramente usando Python. Agora que temos o Mavros agindo como interface da aeronave, é possível desenvolver o software embarcado que também será um nó, ele irá se comunicar com o Mavros e com a aplicação em Django que será desenvolvida.
+
+\section{Arquitetura da aplicação}
 
 <mostrar diagrama estrutural>
 
