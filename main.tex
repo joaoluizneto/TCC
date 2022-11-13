@@ -266,13 +266,13 @@ Universidade Federal Fluminense - UFF
 
 \hrulefill \\
 Prof. Alexandre S. de la Vega\\
-Universidade Federal Fluminense - UFF
+INSTITUIÇÃO
 
 \vfill
 
 \hrulefill \\
 Prof. Lauro Eduardo Kozovits\\
-Universidade Federal Fluminense - UFF
+INSTITUIÇÃO
 
 \vfill
 
@@ -297,7 +297,7 @@ Niterói -- RJ
 %
 \thispagestyle{myheadings}
 %
-Este trabalho é o fruto de um esforço em conjunto entre vários discentes e docentes da UFF e iniciativa privada, todos com mútuo 
+Este trabalho é o fruto de um esforço conjunto entre vários discentes e docentes da UFF e iniciativa privada, todos com mútuo 
 interesse por VANTs e suas aplicações. O projeto inicial era ideia da Equipe UFFO~\cite{url:equipeuffo} - construir um \textit{drone} 
 para vigilância dos campi da UFF. O hardware a ser utilizado era um quadricóptero equipado com um sistema FPV de transmissão analógica. 
 Posteriormente, houve-se o interesse de equipar um computador de bordo no \textit{drone} em questão, para fazer aplicações no campo 
@@ -307,9 +307,9 @@ sobre computadores de bordo~\cite{url:ardupilot-companioncomputers}.\\
 Para a escolha do computador de bordo foram levados mais em conta fatores de custo e popularidade, com isso a plataforma 
 \textit{Raspberry Pi}~\cite{url:raspberrypi} foi a selecionada para esse fim.\\
 %
-A partir da arquitetura proposta, várias aplicações além da visão computacional são possíveis. O computador de bordo em questão 
-possui um sistema operacional baseado em \textit{debian}~\cite{url:debian}, além de outras capacidades de hardware como portas 
-\textit{GPIO} para acoplamento de sensores e atuadores e outros barramentos para conexão de periféricos. Logo, as possibilidades para complementos de funcionalidades são muitas.\\
+A partir da arquitetura proposta, várias aplicações além da visão computacional são possíveis. Como o computador de bordo em questão 
+possui um sistema operacional com propósito geral baseado em \textit{debian}~\cite{url:debian}, além de outras capacidades de Hardware como portas 
+\textit{GPIO} para acoplamento de sensores e atuadores e outros barramentos para conexão de periféricos, as possibilidades para esse hardware são muitas.\\
 %
 Com isso, a aplicação proposta nesse trabalho será a conexão desse computador de bordo à uma rede IP. Várias capacidades da plataforma 
 \textit{Raspberry Pi} serão exploradas nos experimentos que sucederão, além disso, serão desenvolvidas aplicações para testar o conceito de 
@@ -341,6 +341,7 @@ The on-board computer was chosen taking into account the cost and popularity, th
 Based on the proposed architecture, countless features may be implemmented by using its hardware. The on-board computer has an operating system based on debian~\cite{url:debian}, moreover it has numerous GPIO ports that enables the communication to sensors or actuators and also other buses to connect peripherals devices. Hence, there are a plenty possibilities of addons and functionalities.\\ 
 %
 Therefore, the proposed application of this thesis will be the connection between the on-board computer to an IP network. Many possibilities of Raspberry Pi will be studied and explored in future experiments, besides that, there will be developed some applications to test the concept of drones on a computer network.
+
 \bigskip
 
 \hl{ Keywords: Raspberry Pi. Drones. UAV. ROS. UFFO Team. Robotics. Ardupilot. Pixhawk}
@@ -379,8 +380,6 @@ Therefore, the proposed application of this thesis will be the connection betwee
 
 \thispagestyle{myheadings}
 %
-Espaço reservado para os agradecimentos.
-%
 Agradecemos ao Prof. Alexandre pela orientação durante a nossa estadia no grupo do PET-Tele. Através, 
 da nossa participação no grupo foi possível termos um primeiro contato com as plataformas de desenvolvimento 
 Arduino e \textit{Raspberry Pi}~\cite{url:raspberrypi}, além de outras atividades que contribuíram para nosso
@@ -399,7 +398,7 @@ desse projeto.
 %
 Agradecemos à comunidade Arducopter pelo grande esforço colaborativo em desenvolver varias das ferramentas utilizadas nesse projeto.
 %
-Eu, João, agradeço à Larissa, minha namorada, por todo apoio, carinho e incentivo durante a graduação.
+Agradeço à Larissa, minha namorada, por todo apoio, carinho e incentivo durante a minha graduação.
 %
 Agradecemos aos nossos familiares pela cobrança e incentivo nos estudos.
 %
@@ -471,30 +470,34 @@ TXD - \textit{Transmit Data}\\
 \thispagestyle{empty} 
 %
 %
-Atrelado à popularização da tecnologia, o barateamento dos \textit{drones} tornou-o capaz de ser usado para além do âmbito militar, 
-ganhando espaço nas industrias cinematográficas, esportivas e do entretenimento, fora para o uso pessoal.\\
-Somado à isso, com o barateamento e miniaturização dos componentes eletrônicos nas últimas décadas, surgiram diversas plataformas de 
-difusão de estudos sobre possíveis aplicações é, portanto, uma consequência inevitável. Dessa forma, abre-se um leque de possibilidades 
-para explorar as atividades que um VANT (Veículo Aéreo Não Tripulado) pode executar.\\
+Atrelado à popularização da tecnologia, o barateamento dos \textit{drones} tornaram-los capazes de serem usados para além do âmbito militar, ganhando espaço nas industrias cinematográficas, esportivas e do entretenimento, fora para o uso pessoal.
 
+Somado à isso, com o barateamento e miniaturização dos componentes eletrônicos nas últimas décadas, surgiram diversas plataformas eletrônicas de prototipagem, como o Arduíno e também mini computadores como o Raspberry Pi, o que popularizou o estudo das mesmas no âmbito dos drones. 
 
+O uso de mini computadores como o Raspberry Pi já é difundido em aplicações de IOT e robótica e recentemente a comunidade do Ardupilot também explorou e documentou a utilização da plataforma como um computador de bordo, abrindo um leque de possibilidades para as atividades que um VANT (Veículo Aéreo Não Tripulado) pode executar. 
+
+Um computador de bordo permite a utilização de um sistema operacinal completo, e por consequência oferece vários benefícios, como por exemplo capacidades de conexão à rede e a utilização de diversas tecnologias que facilitam o desenvolvimento de drones inteligentes.
+
+Dessa forma, partindo da tecnologia para a utilização de computadores de bordo em drones é possível explorar as capacidades desse sistema conectado à rede. Além disso, é inevitavel a criação de sistemas capazes de realizar o gerenciamento e controle dessas aeronaves através da própria internet, o que será abordado nesse documento.
 
 \section{Motivações}
 
 O sentimento de interesse e empolgação pela tecnologia dos drones dos autores desse texto foram as forças primordiais para a concepção 
 do trabalho que se segue. Tal interesse nasceu dentro da Universidade Federal Fluminense através da equipe UFFO~\cite{url:equipeuffo}, 
-formada por discentes e docentes da universidade.\\
+formada por discentes e docentes da universidade.
+
 Com a experiência adquirida na confecção de um drone quadcóptero simples, descobriu-se a possibilidade de acoplar a este um 
-Raspberry Pi~\cite{url:raspberrypi} como computador de bordo da aeronave, expandindo suas capacidades.\\
-A partir desta ideia, foram realizados estudos para buscar os métodos e tecnologias mais recentes utilizados nessa configuração de drone. 
+Raspberry Pi~\cite{url:raspberrypi} como computador de bordo da aeronave, expandindo suas capacidades. A partir desta ideia, foram realizados estudos para buscar os métodos e tecnologias mais recentes utilizados nessa configuração de drone. 
 Felizmente, muitas dessas tecnologias utilizadas já estavam disponíveis na documentação Open Source do Ardupilot~\cite{url:ardupilotdoc} 
 para o equipamento utilizado.
 
 \section{Objetivo}
 
-O primeiro objetivo deste trabalho é projetar, construir e testar uma conexão de  um drone a uma rede \textit{IP}, visando facilitar a coleta de dados e o controle do drone em si. Para isso, no ambiente simulado, utilizaremos uma rede \textit{wi-fi} para realizazr o envio de dados do drone a um servidor remoto, cujo intuito é armazenar, processar e exibir informações coletadas pelo drone. O segundo objetivo, agora fora do ambiente de simulação, gira em torno do estudo da viabilidade e benefícios 
-de uma conexão utilizando a tecnologia LTE. ampliando o ambiente de funcionamento para muito além do alcance do \textit{wi-fi}.
-\textit{IP}.  
+O primeiro objetivo deste trabalho será o estudo e planejamento da arquitetura do sistema proposto, desde o hardware a ser utilizado, às ferramentas de software e a arquitetura da aplicação que será desenvolvida. 
+
+O segundo objetivo é o desenvolvimento de uma aplicação utilizando as ferramentas e a arquitetura proposta no objetivo anterior. Além disso, o funcionamento do sistema será validado através de um ambiente de simulação. A validação será feita a partir da análise dos resultados.
+
+Por último, com a apuração do sistema, visa-se a construção e configuração de um drone, com as mesmas especificações do usado no segundo objetivo, isso inclui todo o sistema embarcado proposto. Finalmente, serão analisados os resultado obtidos.  
 
 \section{Resultados esperados}
 
@@ -510,15 +513,51 @@ de uma conexão utilizando a tecnologia LTE. ampliando o ambiente de funcionamen
  \cite{artigo_relacionado_1}
 
 \section{Organização do documento}
-Resumir os seguintes pontos:
+
 \begin{enumerate}
-    \item Introdução teórica
-    O avanço da interconectividade de aparelhos através das redes vem sendo explorada e, em vista disso, tivemos a ideia de acoplar um computador de bordo com acesso à internet a um \textit{VANT}. Os drones, que compõem um tipo específico de \textit{VANT}, tem acoplados juntamente a eles uma controladora, que em nosso caso chama-se \textit{PixHawk}. Com o intuito de fazer a comunicação entre drone e usuário, além de utilizar o protocolo \textit{UART}, está sendo implementado em uma camada acima, o protocolo \textit{Mavlink}. Tratando-se de drones, essa troca de dados é traduzida em telemetria, que podem ser filtradas e processadas pelo usuário. 
-    
-    \item Definições
-    \item Arquitetura Proposta
-    \item Metodologia
+     \item Introdução teórica 
+     
+     \begin{enumerate}
+     
+         \item Definições
+         
+         Apesar da crescente difusão dos drones na sociedade geral, muitos termos ainda não são conhecidos e devem ser explicados a fim de se compreender a teoria em volta do nosso projeto. Resumidamente, discutiremos os tipos de drones mais comumente comercializados, qual a utilidade de cada parte essencial para um drone operar,  os \textit{softwares} embarcados, o computador de bordo e alguns complementos para aperfeiçoar o projeto.
+         
+         \item Arquitetura Proposta
+ 
+         Desejamos que, após agregar todas as tecnologias introduzidas, elaborar um sistema composto por uma controladora de \textit{firmware ardupilot} e um computador de bordo capaz de se conectar com uma rede de computadores. O \textit{software} embarcado será desenvolvido utilizando \textit{ROS} e uma \textit{API} será programada em \textit{django} para centralizar a conexão do drone via rede.
+ 
+     \end{enumerate}
+     
+     \item Metodologia
+ 
+     \item Detalhamento da solução \label{item:solucao}
+     
+     A nível de \textit{hardware}, para realizar testes iniciais da 
+     solução, escolheu-se um drone quadricóptero, a controladora 
+     Omnibus f4 pro, um Rapberry Pi, além do \textit{software MavProxy}. 
+     Por outro lado, a parte de \textit{software} do projeto, gira em torno
+     da conexão entre o pacote \textit{MAVros}, baseado no protocolo 
+     \textit{MAVLink}, e o \textit{django framework}.
+     
+     Em resumo, a
+     arquitetura se baseia num modelo cliente-servidor, onde o Rapberry
+     é o cliente, e o \textit{django} o servidor, ambos conectados numa mesma
+     rede via VPN. Idealmente, outras possíveis soluções seria a conexão de
+     um modem LTE (4G) ou NR (5G), o qual permitiria a conexão sem limitações de 
+     distância, bastaria estar na área de cobertura do sinal de rede móvel.
+
+     \item Resultados
+     
+     Estabelecemos com sucesso a conexão entre cliente e servidor. O cliente, composto
+     pelo drone, controladora e \textit{Raspberry}, coleta, processa e envia ao servidor os
+     dados de telemetria. Já o servidor, formado principalmente pelo \textit{django},
+     recebe esses dados e os imprime numa página \textit{web}.
+
+
+
 \end{enumerate}
+
 
 
 
@@ -540,35 +579,255 @@ remotamente, podem carregar diversos tipos de carga e fazer vários tipos de mis
 Devido a avanços nas tecnologias envolvidas na fabricação, nos sistemas de navegação, nos sensores e sistemas de armazenamento de 
 energia, uma grande variedade de tipos de drones surgiram nas últimas décadas. 
 
-\subsection{Tipos de VANTs}
-Dentre os diversos tipos de VANTs, iremos focar na apresentação dos quatro principais tipos. O primeiro, os drones multirotor, são os mais baratos e, portanto, os mais comuns para uso geral, devido ao excelente custo benefício para realizar funções como foto aéreas e vigilância. O nome multirotor se dá, evidentemente, pela presença de mais de um motor, que em grande maioria são três, quatro, seis ou oito.
+\subsection{Classificação de VANTs}
 
-O segundo tipo, drones de asa fixa, têm o formato de um avião e funcionam como um, elevando a altitude com movimentos retilíneos diagonais. A grande vantagem é a economia de energia, já que nesse tipo de drone a energia é gasta apenas para mover-se para frente, e não para cima, assim como nos aviões usuais.
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/introducao/drone_classification.png}
+  \caption{Classificação de VANTs por tipo de pouso, aerodinâmica e quantidade de rotores.}
+  \label{fig:drone_classification.png}
+\end{figure}
 
-O terceiro tipo de drone, de rotor único, são construídos com o objetivo de serem mais resistentes e duradouros. Pode-se dizer que o formato assemelha-se a um helicóptero, já que possui uma hélice central e uma hélice menor na cauda, essa última para controlar a direção e estabilidade.
+Como mostrado no organograma da figura a cima~\ref{fig:drone_classification.png}, as categorizações mais comuns para os VANTs são obtidas pelos atributos "tipo de pouso", "aerodinâmica" e "quantidade de rotores".
 
-Por último, o VTOL une os benefícios dos drones de asa fixa e rotores, já que conta com rotores acoplados em suas asas fixas, isso os torna muito promissores no futuro, apesar de serem um tipo novo. Um bom exemplo de VTOL são os drones de entrega utilizados pela \textit{Amazon}.
+O tipo de aerodinâmica responsável pela sustentação das aeronaves no ar é bastante diversificado. Uma categoria bem comum de drones são os VANTs de asa fixa, que semelhantemente aos aviões, tiram proveito da geometria das asas e da velocidade gerada por um ou mais motores para obterem sustentação. 
 
-\cite{vant_tipos}
+A classificaçao de aterrisagem, com a nomenclatura VTOL e HTOL diz respeito apenas aos VANTs de asa fixa visto que apenas esses tipos de VANTs tiram proveito tanto da aterrisagem vertical quanto da autonomia proveniente do vôo horizontal com asas fixas. 
+
+No presente documento focaremos mais acetuadamente nos drones de asa rotativa, visto que esse tipo de drone será utilizado nos experimentos que sucederão.
+
 \subsection{Componentes dos VANTs de Asa Rotativa}
 
-\subsection{Controladora \textit{PixHawk}}
+Os componentes dos drones de asa rotativa variam conforme o tipo de missão. Alguns dos componentes proncipais podem ser listados abaixo:
 
+\begin{enumerate}
+  \item Frame
+  \item Motores e hélices
+  \item Escs
+  \item Controladora de voo
+  \item Bateria e Placa distribuidora de energia
+\end{enumerate}
+\subsubsection*{Frame}
+
+O Frame de um drone é a base estrutural na qual todos os outros componentes são fixados, ele geralmente é feito de um material leve e 
+resistente como fibra de carbono e outros polímeros plásticos. 
+
+\subsubsection*{Bateria e Placa distribuidora de energia}
+
+A bateria é a fonte de energia do drone, geralmente são utilizadas baterias Li-Po (Lítio-Polímero) pela sua boa relação massa/desempenho 
+enérgetico, essas baterias possuem uma nomenclatura específica com baase na quantidade de células <explicar melhor as baterias>.
+
+\subsubsection*{Motores e hélices}
+
+Os motores do drone são os responsávei por converter a energia elétrica proveniente das baterias em energia cinética. Geralmente os 
+motores utilizados são motores de corrente contínua não escovados (\textit{brushless DC}) <colocar as características físicas desse tipo de motor>.
+A partir da corrente elétrica fornecida ao motor ele movimenta a hélice, que devido à sua aerodinamica gera uma força resultante para cima no drone,
+a qual é denominada empuxo. 
+
+\subsubsection*{Escs}
+
+Os Escs, ou Eletronic Speed Controlers são os componentes eletrônicos responsáveis por controlar a velocidade dos motores.
+Eles são comandados pela controladora de voo, geralmente a partir de sinais PWM <Falar sobre PWM>. Assim como o PWM é utilizado para comandar 
+os ESCs, os ESCs utilizam essa modulação para chavear o circuito entre os motores e a bateria controlando assim a velocidade dos motores. 
+
+\subsubsection*{Controladora de Voo}
+
+A controladora de voo é um microcontrolador com software embarcado dedicado às funções básicas da aeronave. Ela possui sensores 
+inerciais embutidos para comandar a dinâmica de voo da aeronave, além de possuir interface eletrônica com outros componentes como módulos gps, módulos receptores de rádio, módulos de telemetria entre outros. Sem a controladora de voo, seria uma tarefa humanamente impossível controlar o voo da aeronave, visto que a mesma depende de um feedback contínuo e instantâneo dos parâmetros inerciais. 
+
+\subsection{Ardupilot}
+
+ArduPilot enables the creation and use of trusted, autonomous, unmanned vehicle systems for the peaceful benefit of all. ArduPilot provides a comprehensive suite of tools suitable for almost any vehicle and application. As an open source project, it is constantly evolving based on rapid feedback from a large community of users. The Development Team works with the community and commercial partners to add functionality to ArduPilot that benefits everyone. Although ArduPilot does not manufacture any hardware, ArduPilot firmware works on a wide variety of different hardware to control unmanned vehicles of all types. Coupled with ground control software, unmanned vehicles running ArduPilot can have advanced functionality including real-time communication with operators. ArduPilot has a huge online community dedicated to helping users with questions, problems, and solutions
 
 \subsection{UART}
+
 UART, que vem das palavras \textit{universal asynchronous receive/transmit}, realiza o papel principal na comunicação serial, já que converte os dados entre série e paralelo. Há então uma conversão de paralelo-serial para os dados transmitidos, e uma outra serial-paralelo para os dados recebidos. Existe ainda um \textit{buffer}, cujo objetivo é armazenar dados por tempo limitado em transmissões com alta taxa, sem que haja descarte de dados e consequente perda de informação. Para que não haja fluxo de transmissão caso ambas as partes estiverem prontas, em adição as características citadas, são incorporados circuitos reguladores de fluxo.
 
 A divisão do protocolo é feita em três sub-módulos, gerador de taxa de transmissão, módulo de transmissão e módulo de recepção. O primeiro, se responsabiliza por gerar um sinal de relógio localmente, o qual deve ser muito maior que a taxa de transmissão de dados entre transmissor-receptor. O módulo receptor, por sua vez, recebe os sinais RXD e os converte para dados paralelos. Por fim, o módulo transmissor converte os bytes em bits seriais, com base no padrão de quadro utilizado, e os envia através de sinais TXD. \cite{uart}
 
 \subsection{Telemetria}
 
-\subsection{Protocolo \textit{Mavlink}}
+A telemetria é uma funcionalidade indispensável nos drones mais modernos, ela permite receber informações dos sensores do drone em tempo real como altitude, velocidade, gps, temperatura, informações da quantidade de carga na bateria dentre outras. Essa transmissão de dados geralmente é feita por um módulo dedicado a isso ou então em módulos receptores de rádio que já possuem essa funcionalidade integrada.
+
+\subsection{Protocolo Mavlink}
+
 MAVLink é um protocolo de comunicação com drones e entre os componentes acoplados ao drone. Essa transmissão consiste no envio de um fluxo de dados, os quais são chamados de tópicos, e escritos em arquivos XML. Dentre as principais vantagens de se utilizar o MAVLink estão a sua eficiência e versatilidade. Em números, a segunda versão do MAVLink tem apenas 14 \textit{bytes} de \textit{overhead} no pacote de comunicação. Além disso, provê métodos de detectar perda de pacotes e dados corrompidos, e garante a autenticação dos pacotes. Outro ponto positivo é o suporte a diversas linguagens, já que o protocolo tem suporte a diferentes tipos de sistemas operacionais e microcontroladores. Por fim, apesar de menos importante para o nosso projeto, vale citar que o protocolo suporta até 255 usuários simultâneos em um mesma rede.
 \cite{mavlink}
 
 \subsection{Computadores de Bordo}
 
-\subsection {Série de computadores Raspberry Pi}
+Companion Computers can be used to interface and communicate with ArduPilot on a flight controller using the MAVLink protocol. By doing this your companion computer gets all the MAVLink data produced by the autopilot (including GPS data) and can use it to make intelligent decisions during flight. For example, “take a photo when the vehicle is at these GPS co-ordinates”, gather and pre-process information from advanced sensors or actuate lights, auxiliary servos or any other interfaces.
+
+There are two major parts to Companion Computers - hardware and software.
+
+The Companion Computer hardware refers to the specific computer hardware being used. This is typically a small ARM-based Single Board Computer. Specific tutorials for popular Companion Computer hardware are listed below.
+
+Arduino family
+LYCHEE (Cube Carrier Board for Raspberry Pi Compute Module)
+NVidia TX1
+NVidia TX2
+ODroid
+Raspberry Pi
+The Companion Computer software refers to the programs and tools that run on the Companion Computer. They will take in MAVLink telemetry from the Flight Controller and can route and process the telemetry data. Specific tutorials for popular Companion Computer software tools/suites are listed below.
+
+APSync
+DroneKit
+FlytOS
+Maverick
+ROS
+Rpanion-server
+
+\subsection{ROS - Robot Operative System}
+
+Robot Operating System, ROS ou ros, é um middleware, 
+com foco em robótica, open-source. O ROS não é considerado 
+um sistema operacional, mas um conjunto de software 
+frameworks para desenvolvimentos de softwares para robôs. 
+Oferece serviços a uma vasta gama de computadores, 
+como abstração de hardware, controle de dispositivos 
+de baixo nível, implementação de funcionalidades usadas 
+comumente, troca de mensagens entre processos e 
+gerenciamento de pacotes. A arquitetura de grafos 
+pode ser usada para representar processos baseados 
+em ROS, onde os processos são tidos como vértices, 
+os quais podem receber, enviar, e multiplexar 
+dados de sensores, controlar, planejar e trocar 
+outras mensagens. Apesar da necessidade de baixa latência
+e interações rápidas, o ROS não é um \textit{Real-Time
+Operating System} (RTOS). Entretanto, embora pouco explorado,
+é possível integrar códigos executados em tempo real.
+Essa falta de um suporte nativo a códigos de tempo real é
+uma preocupação real dos desenvolvedores, os quais planejam 
+integrá-los ao ROS 2, projeto que visa ter proveito de 
+bibliotecas e tecnologias mais novas. 
+
+As principais bibliotecas do ROS são voltadas para sistemas
+Unix, isso se deve ao fato da dependência com diversos
+\textit{softwares open-source}. Para essas bibliotecas,
+o Ubuntu é listado como "\textit{supported}", entretanto,
+para outras distros Linux, como o Fedora, macOS e Windows,
+todos são listados como "\textit{experimental}". Ainda assim,
+existem exceções, como a biblioteca rosjava, a qual foi 
+escrita para Android OS. Apesar disso, oferece uma integração
+nativa com o MATLAB, programa que pode ser usado no Linux,
+macOS ou Windows. Outro caso a parte é a biblioteca roslibjs,
+voltada para desenvolvimento \textit{web} com JavaScript,
+que garante compatibilidade com qualquer navegador padrão.
+
+\subsubsection{Mavros}
+
+This package provides communication driver for various autopilots with MAVLink communication protocol. Additional it provides UDP MAVLink bridge for ground control stations (e.g. QGroundControl).
+
+<listar os tópicos>
+
+\subsection{Django}
+
+Django é um \textit{web framework} cuja intenção é tornar o desenvolvimento \textit{web} mais veloz e fácil. Possui uma integração nativa entre banco de dados, \textit{front-end} e \textit{back-end}, apesar de que não seja necessária a utilização de um banco de dados. Primeiramente, podemos citar que todo o esquema do banco é feito através de códigos \textit{python}, pela técnica de mapeamento objeto-relacional, como podemos ver no exemplo a seguir\cite{django}.
+
+\begin{lstlisting}[language=Python]
+from django.db import models
+
+class Reporter(models.Model):
+    full_name = models.CharField(max_length=70)
+
+    def __str__(self):
+        return self.full_name
+
+class Article(models.Model):
+    pub_date = models.DateField()
+    headline = models.CharField(max_length=200)
+    content = models.TextField()
+    reporter = models.ForeignKey(Reporter, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.headline
+\end{lstlisting}
+
+No exemplo acima, são instanciadas duas tabelas, \textit{Reporter} e \textit{Article}, e suas respectivas colunas. A fim de criá-las no banco deve-se executar os comandos:
+
+\begin{lstlisting}[language=bash] 
+$ python manage.py makemigrations
+$ python manage.py migrate
+\end{lstlisting}
+
+A partir do momento que os modelos estão criados, podemos registrá-los no arquivo referente ao administrador, o que possibilita a criação, alteração e remoção dos objetos através da \textit{interface web} criada pelo próprio Django. Para habilitar as operações citadas sobre a classe \textit{Article}, por exemplo, basta configurar o arquivo \textit{admin.py} tal como:
+
+\begin{lstlisting}[language=Python]
+from django.contrib import admin
+
+from . import models
+
+admin.site.register(models.Article)
+\end{lstlisting}
+
+Outro ponto interessante é a possibilidade de configuração de \textit{URLs}. Para isso, devemos criar um código de mapeamento de \textit{URLs} dentro do arquivo \textit{urls.py}, como exemplificado a seguir:
+
+\begin{lstlisting}[language=Python]
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('articles/<int:year>/', views.year_archive),
+    path('articles/<int:year>/<int:month>/', views.month_archive),
+]
+\end{lstlisting}
+
+Nesse caso, 
+
+
+\section{Arquitetura do sistema proposto}
+
+Com todas as tecnologias devidamente introduzidas, deseja-se criar um sistema composto pelas mesmas e explorar as suas capacidades. Para isso, utilizaremos um drone com controladora de firmware ardupilot e um computador de bordo capaz de se conectar com uma rede de computadores. O software embarcado será desenvolvido utilizando ROS e um API será desenvolvida em django para centralizar se conectar ao drone via rede. 
+%    \centering
+%    \includegraphics{Images/introducao/planta_inicial.png}
+%    \caption{Diagrama em blocos da planta didática em configuração original.}
+%    \label{fig:planta_inicial}
+%\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% Metodologia %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Metodologia}
+\label{chapter:Metodologia}
+%
+% retira numeracao da pagina, conforme as normas de apresentacao.
+\thispagestyle{empty} 
+%
+\section{Pesquisa}
+
+
+%
+\section{Objetivos do método aplicado}
+A metodologia aplicada possui objetivo descritivo e exploratório. Com o sistema devidamente construído, faremos experimentos que comprovam algumas possibilidades de uso para o equipamento.
+
+\section{Abordagem}
+adotar-se-á uma análise qualitativa dos resultados obtidos a partir da implementação do novo sistema, em observância aos seguintes questionamentos:
+\begin{enumerate}
+    \item Com o sistema desenvolvido será possível ao professor, operador do sistema. controlar o experimento remotamente?
+    \item Com o sistema desenvolvido a turma da disciplina conseguirá acompanhar o experimento em um ambiente diferente do laboratório?
+    \item pergunta avaliativa 3
+    \item pergunta avaliativa 4
+\end{enumerate}
+%
+%%%%%%%%%%%%%%%%
+%
+
+\section{Descrição do problema}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\chapter{Detalhamento da solução}
+%
+% retira numeracao da pagina, conforme as normas de apresentacao.
+\thispagestyle{empty} 
+%
+
+
+\section {Série de computadores Raspberry Pi}
 %
 O Raspberry Pi é uma série de computadores de placa única e tamanho reduzido, que recebem a denominação  SoC (\textit{System on Chip})~\cite{url:soc} à qual são conectados os seguintes dispositivos: monitor, teclado, e mouse. 
 
@@ -655,123 +914,6 @@ A Tabela~\ref{tab:Raspberry Pinout} reúne uma descrição de todos os pinos.
     \label{tab:Raspberry Pinout}
 \end{table}
 
-\subsection{ROS - \textit{Robot Operative System}}
-\textit{Robot Operative System} é um \textit{software open source} cujo objetivo se baseia em facilitar a integração entre diferentes módulos de um robô. Normalmente, assim como no nosso caso, pode-se dividir os módulos em atuadores, sensores e o sistema de controle, o ROS então, permite que interliguemos todos as partes de maneira simples e rápida através de suas ferramentas, as quais são mensagens e tópicos. As mensagens almejam facilitar a coleta e análise dos dados, podendo ser guardados em \textit{logs}, o que ajuda testes em geral e a detecção de problemas. Essas dados contidos nas mensagens, geradas automaticamente, podem ser integradas a outros \textit{softwares}, permitindo a visualização 3D em um ambiente de simulação, por exemplo \cite{ros}. Já os tópicos 
-
-\subsection{Django}
-Django é um \textit{web framework} cuja intenção é tornar o desenvolvimento \textit{web} mais veloz e fácil. Possui uma integração nativa entre banco de dados, \textit{front-end} e \textit{back-end}, apesar de que não seja necessária a utilização de um banco de dados. Primeiramente, podemos citar que todo o esquema do banco é feito através de códigos \textit{python}, pela técnica de mapeamento objeto-relacional, como podemos ver no exemplo a seguir\cite{django}.
-
-\begin{lstlisting}[language=Python]
-from django.db import models
-
-class Reporter(models.Model):
-    full_name = models.CharField(max_length=70)
-
-    def __str__(self):
-        return self.full_name
-
-class Article(models.Model):
-    pub_date = models.DateField()
-    headline = models.CharField(max_length=200)
-    content = models.TextField()
-    reporter = models.ForeignKey(Reporter, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.headline
-\end{lstlisting}
-
-No exemplo acima, são instanciadas duas tabelas, \textit{Reporter} e \textit{Article}, e suas respectivas colunas. A fim de criá-las no banco deve-se executar os comandos:
-
-\begin{lstlisting}[language=bash] 
-$ python manage.py makemigrations
-$ python manage.py migrate
-\end{lstlisting}
-
-A partir do momento que os modelos estão criados, podemos registrá-los no arquivo referente ao administrador, o que possibilita a criação, alteração e remoção dos objetos através da \textit{interface web} criada pelo próprio Django. Para habilitar as operações citadas sobre a classe \textit{Article}, por exemplo, basta configurar o arquivo \textit{admin.py} tal como:
-
-\begin{lstlisting}[language=Python]
-from django.contrib import admin
-
-from . import models
-
-admin.site.register(models.Article)
-\end{lstlisting}
-
-Outro ponto interessante é a possibilidade de configuração de \textit{URLs}. Para isso, devemos criar um código de mapeamento de \textit{URLs} dentro do arquivo \textit{urls.py}, como exemplificado a seguir:
-
-\begin{lstlisting}[language=Python]
-from django.urls import path
-
-from . import views
-
-urlpatterns = [
-    path('articles/<int:year>/', views.year_archive),
-    path('articles/<int:year>/<int:month>/', views.month_archive),
-]
-\end{lstlisting}
-
-Nesse caso, 
-
-\subsection{Django REST Framework}
-
-\section{Arquitetura do sistema proposto}
-
-Explicação dos componentes da arquitetura do sistema proposto.
-%
-%\begin{figure}[ht]
-%    \centering
-%    \includegraphics{Images/introducao/planta_inicial.png}
-%    \caption{Diagrama em blocos da planta didática em configuração original.}
-%    \label{fig:planta_inicial}
-%\end{figure}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%% Metodologia %%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\chapter{Metodologia}
-\label{chapter:Metodologia}
-%
-% retira numeracao da pagina, conforme as normas de apresentacao.
-\thispagestyle{empty} 
-%
-\section{Pesquisa}
-
-https://florimondmanca.github.io/djangorestframework-api-key/guide/
-
-https://riptutorial.com/django-rest-framework/example/30993/api-key-base-request-authentication
-
-%
-\section{Objetivos do método aplicado}
-A metodologia aplicada possui objetivo descritivo e exploratório. Com o sistema devidamente construído, faremos experimentos que comprovam algumas possibilidades de uso para o equipamento.
-
-\section{Abordagem}
-adotar-se-á uma análise qualitativa dos resultados obtidos a partir da implementação do novo sistema, em observância aos seguintes questionamentos:
-\begin{enumerate}
-    \item Com o sistema desenvolvido será possível ao professor, operador do sistema. controlar o experimento remotamente?
-    \item Com o sistema desenvolvido a turma da disciplina conseguirá acompanhar o experimento em um ambiente diferente do laboratório?
-    \item pergunta avaliativa 3
-    \item pergunta avaliativa 4
-\end{enumerate}
-%
-%%%%%%%%%%%%%%%%
-%
-
-\section{Descrição do problema}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-\chapter{Detalhamento da solução}
-%
-% retira numeracao da pagina, conforme as normas de apresentacao.
-\thispagestyle{empty} 
-%
-
-
-
-
 
 
 
@@ -808,27 +950,16 @@ Responda as perguntas avaliativas para definir a conclusão}
     \item pergunta avaliativa 4
 \end{enumerate}
 
-A presente monografia detalha o processo de pesquisa, projeto e construção de um sistema para atuação em uma planta didática localizada no Laboratório de Drenagem Irrigação e Saneamento~\cite{url:ladisan}.
+Esta monografia tem como base a pesquisa, a elaboração e o teste, em ambiente simulado, de um drone capaz de se comunicar por uma rede IP, no nosso caso,
+uma rede \textit{wi-fi}. 
 
-Utilizando, como base, o documento 
-\textbf{Uso de Sensores e Acesso Remoto para a Realização de Aula Prática Sobre Reservatórios de Detenção Aplicados à Drenagem urbana}~\cite{article:tcc_lorraine_maria} 
-%
-e o artigo 
-\textbf{Realização de Aula Prática Remota a Partir de Laboratório Equipado com Modelo Físico Sobre Detenção de Água de Chuva}~\cite{article:lorraine_maria}, 
-publicado no COBENGE 2018~\cite{url:cobenge}, 
-%
-foi desenvolvido um conjunto de melhorias e novos processos que permitem monitoramento e maior e melhor atuação do ``usuário'' (computador remoto localizado na sala de aula) na planta didática operando no Laboratório LaDISan~\cite{url:ladisan}. 
-%
-O conjunto de melhorias compreende uma câmera com controle remoto, um servomotor acoplado a um registro de admissão de água, uma interface de acesso e um dispositivo Raspberry Pi operando como controlador do servomotor e computador auxiliar para o Arduino. 
+Aproveitou-se conhecimentos adquiridos na equipe UFFO \cite{url:equipeuffo}, como \textit{softwares} e bibliotecas específicas para automação. A partir
+dessa base, surgiu a ideia de incrementar o \textit{hardware} de um drone comum acoplando um \textit{raspberry}. A grande adição é o acesso ao protocolo IP, permitindo o drone trocar dados sem limitações de distância. Para realizar a comunicação com o drone, foi elaborada uma arquitetura de cliente-servidor, cujo cliente, em resumo o drone, envia e recebe dados do servidor, ambos conectados numa mesma rede, via VPN. Por fim, realizou-se uma página \textit{web} como \textit{interface} gráfica final, a qual permite o envio de missões ao drone e exibe os dados essenciais de telemetria em tempo real.  
 
-Os resultados foram satisfatórios no que tange aos objetivos propostos. 
-Foram realizadas duas aulas no ano de 2019, uma no primeiro semestre letivo e outra no segundo semestre.
+No geral, os resultados foram compatíveis aos objetivos propostos, realizaram-se testes no ambiente de simulação que demonstraram a viabilidade de um projeto prático.  
 
-O sistema ainda não contempla uma solução fechada pronta para comercialização conforme foi citado no Capítulo~\ref{chapter:Metodologia}.
-%
-Ainda se faz necessário melhorias e correções que podem ser implementadas conforme novas demandas levantadas por alunos da disciplina e o professor Dario Sobrenome Sobrenome.
-%
-As demandas podem ser implementadas pelos futuros bolsistas do grupo PET-Tele. Complementarmente a este documento existe um relatório técnico com detalhamento das etapas de construção, disponível no \textit{website} do Grupo PET-Tele~\cite{url:projeto_ladisan}
+O projeto como um todo ainda deve ser aperfeiçoado casa haja interesse em comercialização. Faz-se necessário a realização de testes com um drone fora do ambiente de simulação, e como citado no Capítulo 1~\ref{item:solucao}, idealmente, conectar um modem LTE ou NR ao \textit{raspberry}. Ambos, os testes e a conexão do modem, podem ser feitos por futuros integrantes da equipe UFFO.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %          Sugestoes para trabalhos futuros            %
