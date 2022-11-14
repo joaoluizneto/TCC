@@ -457,6 +457,7 @@ Agradecemos aos nossos familiares pela cobrança e incentivo nos estudos.
 %                        Texto                         %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Siglas}
+
 ROS - \textit{Robot Operating System} \\
 VANT - Veículo aéreo não tripulado \\
 MAVLink - \textit{Micro Air Vehicle Communication Protocol} \\
@@ -470,7 +471,7 @@ TXD - \textit{Transmit Data}\\
 \thispagestyle{empty} 
 %
 %
-<<<<<<< HEAD
+
 Atrelado à popularização da tecnologia, o barateamento dos \textit{drones} tornaram-los capazes de serem usados para além do âmbito militar, ganhando espaço nas industrias cinematográficas, esportivas e do entretenimento, fora para o uso pessoal.
 
 Somado à isso, com o barateamento e miniaturização dos componentes eletrônicos nas últimas décadas, surgiram diversas plataformas eletrônicas de prototipagem, como o Arduíno e também mini computadores como o Raspberry Pi, o que popularizou o estudo das mesmas no âmbito dos drones. 
@@ -478,15 +479,6 @@ Somado à isso, com o barateamento e miniaturização dos componentes eletrônic
 O uso de mini computadores como o Raspberry Pi já é difundido em aplicações de IOT e robótica e recentemente a comunidade do Ardupilot também explorou e documentou a utilização da plataforma como um computador de bordo, abrindo um leque de possibilidades para as atividades que um VANT (Veículo Aéreo Não Tripulado) pode executar. 
 
 Um computador de bordo permite a utilização de um sistema operacinal completo, e por consequência oferece vários benefícios, como por exemplo capacidades de conexão à rede e a utilização de diversas tecnologias que facilitam o desenvolvimento de drones inteligentes.
-=======
-Atrelado à popularização da tecnologia, o barateamento dos \textit{drones} tornaram-los capazes de serem usados para além do âmbito militar, ganhando espaço nas industrias cinematográficas, esportivas e do entretenimento, fora para o uso pessoal.\\
-
-Somado à isso, com o barateamento e miniaturização dos componentes eletrônicos nas últimas décadas, surgiram diversas plataformas eletrônicas de prototipagem, como o Arduíno e também mini computadores como o Raspberry Pi, o que popularizou o estudo das mesmas no âmbito dos drones. 
-
-O uso de mini computadores como o Raspberry Pi já é difundido em aplicações de IOT e robótica e recentemente a comunidade do Ardupilot também explorou e documentou a utilização da plataforma como um computador de bordo, abrindo um leque de possibilidades para as atividades que um VANT (Veículo Aéreo Não Tripulado) pode executar. 
-
-Um computador de bordo permite a utilização de um sistema operacinal completo, e por consequência oferece vários benefícios, como por exemplo capacidades de conexão à rede e a utilização de diversas tecnologias que facilitam o desenvolvimento de drones inteligentes.\\
->>>>>>> 8f3b1bbf034ec2d3e90e71f2004f3703b5ccfa48
 
 Dessa forma, partindo da tecnologia para a utilização de computadores de bordo em drones é possível explorar as capacidades desse sistema conectado à rede. Além disso, é inevitavel a criação de sistemas capazes de realizar o gerenciamento e controle dessas aeronaves através da própria internet, o que será abordado nesse documento.
 
@@ -503,19 +495,11 @@ para o equipamento utilizado.
 
 \section{Objetivo}
 
-<<<<<<< HEAD
 O primeiro objetivo deste trabalho será o estudo e planejamento da arquitetura do sistema proposto, desde o hardware a ser utilizado, às ferramentas de software e a arquitetura da aplicação que será desenvolvida. 
 
 O segundo objetivo é o desenvolvimento de uma aplicação utilizando as ferramentas e a arquitetura proposta no objetivo anterior. Além disso, o funcionamento do sistema será validado através de um ambiente de simulação. A validação será feita a partir da análise dos resultados.
 
 Por último, com a apuração do sistema, visa-se a construção e configuração de um drone, com as mesmas especificações do usado no segundo objetivo, isso inclui todo o sistema embarcado proposto. Finalmente, serão analisados os resultado obtidos.  
-=======
-O primeiro objetivo deste trabalho será o estudo e planejamento da arquitetura do sistema proposto, desde o hardware a ser utilizado, as ferramentas de software e a arquitetura da aplicação que será desenvolvida.
-
-O segundo obejtivo é o desenvolvimento de uma aplicação utilizando as ferramentas e a arquitetura proposta no objetivo anterior. Além disso, o funcionamento do sistema será parcialmente validado através de um ambiente de simulação.
-
-Por último, visa-se a construção e configuração de um drone com o sistema embarcado proposto e serão analisados os resultado obtidos.  
->>>>>>> 8f3b1bbf034ec2d3e90e71f2004f3703b5ccfa48
 
 \section{Resultados esperados}
 
@@ -607,19 +591,11 @@ energia, uma grande variedade de tipos de drones surgiram nas últimas décadas.
 \end{figure}
 
 Como mostrado no organograma da figura a cima~\ref{fig:drone_classification.png}, as categorizações mais comuns para os VANTs são obtidas pelos atributos "tipo de pouso", "aerodinâmica" e "quantidade de rotores".
-<<<<<<< HEAD
 
 O tipo de aerodinâmica responsável pela sustentação das aeronaves no ar é bastante diversificado. Uma categoria bem comum de drones são os VANTs de asa fixa, que semelhantemente aos aviões, tiram proveito da geometria das asas e da velocidade gerada por um ou mais motores para obterem sustentação. 
 
 A classificaçao de aterrisagem, com a nomenclatura VTOL e HTOL diz respeito apenas aos VANTs de asa fixa visto que apenas esses tipos de VANTs tiram proveito tanto da aterrisagem vertical quanto da autonomia proveniente do vôo horizontal com asas fixas. 
 
-=======
-
-O tipo de aerodinâmica responsável pela sustentação das aeronaves no ar é bastante diversificado. Uma categoria bem comum de drones são os VANTs de asa fixa, que semelhantemente aos aviões, tiram proveito da geometria das asas e da velocidade gerada por um ou mais motores para obterem sustentação. 
-
-A classificaçao de aterrisagem, com a nomenclatura VTOL e HTOL diz respeito apenas aos VANTs de asa fixa visto que apenas esses tipos de VANTs tiram proveito tanto da aterrisagem vertical quanto da autonomia proveniente do vôo horizontal com asas fixas. 
-
->>>>>>> 8f3b1bbf034ec2d3e90e71f2004f3703b5ccfa48
 No presente documento focaremos mais acetuadamente nos drones de asa rotativa, visto que esse tipo de drone será utilizado nos experimentos que sucederão.
 
 \subsection{Componentes dos VANTs de Asa Rotativa}
@@ -635,7 +611,7 @@ Os componentes dos drones de asa rotativa variam conforme o tipo de missão. Alg
 \end{enumerate}
 \subsubsection*{Frame}
 
-O Frame de um drone é a base estrutural na qual todos os outros componentes são fixados, ele geralmente é feito de um material leve e 
+O frame de um drone é a base estrutural na qual todos os outros componentes são fixados, ele geralmente é feito de um material leve e 
 resistente como fibra de carbono e outros polímeros plásticos. 
 
 \subsubsection*{Bateria e Placa distribuidora de energia}
@@ -651,8 +627,6 @@ A partir da corrente elétrica fornecida ao motor ele movimenta a hélice, que d
 a qual é denominada empuxo. 
 
 \subsubsection*{Escs}
-<<<<<<< HEAD
-=======
 
 Os Escs, ou Eletronic Speed Controlers são os componentes eletrônicos responsáveis por controlar a velocidade dos motores.
 Eles são comandados pela controladora de voo, geralmente a partir de sinais PWM <Falar sobre PWM>. Assim como o PWM é utilizado para comandar 
@@ -664,7 +638,6 @@ A controladora de voo é um microcontrolador com software embarcado dedicado às
 inerciais embutidos para comandar a dinâmica de voo da aeronave, além de possuir interface eletrônica com outros componentes como módulos gps, módulos receptores de rádio, módulos de telemetria entre outros. Sem a controladora de voo, seria uma tarefa humanamente impossível controlar o voo da aeronave, visto que a mesma depende de um feedback contínuo e instantâneo dos parâmetros inerciais. 
 
 \subsection{ArduPilot}
-
 %
 \begin{figure}[!htbp]
   \centering
@@ -707,20 +680,7 @@ Além de suportar o firmware para todos esses tipos de veículos, a comunidade A
 \end{itemize}
 
 <LISTAR CONTROLADORAS DE VOO COMPATÍVEIS COM O FIRMWARE>
->>>>>>> 8f3b1bbf034ec2d3e90e71f2004f3703b5ccfa48
 
-Os Escs, ou Eletronic Speed Controlers são os componentes eletrônicos responsáveis por controlar a velocidade dos motores.
-Eles são comandados pela controladora de voo, geralmente a partir de sinais PWM <Falar sobre PWM>. Assim como o PWM é utilizado para comandar 
-os ESCs, os ESCs utilizam essa modulação para chavear o circuito entre os motores e a bateria controlando assim a velocidade dos motores. 
-
-\subsubsection*{Controladora de Voo}
-
-A controladora de voo é um microcontrolador com software embarcado dedicado às funções básicas da aeronave. Ela possui sensores 
-inerciais embutidos para comandar a dinâmica de voo da aeronave, além de possuir interface eletrônica com outros componentes como módulos gps, módulos receptores de rádio, módulos de telemetria entre outros. Sem a controladora de voo, seria uma tarefa humanamente impossível controlar o voo da aeronave, visto que a mesma depende de um feedback contínuo e instantâneo dos parâmetros inerciais. 
-
-\subsection{Ardupilot}
-
-ArduPilot enables the creation and use of trusted, autonomous, unmanned vehicle systems for the peaceful benefit of all. ArduPilot provides a comprehensive suite of tools suitable for almost any vehicle and application. As an open source project, it is constantly evolving based on rapid feedback from a large community of users. The Development Team works with the community and commercial partners to add functionality to ArduPilot that benefits everyone. Although ArduPilot does not manufacture any hardware, ArduPilot firmware works on a wide variety of different hardware to control unmanned vehicles of all types. Coupled with ground control software, unmanned vehicles running ArduPilot can have advanced functionality including real-time communication with operators. ArduPilot has a huge online community dedicated to helping users with questions, problems, and solutions
 
 \subsection{UART}
 
@@ -764,7 +724,7 @@ Já no quesito de software, existem ferramentas, programas e sistemas operaciona
 \end{itemize}
 
 
-\section {Série de computadores Raspberry Pi}
+\subsection {Série de computadores Raspberry Pi}
 %
 O Raspberry Pi é uma série de computadores de placa única e tamanho reduzido, que recebem a denominação  SoC (\textit{System on Chip})~\cite{url:soc} à qual são conectados os seguintes dispositivos: monitor, teclado, e mouse. 
 
@@ -1000,77 +960,6 @@ De forma resumida, deseja-se, a partir de um drone montado com todos os seus com
 \thispagestyle{empty} 
 %
 
-\section{Primeiros testes com o drone quadricóptero}
-
-De posse de um drone quadricóptero com a controladora de voo Omnibus f4 pro, foram estabelecidos os primeiros testes de conexão entre o Raspberry Pi e o firmware ArduPilot. O diagrama de montagem do equipamento foi o seguinte:
-
-\subsection{Diagrama de conexão dos componentes de hardware}
-%
-\begin{figure}[!htbp]
-  \centering
-  \includegraphics[width=0.7\textwidth]{Images/Diagramas/hardware_connections.png}
-  \caption{Conexões de hardware para Omnibus F4 Pro V3.}
-  \label{fig:hardware_connections.png.0}
-\end{figure}
-%
-A motivação para a escolha dessa controladora foi o preço da mesma no mercado em relação às outras, valor que na época era em torno de 260 reais, enquanto que a Pixhawk custava em torno de 1000 reais. O resto dos componentes também foi escolhido com o intuito de deixar o projeto em baixo custo. 
-%
-\begin{figure}[!htbp]
-  \centering
-  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/omnibus_drone.jpeg}
-  \caption{Bancada de trabalho com o drone quadricóptero.}
-  \label{fig:omnibus_drone.jpeg.0}
-\end{figure}
-%
-
-Após a ligação dos componentes eletrônicos, o teste de conexão entre o Raspberry e a controladora foi realizado utilizando o software MavProxy no minicomputador e foi possível obter dados em tempo real da controladora através da conexão serial assim como também foi possível mandar comandos MAVLink para a controladora de voo através do terminal da aplicação.
-
-Dessa forma, conseguiu-se comandar o drone a partir do computador de bordo e receber dados de telemetria do mesmo. Entretanto, não foi possível acoplar o módulo de GPS na controladora já que o módulo em questão não se mostrou compatível com a mesma.
-
-As pesquisas e soluções de problemas oriundos da execução dessa etapa foram cruciais para adiquirir maturidade na montagem, configuração e acoplamento dos componentes. Além disso, o conhecimento adiquirido das ferramentas utilizadas para conectar o computador de bordo ao drone também foram excenciais. Entretanto, escolhemos mudar o hardware utilizado para uma configuração de drone mais convencional na comunidade ArduPilot, com a controladora Pixhawk Cube. 
-
-\section{Montagem do drone hexacóptero}
-
-Após os problemas obtidos no drone quadcóptero com a controladora Omnibus, trocamos o hardware utilizado para um drone hexacóptero com a controladora Pixhawk Cube. Tal aeronave já estava operacional antes de acoplarmos o Raspberrypi, isto é, era possível realizar todas as funções básicas que a controladora por si só é capaz de fazer.
-%
-\begin{figure}[!htbp]
-  \centering
-  \includegraphics[width=0.4\textwidth]{Images/Desenvolvimento/pixhawk2_cube_hero.png}
-  \caption{Pixhawk 2 Cube Hero.}
-  \label{fig:pixhawk2_cube_hero.png.0}
-\end{figure}
-%
-
-Com isso, obtemos a seguinte conexão dos componentes:
-
-\subsection{Diagrama de conexão dos componentes de hardware}
-%
-\begin{figure}[!htbp]
-  \centering
-  \includegraphics[width=0.7\textwidth]{Images/Diagramas/cube_wiring_overview.jpg}
-  \caption{Conexões de hardware para a Pixhawk 2 Cube Hero.}
-  \label{fig:cube_wiring_overview.jpg.0}
-\end{figure}
-%
-<motivação da escolha desse hardware>
-<características desse hardware>
-<capacidades desse drone>
-%
-\begin{figure}[!htbp]
-  \centering
-  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/omnibus_drone.jpeg}
-  \caption{Bancada de trabalho com o drone quadricóptero.}
-  \label{fig:omnibus_drone.jpeg.0}
-\end{figure}
-%
-<conseguir mais fotos do drone>
-<mostrar ligação dos componentes e tudo funcionando perfeitamente>
-<motivação da escolha desse hardware>
-<características desse hardware>
-<capacidades desse drone>
-
-\newpage
-
 \section{Ambiente de simulação}
 %
 \begin{figure}[!htbp]
@@ -1213,6 +1102,76 @@ Modelo cliente servidor, no qual o raspberry e o servidor da API estão numa mes
 
 LTE e 5G.
 
+\section{Primeiros testes com o drone quadricóptero}
+
+De posse de um drone quadricóptero com a controladora de voo Omnibus f4 pro, foram estabelecidos os primeiros testes de conexão entre o Raspberry Pi e o firmware ArduPilot. O diagrama de montagem do equipamento foi o seguinte:
+
+\subsection{Diagrama de conexão dos componentes de hardware}
+%
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Diagramas/hardware_connections.png}
+  \caption{Conexões de hardware para Omnibus F4 Pro V3.}
+  \label{fig:hardware_connections.png.0}
+\end{figure}
+%
+A motivação para a escolha dessa controladora foi o preço da mesma no mercado em relação às outras, valor que na época era em torno de 260 reais, enquanto que a Pixhawk custava em torno de 1000 reais. O resto dos componentes também foi escolhido com o intuito de deixar o projeto em baixo custo. 
+%
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/omnibus_drone.jpeg}
+  \caption{Bancada de trabalho com o drone quadricóptero.}
+  \label{fig:omnibus_drone.jpeg.0}
+\end{figure}
+%
+
+Após a ligação dos componentes eletrônicos, o teste de conexão entre o Raspberry e a controladora foi realizado utilizando o software MavProxy no minicomputador e foi possível obter dados em tempo real da controladora através da conexão serial assim como também foi possível mandar comandos MAVLink para a controladora de voo através do terminal da aplicação.
+
+Dessa forma, conseguiu-se comandar o drone a partir do computador de bordo e receber dados de telemetria do mesmo. Entretanto, não foi possível acoplar o módulo de GPS na controladora já que o módulo em questão não se mostrou compatível com a mesma.
+
+As pesquisas e soluções de problemas oriundos da execução dessa etapa foram cruciais para adiquirir maturidade na montagem, configuração e acoplamento dos componentes. Além disso, o conhecimento adiquirido das ferramentas utilizadas para conectar o computador de bordo ao drone também foram excenciais. Entretanto, escolhemos mudar o hardware utilizado para uma configuração de drone mais convencional na comunidade ArduPilot, com a controladora Pixhawk Cube. 
+
+\section{Montagem do drone hexacóptero}
+
+Após os problemas obtidos no drone quadcóptero com a controladora Omnibus, trocamos o hardware utilizado para um drone hexacóptero com a controladora Pixhawk Cube. Tal aeronave já estava operacional antes de acoplarmos o Raspberrypi, isto é, era possível realizar todas as funções básicas que a controladora por si só é capaz de fazer.
+%
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.4\textwidth]{Images/Desenvolvimento/pixhawk2_cube_hero.png}
+  \caption{Pixhawk 2 Cube Hero.}
+  \label{fig:pixhawk2_cube_hero.png.0}
+\end{figure}
+%
+
+Com isso, obtemos a seguinte conexão dos componentes:
+
+\subsection{Diagrama de conexão dos componentes de hardware}
+%
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Diagramas/cube_wiring_overview.jpg}
+  \caption{Conexões de hardware para a Pixhawk 2 Cube Hero.}
+  \label{fig:cube_wiring_overview.jpg.0}
+\end{figure}
+%
+<motivação da escolha desse hardware>
+<características desse hardware>
+<capacidades desse drone>
+%
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/Desenvolvimento/omnibus_drone.jpeg}
+  \caption{Bancada de trabalho com o drone quadricóptero.}
+  \label{fig:omnibus_drone.jpeg.0}
+\end{figure}
+%
+<conseguir mais fotos do drone>
+<mostrar ligação dos componentes e tudo funcionando perfeitamente>
+<motivação da escolha desse hardware>
+<características desse hardware>
+<capacidades desse drone>
+
+\newpage
 
 \chapter{Resultados}
 %
