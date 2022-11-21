@@ -3,48 +3,49 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: apalike.bst
 Database file #1: ./MyBibFiles/my_refs.bib
+Warning--I didn't find a database entry for "url:esc_pwm"
 Warning--empty year in url:equipeuffo
 Warning--empty year in django
-Warning--empty year in mavlink
-You've used 12 entries,
+Warning--empty year in MAVlink
+You've used 17 entries,
             1935 wiz_defined-function locations,
-            529 strings with 5981 characters,
-and the built_in function-call counts, 3100 in all, are:
-= -- 340
-> -- 90
-< -- 12
-+ -- 27
-- -- 26
-* -- 180
-:= -- 622
-add.period$ -- 48
-call.type$ -- 12
-change.case$ -- 73
-chr.to.int$ -- 11
-cite$ -- 15
-duplicate$ -- 120
-empty$ -- 181
-format.name$ -- 40
-if$ -- 573
+            552 strings with 7184 characters,
+and the built_in function-call counts, 4560 in all, are:
+= -- 493
+> -- 156
+< -- 16
++ -- 49
+- -- 48
+* -- 281
+:= -- 913
+add.period$ -- 68
+call.type$ -- 17
+change.case$ -- 109
+chr.to.int$ -- 16
+cite$ -- 20
+duplicate$ -- 170
+empty$ -- 256
+format.name$ -- 67
+if$ -- 839
 int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 0
-newline$ -- 75
-num.names$ -- 36
-pop$ -- 31
+newline$ -- 105
+num.names$ -- 51
+pop$ -- 48
 preamble$ -- 1
-purify$ -- 73
+purify$ -- 109
 quote$ -- 0
-skip$ -- 102
+skip$ -- 146
 stack$ -- 0
-substring$ -- 144
+substring$ -- 204
 swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
+type$ -- 102
 warning$ -- 3
-while$ -- 24
+while$ -- 34
 width$ -- 0
-write$ -- 167
-(There were 3 warnings)
+write$ -- 237
+(There were 4 warnings)

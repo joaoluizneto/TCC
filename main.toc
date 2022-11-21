@@ -6,67 +6,66 @@
 \contentsline {chapter}{Lista de Tabelas}{ix}{chapter*.6}%
 \contentsline {section}{\numberline {0.1}Siglas}{1}{section.0.1}%
 \contentsline {chapter}{\numberline {1}Introdução}{2}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Motivações}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Motivações}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objetivo}{3}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Resultados esperados}{4}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Trabalhos correlacionados}{4}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Organização do documento}{4}{section.1.5}%
-\contentsline {chapter}{\numberline {2}Introdução teórica}{6}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Definições iniciais}{6}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Drones e VANTs}{6}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Classificação de VANTs}{6}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Componentes dos VANTs de Asa Rotativa}{7}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}ArduPilot}{8}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}Ardupilot}{10}{subsection.2.1.5}%
-\contentsline {subsection}{\numberline {2.1.6}UART}{11}{subsection.2.1.6}%
-\contentsline {subsection}{\numberline {2.1.7}Telemetria}{11}{subsection.2.1.7}%
-\contentsline {subsection}{\numberline {2.1.8}Protocolo Mavlink}{11}{subsection.2.1.8}%
-\contentsline {subsection}{\numberline {2.1.9}Computadores de Bordo}{12}{subsection.2.1.9}%
-\contentsline {section}{\numberline {2.2}Série de computadores Raspberry Pi}{13}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}ROS - Robot Operative System}{15}{subsection.2.2.1}%
-\contentsline {subsubsection}{Mavros}{15}{section*.19}%
-\contentsline {subsection}{\numberline {2.2.2}Django}{15}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Arquitetura do sistema proposto}{17}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Metodologia}{18}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Pesquisa}{18}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Objetivos do método aplicado}{18}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Abordagem}{18}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Descrição do problema}{18}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Detalhamento da solução}{20}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Primeiros testes com o drone quadricóptero}{20}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Diagrama de conexão dos componentes de hardware}{20}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Montagem do drone hexacóptero}{22}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Diagrama de conexão dos componentes de hardware}{22}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Ambiente de simulação}{24}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Ambiente de Simulação com o Mavros}{27}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Arquitetura da aplicação}{29}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Arquitetura da aplicação de rede}{29}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Outras arquiteturas possíveis para o sistema proposto}{30}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Resultados}{31}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusão}{32}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Sugestões para trabalhos futuros}{34}{chapter.7}%
-\contentsline {chapter}{Refer\^encias}{36}{chapter*.36}%
-\contentsline {chapter}{\numberline {A}Apêndice 1}{37}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Intalando o ArduPilot e MavProxy}{37}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Clonando o repositório \textit {git} para sua máquina}{37}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Instalando as dependências e recompilando o perfil}{37}{subsection.A.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Mudando para a \textit {branch} do ArduCopter}{37}{subsection.A.1.3}%
-\contentsline {subsection}{\numberline {A.1.4}Rodando SITL (\textit {Software In The Loop})}{37}{subsection.A.1.4}%
-\contentsline {section}{\numberline {A.2}Instalando o Gazebo e o \textit {plugin} do ArduPilot}{38}{section.A.2}%
-\contentsline {subsection}{\numberline {A.2.1}Atualizando a lista de fontes para \textit {download}}{38}{subsection.A.2.1}%
-\contentsline {subsection}{\numberline {A.2.2}Instalando o \textit {plugin} do Gazebo para comunicação com o ArduPilot}{38}{subsection.A.2.2}%
-\contentsline {subsection}{\numberline {A.2.3}Executando a simulação}{38}{subsection.A.2.3}%
-\contentsline {section}{\numberline {A.3}Instalando o \textit {ROS} e o configurando o \textit {Catkin}}{39}{section.A.3}%
-\contentsline {subsection}{\numberline {A.3.1}Atualizando a lista de fontes para \textit {download}}{39}{subsection.A.3.1}%
-\contentsline {subsection}{\numberline {A.3.2}Instalando o \textit {ROS}}{39}{subsection.A.3.2}%
-\contentsline {subsection}{\numberline {A.3.3}Configurando o ambiente}{39}{subsection.A.3.3}%
-\contentsline {subsection}{\numberline {A.3.4}Instalando as dependências para os pacotes dos \textit {ROS}}{39}{subsection.A.3.4}%
-\contentsline {subsection}{\numberline {A.3.5}Configurando o \textit {Catkin}}{40}{subsection.A.3.5}%
-\contentsline {subsection}{\numberline {A.3.6}Instalando as dependências para o \textit {Catkin}}{40}{subsection.A.3.6}%
-\contentsline {subsection}{\numberline {A.3.7}Instalando as \textit {MAVROS} e \textit {MAVLink}}{40}{subsection.A.3.7}%
-\contentsline {subsection}{\numberline {A.3.8}Atualizando o arquivo \textit {.bachrc}}{40}{subsection.A.3.8}%
-\contentsline {section}{\numberline {A.4}Instalando as dependências geográficas e clonando o repositório de simulação do \textit {Intelligent Quads}}{41}{section.A.4}%
-\contentsline {subsection}{\numberline {A.4.1}Instalando as dependências geográficas}{41}{subsection.A.4.1}%
-\contentsline {subsection}{\numberline {A.4.2}Clonando pacote ROS de simulação do \textit {Intelligent Quads}}{41}{subsection.A.4.2}%
-\contentsline {section}{\numberline {A.5}Instalando o \textit {QGround Control}}{41}{section.A.5}%
-\contentsline {subsection}{\numberline {A.5.1}Alterando permissões e instalando o \textit {QGround Control}}{41}{subsection.A.5.1}%
+\contentsline {section}{\numberline {1.3}Resultados esperados}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Trabalhos correlacionados}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Organização do documento}{3}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Introdução teórica}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Definições iniciais}{5}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}\textit {drones} e VANTs}{5}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Classificação de VANTs}{5}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Componentes dos VANTs de Asa Rotativa}{6}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}ArduPilot}{10}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}UART}{11}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}Telemetria}{12}{subsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.1.7}Protocolo MAVlink}{12}{subsection.2.1.7}%
+\contentsline {subsection}{\numberline {2.1.8}Computadores de Bordo}{12}{subsection.2.1.8}%
+\contentsline {subsection}{\numberline {2.1.9}Série de computadores Raspberry Pi}{13}{subsection.2.1.9}%
+\contentsline {subsection}{\numberline {2.1.10}ROS - Robot Operative System}{14}{subsection.2.1.10}%
+\contentsline {subsubsection}{Mavros}{16}{section*.24}%
+\contentsline {subsection}{\numberline {2.1.11}Django}{16}{subsection.2.1.11}%
+\contentsline {section}{\numberline {2.2}Arquitetura do sistema proposto}{18}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Metodologia}{20}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Pesquisa}{20}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Objetivos do método aplicado}{20}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Abordagem}{20}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Descrição do problema}{21}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Detalhamento da solução}{22}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Ambiente de simulação}{22}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Ambiente de Simulação com o Mavros}{25}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Arquitetura da aplicação}{28}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Arquitetura da aplicação de rede}{28}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Outras arquiteturas possíveis para o sistema proposto}{28}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Primeiros testes com o \textit {drone} quadricóptero}{28}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Diagrama de conexão dos componentes de hardware}{28}{subsection.4.6.1}%
+\contentsline {section}{\numberline {4.7}Montagem do \textit {drone} hexacóptero}{30}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Diagrama de conexão dos componentes de hardware}{30}{subsection.4.7.1}%
+\contentsline {chapter}{\numberline {5}Resultados}{32}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusão}{33}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Sugestões para trabalhos futuros}{35}{chapter.7}%
+\contentsline {chapter}{Refer\^encias}{37}{chapter*.42}%
+\contentsline {chapter}{\numberline {A}Apêndice 1}{38}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Intalando o ArduPilot e MavProxy}{38}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Clonando o repositório \textit {git} para sua máquina}{38}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Instalando as dependências e recompilando o perfil}{38}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Mudando para a \textit {branch} do ArduCopter}{38}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Rodando SITL (\textit {Software In The Loop})}{38}{subsection.A.1.4}%
+\contentsline {section}{\numberline {A.2}Instalando o Gazebo e o \textit {plugin} do ArduPilot}{39}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Atualizando a lista de fontes para \textit {download}}{39}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Instalando o \textit {plugin} do Gazebo para comunicação com o ArduPilot}{39}{subsection.A.2.2}%
+\contentsline {subsection}{\numberline {A.2.3}Executando a simulação}{39}{subsection.A.2.3}%
+\contentsline {section}{\numberline {A.3}Instalando o \textit {ROS} e o configurando o \textit {Catkin}}{40}{section.A.3}%
+\contentsline {subsection}{\numberline {A.3.1}Atualizando a lista de fontes para \textit {download}}{40}{subsection.A.3.1}%
+\contentsline {subsection}{\numberline {A.3.2}Instalando o \textit {ROS}}{40}{subsection.A.3.2}%
+\contentsline {subsection}{\numberline {A.3.3}Configurando o ambiente}{40}{subsection.A.3.3}%
+\contentsline {subsection}{\numberline {A.3.4}Instalando as dependências para os pacotes dos \textit {ROS}}{40}{subsection.A.3.4}%
+\contentsline {subsection}{\numberline {A.3.5}Configurando o \textit {Catkin}}{41}{subsection.A.3.5}%
+\contentsline {subsection}{\numberline {A.3.6}Instalando as dependências para o \textit {Catkin}}{41}{subsection.A.3.6}%
+\contentsline {subsection}{\numberline {A.3.7}Instalando as \textit {MAVROS} e \textit {MAVlink}}{41}{subsection.A.3.7}%
+\contentsline {subsection}{\numberline {A.3.8}Atualizando o arquivo \textit {.bachrc}}{41}{subsection.A.3.8}%
+\contentsline {section}{\numberline {A.4}Instalando as dependências geográficas e clonando o repositório de simulação do \textit {Intelligent Quads}}{42}{section.A.4}%
+\contentsline {subsection}{\numberline {A.4.1}Instalando as dependências geográficas}{42}{subsection.A.4.1}%
+\contentsline {subsection}{\numberline {A.4.2}Clonando pacote ROS de simulação do \textit {Intelligent Quads}}{42}{subsection.A.4.2}%
+\contentsline {section}{\numberline {A.5}Instalando o \textit {QGround Control}}{42}{section.A.5}%
+\contentsline {subsection}{\numberline {A.5.1}Alterando permissões e instalando o \textit {QGround Control}}{42}{subsection.A.5.1}%

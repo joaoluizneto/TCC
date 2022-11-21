@@ -964,7 +964,9 @@ urlpatterns = [
 
 A partir do processo de pesquisa e também considerando os requerimentos da aplicação, o diagrama de arquitetura foi idealizado como demonstrado na figura \ref{fig:CCS_ARQ.png.0}. A API de controle e navegação foi batizada com o nome \textit{CCS}, que significa em inglês \textit{Cloud Control Station}, que vem da sigla já conhecida na comunidade \textit{ArduPilot} como \textit{GCS} de \textit{Ground Control Station}.   
 
-Além da aplicação em Django, serão desenvolvidos dois nós de ROS que faram interface com o Mavros. Sãe eles respectivamente:  
+Além da aplicação em Django, serão desenvolvidos dois nós de ROS que farão interface com o Mavros. Um nó responsável apenas por transmitir dados de telemetria para a API e o outro responsável por receber os comandos da API e comandar a controladora de voo. Escolheu-se separar as funções em dois processos distintos para garantir a independência entre as duas atividades e manter a segurança de funcionamento da aplicação.  
+
+O modelo cliente-servidor foi o escolhido para a aplicação pois, visto a natureza diversa da rede a qual o cliente e o \textit{drone} podem se conectar, esse modelo pode ser aplicado em uma maior variedade de casos. Por exemplo, esse tipo de arquitetura de aplicação exige apenas que o servidor seja acessível na rede, e que tanto o drone quanto o usuário consigam conectar-se a ele, enquanto que o modelo par-a-par ou híbrido exige que todas as partes sejam acessíveis e consigam comunicar-se umas com as outras, o que é mais difícil devido à configurações de \textit{firewall} e \textit{NAT} às quais os clientes podem estar submetidos.  
 
 %    \centering
 %    \includegraphics{Images/introducao/planta_inicial.png}

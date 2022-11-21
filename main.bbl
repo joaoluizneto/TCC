@@ -1,5 +1,14 @@
 \begin{thebibliography}{}
 
+\bibitem[Ahmed et~al., 2017]{url:drone_forces_diagram}
+Ahmed, S.~F., Desa, H., Kadir, K., Hussain, D. A.-S., Hussain, T.,
+  Mohamad~Razlan, Z., and Abu~bakar, S. (2017).
+\newblock \textbf{URL Development of Automatic Take Off and Smooth Landing
+  Control System for Quadrotor UAV }.
+\newblock Disponível em:
+  ``\url{https://www.researchgate.net/publication/322419082_Development_of_Automatic_Take_Off_and_Smooth_Landing_Control_System_for_Quadrotor_UAV}''.
+\newblock Acesso em: 25/01/2021.
+
 \bibitem[{Ardupilot Docs}, 2021]{url:ardupilotdoc}
 {Ardupilot Docs} (2021).
 \newblock \textbf{Ardupilot Docs}.
@@ -47,7 +56,14 @@ Laddha, N.~R. and Thakare, A.~P. (2013).
   ``\url{https://aaltodoc.aalto.fi/bitstream/handle/123456789/19152/master_Sundqvist_Lassi_2015.pdf?sequence=1&isAllowed=y}''.
 \newblock Acesso em: 25/01/2021.
 
-\bibitem[MAVLink, ]{mavlink}
+\bibitem[Liang, 2022]{url:brushless}
+Liang, O. (2022).
+\newblock \textbf{URL How to Choose FPV Drone Motors}.
+\newblock Disponível em:
+  ``\url{https://oscarliang.com/quadcopter-motor-propeller/}''.
+\newblock Acesso em: 25/01/2021.
+
+\bibitem[MAVLink, ]{MAVlink}
 MAVLink.
 \newblock \textbf{\textit{mavlink developer guide}}.
 \newblock Disponível em: ``\url{https://mavlink.io/en/}''.
@@ -74,10 +90,32 @@ Quads, I. (2022).
   ``\url{https://github.com/Intelligent-Quads/iq_tutorials}''.
 \newblock Acesso em: 25/01/2021.
 
+\bibitem[Semiconductor/Fairchild, 2017]{url:esc_wave_form}
+Semiconductor/Fairchild, O. (2017).
+\newblock \textbf{URL Why and How to Sinusoidally Control Three-Phase Brushless
+  DC Motors }.
+\newblock Disponível em:
+  ``\url{https://www.digikey.it/it/supplier-centers/fairchild}''.
+\newblock Acesso em: 25/01/2021.
+
 \bibitem[{Software in the Public Interest, Inc}, 2021]{url:debian}
 {Software in the Public Interest, Inc} (2021).
 \newblock \textbf{Debian OS}.
 \newblock Disponível em: ``\url{https://www.debian.org/}''.
+\newblock Acesso em: 25/01/2021.
+
+\bibitem[Stroski, 2022]{url:brushlessscheme}
+Stroski, P.~N. (2022).
+\newblock \textbf{URL electricalelibrary Motor brushless}.
+\newblock Disponível em:
+  ``\url{https://www.electricalelibrary.com/2017/10/10/motor-brushless/}''.
+\newblock Acesso em: 25/01/2021.
+
+\bibitem[Yoosee, 2020]{url:django_ros}
+Yoosee (2020).
+\newblock \textbf{URL Guia de como integrar \textit{ROS} e \textit{Django}}.
+\newblock Disponível em:
+  ``\url{https://levelup.gitconnected.com/beginners-guide-to-integrating-django-and-robotic-operating-system-ros-f889f6245929}''.
 \newblock Acesso em: 25/01/2021.
 
 \end{thebibliography}
