@@ -479,7 +479,7 @@ O primeiro objetivo deste trabalho será o estudo e planejamento de um \textit{d
 
 O segundo objetivo é o desenvolvimento de uma aplicação utilizando a arquitetura do sistema proposto no objetivo anterior. A aplicação será um sistema de controle e navegação em rede, possivelmente em nuvem. A apuração desse sistema será feita através de um ambiente de simulação.
 
-Por último, com a apuração do sistema, visa-se a construção e configuração do protótipo de \textit{drone}, com as mesmas especificações do primeiro objetivo, isso inclui todo o sistema embarcado proposto. Finalmente, serão analisados os resultado obtidos.  
+Por último, com a apuração do sistema, visa-se a construção e configuração do protótipo de \textit{drone}, com as mesmas especificações do primeiro objetivo, isso inclui todo o sistema embarcado proposto. Finalmente, serão analisados os resultados obtidos.  
 
 \section{Resultados esperados}
 
@@ -488,15 +488,6 @@ Por último, com a apuração do sistema, visa-se a construção e configuraçã
 \item Um sistema de controle e navegação para o \textit{drone}.
 \item Um \textit{drone} capaz de utilizar a aplicação.     
 \end{itemize}
-
-\section{Trabalhos correlacionados}
-
-\textit{Cellular Controlled Drone Experiment: Evaluation of Network Requirements}\cite{artigo_relacionado_1} é um exemplo de documento acadêmico que se assemelha ao nosso trabalho. Na tese de mestrado, é investigada a possibilidade de conectar um \textit{drone} a uma rede IP, via \textit{Internet} móvel, mais especificamente pela tecnologia LTE (4G). Dentre os assuntos discorridos estão a construção, teste, análise dos resultados e, por fim, comparação com o modelo tradicional de comunicação, via controle remoto. 
-
-O destaque do documento é a prova de conceito constatada pelos resultados obtidos. O \textit{drone} não só conseguiu ser controlado com uma latência aceitável, mas inclusive transmitir vídeo em tempo real a uma taxa de bits alta o suficiente para atingir uma qualidade razoável. Outro ponto importante mencionado no documento para evitar perdas ou atrasos de pacotes por conta de uma possível rede congestionada, é a criação de uma nova classe QCI para comunicações com \textit{drone}. \textit{QoS Class Identifier}, QCI, define o quão priorizado será o tráfego o canal, portanto, em redes com grande quantidade de usuários, é indispensável priorizar a comunicação com os \textit{drones}. 
-
-Por fim, o artigo foi escrito em 2015 e muitas tecnologias surgiram desde então, tal como o 5G. Assim sendo, a mesma metodologia de pesquisa e testes podem ser feitas utilizando a rede 5G a fim de comparar os resultados e constatar se houve um ganho significativo entre gerações.
-
 
 \section{Organização do documento}
 
@@ -980,7 +971,7 @@ Para conectar \textit{drone} à API, no computador de bordo, serão desenvolvido
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Metodologia}
-\label{chapter:Metodologia}
+\label{chapter:Metodologia e análise de trabalho semelhantes}
 %
 % retira numeracao da pagina, conforme as normas de apresentacao.
 \thispagestyle{empty} 
@@ -998,8 +989,8 @@ Adotar-se-á uma análise qualitativa dos resultados obtidos a partir da impleme
     \item Com o sistema desenvolvido será possível receber dados de telemetria via rede?
     \item Com o sistema desenvolvido será possível ao operador do sistema, controlar o \textit{drone} remotamente?
     \item O quão seguro é o sistema desenvolvido? Quais riscos de segurança estão submetidos a tal sistema?
-    \item pergunta avaliativa 3
-    \item pergunta avaliativa 4
+    \item pergunta avaliativa 3 TODO#
+    \item pergunta avaliativa 4 TODO#
 \end{enumerate}
 %
 %%%%%%%%%%%%%%%%
@@ -1007,6 +998,16 @@ Adotar-se-á uma análise qualitativa dos resultados obtidos a partir da impleme
 
 \section{Descrição do problema}
 De forma resumida, deseja-se, a partir de um \textit{drone} montado com todos os seus componentes essenciais, acoplar um \textit{Raspberry Pi} à controladora do \textit{drone} para conectar o conjunto à rede de computadores e com isso expandir suas capacidades. Algumas questões surgem quanto a esse projeto, como por exemplo: Qual arquitetura de \textit{software} a ser utilizada, ou seja como o \textit{software} a ser desenvolvido será organizado? Qual arquitetura de rede a ser utilizada, por exemplo, par-a-par ou cliente-servidor? No quesito de comunicação na \textit{Internet}, na qual muitas vezes não se tem o controle da rede, como seria feita essa comunicação?
+
+\section{Trabalhos correlacionados}
+
+\textit{Cellular Controlled Drone Experiment: Evaluation of Network Requirements}\cite{artigo_relacionado_1} é um exemplo de documento acadêmico que se assemelha ao nosso trabalho. Na tese de mestrado, é investigada a possibilidade de conectar um \textit{drone} a uma rede IP, via \textit{Internet} móvel, mais especificamente pela tecnologia LTE (4G). Dentre os assuntos discorridos estão a construção, teste, análise dos resultados e, por fim, comparação com o modelo tradicional de comunicação, via controle remoto. 
+
+O destaque do documento é a prova de conceito constatada pelos resultados obtidos. O \textit{drone} não só conseguiu ser controlado com uma latência aceitável, mas inclusive transmitir vídeo em tempo real a uma taxa de bits alta o suficiente para atingir uma qualidade razoável. Outro ponto importante mencionado no documento para evitar perdas ou atrasos de pacotes por conta de uma possível rede congestionada, é a criação de uma nova classe QCI para comunicações com \textit{drone}. \textit{QoS Class Identifier}, QCI, define o quão priorizado será o tráfego o canal, portanto, em redes com grande quantidade de usuários, é indispensável priorizar a comunicação com os \textit{drones}. 
+
+Por fim, o artigo foi escrito em 2015 e muitas tecnologias surgiram desde então, tal como o 5G. Assim sendo, a mesma metodologia de pesquisa e testes podem ser feitas utilizando a rede 5G a fim de comparar os resultados e constatar se houve um ganho significativo entre gerações.
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -1520,7 +1521,7 @@ O projeto como um todo ainda deve ser aperfeiçoado casa haja interesse em comer
 %          Sugestoes para trabalhos futuros            %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Sugestões para trabalhos futuros}
+\section{Sugestões para trabalhos futuros}
 %
 % retira numeracao da pagina, conforme as normas de apresentacao.
 \thispagestyle{empty} 
